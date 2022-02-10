@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Terminal</title>
+    <link>dverasc.github.io/posts/</link>
+    <description>Recent content in Posts on Terminal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 10 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="dverasc.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New site just dropped.</title>
+      <link>dverasc.github.io/posts/hello/</link>
+      <pubDate>Thu, 10 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>dverasc.github.io/posts/hello/</guid>
+      <description>I&amp;rsquo;ve backdated some of the content that I&amp;rsquo;ve published in other online places but let the record show the actual first post on this lovely slice of digital real estate is this run-on sentence.</description>
+      <content>&lt;p&gt;I&amp;rsquo;ve backdated some of the content that I&amp;rsquo;ve published in other online places but let the record show the actual first post on this lovely slice of digital real estate is this run-on sentence.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Thoughts 2-10-22</title>
+      <link>dverasc.github.io/posts/thoughts2-10-22/</link>
+      <pubDate>Thu, 10 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>dverasc.github.io/posts/thoughts2-10-22/</guid>
+      <description>EdTech Products &amp;amp; Analytics Some time last year, I read a research paper called Dashboard stories: How narratives told by predictive analytics reconfigure roles, risk, and sociality in education (s/o to Juliane Jarke &amp;amp; Felicitas Macgilchrist as they are the original researchers and authors of the paper). I wrote a whole end of course paper on the research so I could go into a lot of detail, but I&amp;rsquo;ll keep it brief for the sake of all our attention spans.</description>
+      <content>&lt;h1 id=&#34;edtech-products--analytics&#34;&gt;EdTech Products &amp;amp; Analytics&lt;/h1&gt;
+&lt;p&gt;Some time last year, I read a research paper called &lt;a href=&#34;https://journals.sagepub.com/doi/full/10.1177/20539517211025561&#34;&gt;Dashboard stories: How narratives told by predictive analytics reconfigure roles, risk, and sociality in education&lt;/a&gt; (s/o to Juliane Jarke &amp;amp; Felicitas Macgilchrist as they are the original researchers and authors of the paper). I wrote a whole end of course paper on the research so I could go into a lot of detail, but I&amp;rsquo;ll keep it brief for the sake of all our attention spans. The purpose of the research was to gauge the impact of predictive analytics on how teachers make decisions (framed through a focus on data dashboards with ML available to them through a variety of edtech products). The main thesis is that there are specific narratives &amp;amp; stories that are “written” by predictive analytics and consequently, into the dashboards that are produced, which then alter the behavior of teachers and students.&lt;/p&gt;
+&lt;p&gt;Analytics in Edtech products, research paper on teachers as managers, recent future of education conference technology products with dashboards&lt;/p&gt;
+&lt;p&gt;Gaming as subscription and overlap into the world of Netflix and streaming dynamics (content on Sony and Xbox etc)&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>DockerFile for SvelteKit Application</title>
+      <link>dverasc.github.io/posts/svkit-dockerfile/</link>
+      <pubDate>Fri, 28 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>dverasc.github.io/posts/svkit-dockerfile/</guid>
+      <description>DockerFile for SvelteKit Are you working with SvelteKit and ready to deploy? Having issues with containerizing your application for said deployment? Well, look no further, here’s a Dockerfile that works for SvelteKit apps that I’ve used on Digital Ocean, GCP, and AWS
+FROM node:14-alpine as builder WORKDIR /app COPY package.json package-lock.json ./ RUN npm install COPY . . RUN npm run build FROM node:14-alpine USER node:node WORKDIR /app COPY — from=builder — chown=node:node /app/build .</description>
+      <content>&lt;h1 id=&#34;dockerfile-for-sveltekit&#34;&gt;DockerFile for SvelteKit&lt;/h1&gt;
+&lt;p&gt;Are you working with SvelteKit and ready to deploy? Having issues with containerizing your application for said deployment? Well, look no further, here’s a Dockerfile that works for SvelteKit apps that I’ve used on Digital Ocean, GCP, and AWS&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;FROM node:14-alpine as builder
+WORKDIR /app
+COPY package.json package-lock.json ./
+RUN npm install
+COPY . .
+RUN npm run build
+
+FROM node:14-alpine
+
+USER node:node
+
+WORKDIR /app
+COPY — from=builder — chown=node:node /app/build ./build
+COPY — from=builder — chown=node:node /app/node_modules ./node_modules
+COPY — chown=node:node package.json .
+ENV PORT 3000
+EXPOSE 3000
+CMD [“node”,”build”]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;building--running&#34;&gt;Building &amp;amp; Running&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;sudo docker build — no-cache -t nameofthing .&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;or&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;sudo docker build — platform linux/amd64 — no-cache -t nameofthing .&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I included the platform in the second build command because I started using an M1 laptop and ran into issues when building images and then pushing those images to third party cloud platforms like AWS.&lt;/p&gt;
+&lt;p&gt;Run&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;sudo docker run — restart=always — publish 3000:3000 — name=nameofthing -d nameofthing&lt;/strong&gt;&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Dynamics 365 F&amp;O Integration Case Study: Part III</title>
+      <link>dverasc.github.io/posts/dynamicsiii/</link>
+      <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>dverasc.github.io/posts/dynamicsiii/</guid>
+      <description>#The Destination
+#Introduction
+In the past articles in this case study, we went over the source systems and the middleware that comprise the data pipeline. Now we’ll discuss the destination components and how they communicate with the other parts to make up the end-to-end pipeline and complete the event-driven design. These components are the message broker, the consumer service, and the destination database (MongoDB).
+Message Queues &amp;amp; Brokers Message queues have been defined as “a form of asynchronous service-to-service communication used in serverless and microservices architecture”.</description>
+      <content>&lt;p&gt;#The Destination&lt;/p&gt;
+&lt;p&gt;#Introduction&lt;/p&gt;
+&lt;p&gt;In the past articles in this case study, we went over the source systems and the middleware that comprise the data pipeline. Now we’ll discuss the destination components and how they communicate with the other parts to make up the end-to-end pipeline and complete the event-driven design. These components are the message broker, the consumer service, and the destination database (MongoDB).&lt;/p&gt;
+&lt;h1 id=&#34;message-queues--brokers&#34;&gt;Message Queues &amp;amp; Brokers&lt;/h1&gt;
+&lt;p&gt;Message queues have been defined as “a form of asynchronous service-to-service communication used in serverless and microservices architecture”. In less buzz wordy terms, it’s a software component that acts as a hub for messages from a source (also known as a producer) to a destination (also known as a consumer). Instead of one system sending data directly to another, this acts as a middle man of sorts. This “decoupling” of software components is a core part of the modern system design for cloud based software and applications. Something to note is the concept of asynchronous communication, which is really any sort of communication that includes sending someone a message and not expecting an immediate response.&lt;/p&gt;
+&lt;p&gt;While there are different variations of queues and how they handle messages (first in, first out as an example), for this particular guide we’ll talk about RabbitMQ. RabbitMQ, or just Rabbit, is an open-source message broker. A message broker is a variation of the concept of a message queue, still acting as a middle-man in the transfer of messages, but including capabilities like parallel processing from multiple consumers, transformation of the data/messages. It can help translate between different messaging protocols, as opposed to just sending it back and forth with no manipulation.&lt;/p&gt;
+&lt;p&gt;Due to its open-source nature, you can use RabbitMQ locally and on the cloud without having to pay for anything other than compute resources to host on the cloud. Rabbit can be deployed using Docker, Kubernetes, or just by downloading it on your machine, (&lt;a href=&#34;https://www.rabbitmq.com/download.html)&#34;&gt;https://www.rabbitmq.com/download.html)&lt;/a&gt;. A popular alternative is Apache Kafka, which has its own pros and cons, and can also be deployed using Docker or by installing it locally. Kafka is usually compared to a queuing system such as RabbitMQ. What makes the difference is that after consuming the log, Kafka doesn’t delete it. In that way, messages stay in Kafka longer, and they can be replayed. Rabbit uses a pub/sub pattern, with consumers “subscribing” to a particular topic and Rabbit “pushing” the information to the consumers.&lt;/p&gt;
+&lt;h1 id=&#34;consumer--destination-database&#34;&gt;Consumer &amp;amp; Destination Database&lt;/h1&gt;
+&lt;p&gt;The queue needs somewhere to send the message that it receives. This is where the consumer comes in. A consumer is any piece of software that communicates with the queue or the broker, and does something with the data that it receives. Typically a micro-service, this software can be written in your preferred language, although in our case we wrote it in Go.&lt;/p&gt;
+&lt;p&gt;Our solution concluded with a microservice written in Go that acted as a consumer, cleaned the data up, and upserted into a MongoDB cluster. I’ve included some snippets from the consumer we developed to help demonstrate the basic parts of this part of the system (connect to the queue, get the message data, and finally send it to the database). It should be noted that our production code was different due to the unique data manipulation that the client needed and the amount of messages we needed to handle.&lt;/p&gt;
+&lt;p&gt;It’s also worthwhile to mention my assumption as a writer that the reader knows the basics of Go so I won’t spend time talking too much about the intricacies of the language and the development environment (that is a different post entirely).&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;package main
+
+import (
+    &amp;quot;encoding/json&amp;quot;
+    &amp;quot;fmt&amp;quot;
+    &amp;quot;io&amp;quot;
+    &amp;quot;log&amp;quot;
+    &amp;quot;net&amp;quot;
+    &amp;quot;time&amp;quot;
+
+    &amp;quot;github.com/streadway/amqp&amp;quot;
+)
+
+func main() {
+
+fmt.Println(&amp;quot;Connecting to RabbitMQ&amp;quot;)
+    url := &amp;quot;RABBIT-URL-GOES-HERE&amp;quot;
+    connection, err := amqp.Dial(url)
+    if err != nil {
+        fmt.Println(&amp;quot;Error connecting with dial: &amp;quot;, err)
+    }
+    defer connection.Close()
+    channel, err := connection.Channel()
+    if err != nil {
+        fmt.Println(&amp;quot;Could not create channel from rabbit connection: &amp;quot;, err)
+    }
+    defer channel.Close()
+    queueName := &amp;quot;QUEUE-NAME-GOES-HERE&amp;quot;
+// The variable m is used here to declare the type of rabbitmq we are using. This is a solution to the error, &amp;quot;inequivalent arg &#39;x-queue-type&#39; for queue &#39;queuename&#39; in vhost &#39;/&#39;: received none but current is the value &#39;classic&#39; of type &#39;longstr&amp;quot;
+m := make(amqp.Table)
+    m[&amp;quot;x-queue-type&amp;quot;] = &amp;quot;classic&amp;quot;
+
+    q, err := channel.QueueDeclare(
+        queueName, //name
+        true,      //durable
+        false,     //deleted when unused
+        false,     // exclusive
+        false,     //no-wait
+        m,         //arguments
+    )
+    if err != nil {
+        fmt.Println(&amp;quot;Error declaring queue: &amp;quot;, err)
+    }
+    msgs, err := channel.Consume(
+        q.Name, //queue
+        &amp;quot;&amp;quot;,     //consumer
+        true,   //auto-ack
+        false,  //exclusive
+        false,  //no-local
+        false,  //no-wait
+        nil,    //args
+    )
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In this initial part of the code, we’re using the amqp package to connect to the queue and consume the messages in it. Once consumed, the information is stored in the msgs variable (type &amp;lt;-chan amqp.Delivery) that is returned by the Consume method.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;package main
+
+import (
+    &amp;quot;context&amp;quot;
+    &amp;quot;encoding/json&amp;quot;
+    &amp;quot;fmt&amp;quot;
+    &amp;quot;strconv&amp;quot;
+    &amp;quot;time&amp;quot;
+
+    &amp;quot;go.mongodb.org/mongo-driver/bson&amp;quot;
+    &amp;quot;go.mongodb.org/mongo-driver/bson/primitive&amp;quot;
+    &amp;quot;go.mongodb.org/mongo-driver/mongo&amp;quot;
+    &amp;quot;go.mongodb.org/mongo-driver/mongo/options&amp;quot;
+)
+
+type Message struct {
+    Name  string `json:&amp;quot;Name&amp;quot; bson:&amp;quot;Name&amp;quot;`
+    Value string `json:&amp;quot;Value&amp;quot; bson:&amp;quot;Value&amp;quot;`
+}
+
+var db *mongo.Client
+var CRUDdb *mongo.Collection
+var mongoCTX context.Context
+
+func main() {
+
+    msgs, err := channel.Consume(
+        q.Name, //queue
+        &amp;quot;&amp;quot;,     //consumer
+        true,   //auto-ack
+        false,  //exclusive
+        false,  //no-local
+        false,  //no-wait
+        nil,    //args
+    )
+    /////code block from above
+    //connecting to MongoDB
+    fmt.Println(&amp;quot;connecting to MongoDB......&amp;quot;)
+    mongoCTX = context.Background()
+    db, err = mongo.Connect(mongoCTX, options.Client().ApplyURI(&amp;quot;DB-URI-GOESS-HERE&amp;quot;))
+    if err != nil {
+        fmt.Println(&amp;quot;Failed with applying URI&amp;quot;, err)
+        log.Fatal(err)
+    }
+
+    err = db.Ping(mongoCTX, nil)
+    if err != nil {
+        fmt.Println(&amp;quot;Failed to connect to db&amp;quot;, err)
+        log.Fatal(err)
+    } else {
+        fmt.Println(&amp;quot;Connected to mongo&amp;quot;)
+    }
+
+    CRUDdb = db.Database(&amp;quot;DB-NAME-GOES-HERE&amp;quot;).Collection(&amp;quot;COLLECTION-NAME-GOES-HERE&amp;quot;)
+    // starting a go func to handle the range of messages efficiently
+    go func() {
+        for d := range msgs {
+
+            msgCount++
+            var messagestruct Message
+
+            fmt.Printf(&amp;quot;\nMessage Count: %d, Message Body: %s\n&amp;quot;, msgCount, d.Body)
+            //here we&#39;re essentially &amp;quot;mapping&amp;quot; (unmarshaling) the content of the message to the struct we declared above
+            err := json.Unmarshal(d.Body, &amp;amp;messagestruct)
+            if err != nil {
+                fmt.Println(&amp;quot;Error unmarshaling message body to message struct&amp;quot;, err)
+            }
+            result, err := CRUDdb.InsertOne(ctx, messagestruct)
+            if err != nil {
+                fmt.Println(&amp;quot;Error Inserting Document ----&amp;gt; &amp;quot;, err)
+            }
+            fmt.Println(&amp;quot;Here is the create result &amp;quot;, result)
+
+        }
+    }()
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In this second block of code, we’re connecting to the Mongo database instance and giving it a ping just to make sure we connected successfully. Then, we enter into a go routine to handle the messages using threads in case there’s a large amount of data in the queue (see multi-threading if you need more info around the concept). In this go routine, we unmarshal the body of the message into our struct so that it can be represented in both JSON and BSON (need this data representation in order to insert into the database).&lt;/p&gt;
+&lt;p&gt;For context, MongoDB is a document based database (see NoSQL) that manages data not in tables or rows, but in essentially JSON-based format (i.e. BSON). Data is represented as key/value pairs, and is inherently more flexible than traditional SQL databases due to its lack of an enforced schema. It is important to note that in production, we utilized the upsert capability of MongoDB, which inserts data only if the database doesn’t find that the document already exists in the records. We used upsert because our production system is moving changed data, so we want to make sure that we only update the documents that have changed.&lt;/p&gt;
+&lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;Working on this particular project was exciting due to the many different services and software we implemented. From working on serverless functions to document based databases, this pipeline had a bit of everything (and it also optimized for cost &amp;amp; performance, which is the goal at the end of the day). I’ve included a visual of the entire system from beginning to end and its components, which I also included in the original post of this series, way back when. If you read this whole thing, I appreciate it and I hope you got something useful out of it. If neither of those things are true, then that’s okay too.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;dverasc.github.io/dI-I.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Dynamics 365 F&amp;O Integration Case Study: Part II</title>
+      <link>dverasc.github.io/posts/dynamicsii/</link>
+      <pubDate>Thu, 27 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>dverasc.github.io/posts/dynamicsii/</guid>
+      <description>The “Middleware” Introduction In the previous entry, I went over the source systems including Microsoft Dynamics and the database that sits under it. Due to it being 2021 and the cloud eating the world, the source systems were deployed on the Azure cloud and as such were easily configured to interact with certain services that we designed to transfer the data from the source to the message queue. Specifically, these services were Azure Logic Apps, Azure functions, and finally blob storage.</description>
+      <content>&lt;h1 id=&#34;the-middleware&#34;&gt;The “Middleware”&lt;/h1&gt;
+&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;In the previous entry, I went over the source systems including Microsoft Dynamics and the database that sits under it. Due to it being 2021 and the cloud eating the world, the source systems were deployed on the Azure cloud and as such were easily configured to interact with certain services that we designed to transfer the data from the source to the message queue. Specifically, these services were Azure Logic Apps, Azure functions, and finally blob storage.&lt;/p&gt;
+&lt;h1 id=&#34;azure-logic-apps&#34;&gt;Azure Logic Apps&lt;/h1&gt;
+&lt;p&gt;The Azure Logic Application service is offered on the Azure cloud and its billed as a “Integration Platform as a Service”, or in slightly different terms, it is a workflow engine used to tie together different Azure services. Some of the pros include the fact that it’s a visual interface (think “no-code”) and the sheer ease of combining a variety of Azure’s cloud services. It is analogous to the Step Functions on AWS.&lt;/p&gt;
+&lt;p&gt;The purpose of the workflow that we developed on our logic application at a high level is to automatically run the export jobs on the Dynamics application and place the files generated from the jobs on Azure’s storage system. While it was not particularly difficult to create this workflow from a technical perspective as it is a no code solution, there were some tricks and quirks that we learned that are useful to share to the community.&lt;/p&gt;
+&lt;h1 id=&#34;azure-logic-workflow&#34;&gt;Azure Logic Workflow&lt;/h1&gt;
+&lt;p&gt;The first part of our particular process was to establish the cadence or scheduling of the logic app. The application offers several configuration options as far as scheduling goes, and for the sake of this guide, I’ll include a screenshot of what it looks like set to run every eight hours (see below)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;dverasc.github.io/DII-I.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Now that the recurrence has been set and the schedule configured, the next step is to initialize the variable that the workflow is going to use to represent the export job’s reference ID for each specific run&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;dverasc.github.io/DII-II.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The step that follows encompass the bulk of activities, and is held within a isolated series of events, in a section called “Scope”&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;dverasc.github.io/DII-III.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This self-contained block of logic within the scope called “Until” is the segment that runs the export job on Dynamics. This is illustrated below:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;dverasc.github.io/DII-IV.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The breakdown of these steps is essentially saying until the value that is returned by the “Dynamics Export to Package” job is not that string of zeros (which represents completion or not), then the logic app should run the “Dynamics Export to Package” job. The fields that can be configured for the “Execute Action” substep include the Instance (which Microsoft Dynamics application is this workflow controlling), the Action (in our use case, we were exporting to a data package hence the action shown in the image), the Definition Group ID (the name of the export job running on Dynamics), whether it should re-execute on failure, and the Legal Entity ID.&lt;/p&gt;
+&lt;p&gt;Once the export job is run, the logic app will then return a value. This value will be used further in the workflow to run other steps. One important thing to note at this stage is that there may be a slight delay in the export job running and the logic app returning the value, so I added a five minute delay in the app following the Export to Package job to give the systems time to align (shown below):&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;dverasc.github.io/DII-V.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;At this point in the workflow, the logic app has triggered the job run and has stored the return value. This return value will be used to validate the next step in the workflow, since it represents the job’s execution ID.&lt;/p&gt;
+&lt;p&gt;Once the five minutes have passed, the next step of the workflow is set up to take the data files created by the jobs and place them into an Azure blob directory. The first part of this block of logic is a condition that is essentially asking “Is the execution ID that was declared in the beginning of the entire application the same as the value returned by Dynamics after the job was run?” (see below)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;dverasc.github.io/DII-VI.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;If this is False, then we configured the application to send an email notifying our support team that there was a failure in the process (shown below)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;dverasc.github.io/DII-VII.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;However if this is True (which means the job ran successfully), then there is another isolated block of logic that is responsible for getting the files and placing them in the Azure blob storage.&lt;/p&gt;
+&lt;p&gt;Within the block of logic that references the True condition, we added another sub-condition as control to the Dynamics operation that would gather the files produced by the earlier Export to Package job. This sub-condition is essentially asking if the Export to Package job succeeded.&lt;/p&gt;
+&lt;p&gt;If the job succeeds, then the logic app will execute the Dynamics action that gathers the URL of the data package (the result of the job Export job). This URL is used to place the data into Azure blob storage.&lt;/p&gt;
+&lt;p&gt;After getting the URL, the block of logic adds another sub-condition. This piece of conditional logic is to verify that the URL is https and thus, valid (shown below)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;dverasc.github.io/DII-VIII.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Drilling down into the True section of logic, the HTTP module of the logic app is used to call a ‘GET’ method on the URL.&lt;/p&gt;
+&lt;p&gt;The HTTP block then gets to create the blob that will store the files. However, here’s one of the quirks of the Azure environment. The files created as part of the Export to Package job are all stored as one blob, which means that they appear as one object on Azure’s storage service. This is quite limiting if you have a job that exports multiple entities and would like to save each entity’s data file as a separate object. The solution to this issue is to add another step after creating the blob to “extract” the files to stand alone blobs (shown below)&lt;/p&gt;
+&lt;p&gt;Extracting the single blob object (Azure detects it as an archive) to a new directory dumps the individual files into the path that you set.&lt;/p&gt;
+&lt;p&gt;The Azure Logic App service is quite powerful, and the fact that we could orchestrate an entire data extract process with no lines of code written is a testament to that capability. While there are some odd bits of knowledge needed to get this particular workflow set up, it speaks to the Azure ecosystem that we integrated so many parts of the puzzle so easily. The next section will deal with what the pipeline does with the files after they are dumped into the blob storage service.&lt;/p&gt;
+&lt;h1 id=&#34;azure-functions&#34;&gt;Azure Functions&lt;/h1&gt;
+&lt;p&gt;Microsoft’s Azure Functions are the cloud provider’s serverless compute service. For some brief context, most major cloud providers provide a “serverless” offering that allows users the highest level of granularity when it comes to computing. Essentially, serverless computing allows developers to run code without having to provision servers, configure a back-end or hosting solution, or managing runtime. Microsoft’s Azure functions provide this through an event-driven platform that allows for programming in a variety of languages (C#, Java, JavaScript, PowerShell, Python, TypeScript, Other/Go/Rust). This article will show code samples in Python, but we did also experiment with developing custom handlers for Go (our follow up to this guide could include those examples). Serverless code is only billed for the seconds or less of runtime of each function and can be a economically efficient solution for the right use case (code should be stateless, etc). One of the main advantages of Azure Functions is the integrated local environment provided through Microsoft’s Visual Studio Code. You can test, debug, and deploy your function code all in one, well-designed interface. The goal for our function is to get the data from the files in blob storage, transform it, and send it to the messenger queue that feeds into the destination database.&lt;/p&gt;
+&lt;h1 id=&#34;setting-up-azure-functions-on-vs-studio-code&#34;&gt;Setting Up Azure Functions on VS Studio Code&lt;/h1&gt;
+&lt;p&gt;If you don’t typically use VS Studio Code, then….well I apologize because this entire section operates under the assumption that you are developing on that IDE. I’m sure there’s other ways to do it, but this guide will not be showing those. This guide also assumes that you have an existing Azure account.&lt;/p&gt;
+&lt;p&gt;Setting up VS Studio Code is relatively easy. The first step is downloading the Azure Functions extension to your IDE (see below).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;dverasc.github.io/DII-VVI.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;dverasc.github.io/DII-VVII.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Once the function is installed, you should now see the Azure icon on your side menu (if you don’t see the icon, you may have to close and re-open the VS Studio Code application)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;dverasc.github.io/DII-VVIII.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Once the extension is installed, the next step is to “Create New Project”. After you’ve pressed this button, the IDE will present a series of configuration prompts:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- What language do you want to use for the function project (Python)
+- What function template (Blob Trigger)
+- Level of Authorization (Function)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Once these are set, you should have an Azure Function project ready to edit on your VS Studio Code window with the following generated files&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- hosts.json
+- local.settings.json
+- requirements.txt
+- A folder that contains the function.json definition file and __init__.py file for the code
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;blob-trigger&#34;&gt;Blob Trigger&lt;/h1&gt;
+&lt;p&gt;In our particular system, we needed our code to run whenever files are dropped into a specific directory. Since this is one of the most common use cases for the Azure Functions, the generated &lt;em&gt;init&lt;/em&gt;.py comes with pre-configured code to begin the function. This code includes the pre-configured binding to the blob storage service. The code shown in this section will include some of the pre-configured bindings and some additional ones, which will require changes in various of the files in the projects.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;import csv
+import sys
+import logging
+from azure.storage.blob import BlobServiceClient
+from azure.storage.blob import BlobClient
+from azure.storage.blob import ContainerClient
+import azure.functions as func
+import pika
+import os
+import json
+import pandas
+from reader import Reader
+from io import StringIO, BytesIO
+import pyxlsb
+import openpyxl
+import requests
+
+def main (myblob: func.InputStream, msg: func.Out[func.QueueMessage], inputblob: func.InputStream):
+    # dblob = myblob
+    logging.info(f&amp;quot;Python blob trigger function processed blob \n&amp;quot;
+             f&amp;quot;Name: {myblob.name}\n&amp;quot;
+             f&amp;quot;Blob Size: {myblob.length} bytes&amp;quot;)`
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In this initial section of the code, we import all the packages that we need to take the data from the files and send it to the queue. It’s important to note that all packages being imported into the function need to be reflected in the “requirements.txt” file (see screen shot below):&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;dverasc.github.io/DII-VVIV.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The next part of the project files is the bindings that the function uses. While the template blob trigger comes with the binding for the blob storage trigger, our function also includes bindings for the message that we will be sending to our queue and for data in the blob that is triggering the function run. These bindings are reflected in the “function.json” file of our project&lt;/p&gt;
+&lt;p&gt;Each binding has certain values that reference the information in the “local.settings.json” file. For example, the field “connection” should reference a value in the “local.settings.json” that provides the connection URL value (see below):&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;dverasc.github.io/DII-VVV.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Note: When deploying to production, all the values in the local.settings.json file need to be added as “Application Settings” to the Azure Function configuration in the Function App service&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;dverasc.github.io/DII-VVVI.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Once your bindings are set, you can now write the logic of the function code. While parts of the function we used in our system are either not relevant to the article or cannot be displayed because of client confidentiality, there are some things I want to highlight that can be useful for most general use cases.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;name = myblob.name
+    print(name)
+    if &amp;quot;.csv&amp;quot; in name:
+        #      # Convert blob to json
+        conn_str = os.environ[&#39;nameofstorageconnectionvariable&#39;]
+        container = os.environ[&amp;quot;nameofcontainernamevariable&amp;quot;]
+        blob_name = myblob.name.split(&amp;quot;/&amp;quot;,1)[-1]
+        container_client = ContainerClient.from_connection_string( conn_str=conn_str, 
+        container_name=container)
+        downloaded_blob = container_client.download_blob(blob_name)
+        df = pandas.read_csv(StringIO(downloaded_blob.content_as_text()), sep=&#39;,&#39;, engine=&amp;quot;python&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The above lines of code are used to access the content of the file that was uploaded to blob storage and triggered this particular function. The connection string and storage container are stored as environment variables, and need to be set to access the storage service. This produces a container client, which has a method to download the blob object itself. It’s important to note that the blob name should be formatted (I used split), in order to use it to download the blob. If the blob name is not formatted, it can throw an error when trying to use that name to download the blob.&lt;/p&gt;
+&lt;p&gt;In this use case, the next step in the pipeline is a message queue. To insert the contents of the blob file into the queue, the Azure function needed to transform the downloaded content into JSON. This requires first using the Pandas package to create a dataframe from the blob csv file.&lt;/p&gt;
+&lt;p&gt;Since I knew the file was going to be a csv, I called the read_csv method. If you’re handling excel files or something similar, pandas has methods that work in the same manner as read_csv. From this dataframe, the function then iterates through the rows and creates batches due to the large data size of certain data entity files. These batches are then transformed into JSON. The final condition determines the contents of the message being sent to the quee based on the file name. Once the JSON is created from the raw file data, it is then dumped into a variable that is sent to the message queue.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;        df = pandas.read_csv(StringIO(downloaded_blob.content_as_text()), sep=&#39;,&#39;, engine=&amp;quot;python&amp;quot;)
+
+        index = df.index
+        rowamount = len(index-1)
+        print(&amp;quot;Here is the rows count ----------------&amp;gt;&amp;quot;, rowamount)
+
+        batchdelimeter = 5000
+        line = 0
+        x = 1
+
+        if batchdelimeter != 1:
+            batchcounter = rowamount//batchdelimeter
+            if(rowamount%batchdelimeter) !=0:
+                batchcounter = batchcounter + 1
+        else:
+            batchcounter = rowamount
+            x = 0
+        print(&amp;quot;here is the batch count---------&amp;gt;&amp;quot;, batchcounter)
+        for batch in range(batchcounter):
+            if (batch==batchcounter):
+                iter=rowamount
+            else:
+                iter=(x*batchdelimeter)
+            x= x+1
+            print(&amp;quot;starting with the batch # ----------------&amp;gt;&amp;quot;, batch)
+            print(&amp;quot;the line-------&amp;gt;&amp;quot;, line)
+            print(&amp;quot;the iterator------&amp;gt;&amp;quot;, iter)
+            print(&amp;quot;the loc&amp;quot;, df.loc[line:iter]) 
+            linerecord = df.loc[line:iter]
+            print(&amp;quot;ending with the batch  # ----------------&amp;gt;&amp;quot;, batch )    
+            line=iter+1
+            lastflag = False
+            if batch == (batchcounter - 1):
+                lastflag = True
+        # for line in range(batch):
+            result = linerecord.to_json(orient=&#39;records&#39;)
+            parsed = json.loads(result)
+            dumpresults = json.dumps(parsed, indent=4)
+            messagebatchcounter = batchcounter
+            stringcount = str(messagebatchcounter)
+            if &amp;quot;FILENAMECONDITION&amp;quot; in name:
+                msg = &#39;{ INSERT JSON HERE }&#39;  
+                key = &amp;quot;vendor&amp;quot;
+            r = requests.post(api_url, data=msg)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Our system sent the variable storing the JSON content to the message queue by calling a post method on an API that we developed in-house.&lt;/p&gt;
+&lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;The bulk of this data pipeline lies in “the middleware” of the system. The Azure Logic App and Functions serverless service combined offer quite a lot of functionality and power across the Azure cloud ecosystem. Being able to integrate workflows across services and have them communicate with one another is a key advantage in the logic apps. On the other hand, the Azure functions provide a level of compute resource granularity that is hard to beat. While the functions service supports a variety of language, the handlers are configured to handle C#, Java, JavaScript, PowerShell, Python, and TypeScript natively. I highly recommend utilizing the VS Studio Code extension for the functions service, as its fully integrated IDE is convenient for local development and testing, and allows you to upload your code to the functions app on the cloud very easily. The next and final part of this case study will break down what happens after the files are sent to storage and the content transformed to JSON.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Dynamics 365 F&amp;O Integration Case Study: Part I</title>
+      <link>dverasc.github.io/posts/dynamicsi/</link>
+      <pubDate>Wed, 26 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>dverasc.github.io/posts/dynamicsi/</guid>
+      <description>Introduction Recently, I worked on a client project that required us to track changes made on the client’s Microsoft Dynamics 365 Finance &amp;amp; Operations module and integrate those data changes on the destination application. As a team we learned quite a bit on how to design and implement a solution to this scenario and we wanted to share insights and tips for anyone needing to develop a pipeline similar to ours.</description>
+      <content>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;Recently, I worked on a client project that required us to track changes made on the client’s Microsoft Dynamics 365 Finance &amp;amp; Operations module and integrate those data changes on the destination application. As a team we learned quite a bit on how to design and implement a solution to this scenario and we wanted to share insights and tips for anyone needing to develop a pipeline similar to ours.&lt;/p&gt;
+&lt;h1 id=&#34;the-stack&#34;&gt;The Stack&lt;/h1&gt;
+&lt;p&gt;For this project, we had a source system made up of a relational source database in MSSQL, sitting behind Microsoft Dynamics 365 and a destination system composed of a web application with a supporting database on MongoDB. The source database has a feature called “CDC”, or Change Data Capture that can be configured to track changes at the table level. In our use case, these changes needed to be captured at the MongoDB side as they happen in the SQL database. Our pipeline was designed to use an event driven architecture, using RabbitMQ as our message broker. The destination components included a consumer service subscribed to our broker’s topic, and a MongoDB cluster as the destination database where the data changes are capture. The components of the pipeline include Azure Functions, Logic Apps, and blob storage as the middleware. I’ve included a visual of the design of the system from a high level for a complete look at all the different components.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;dverasc.github.io/dI-I.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;the-articles&#34;&gt;The Articles&lt;/h1&gt;
+&lt;p&gt;To mirror the development process, this study will be broken into different articles, each one focused on a different layer or stack of our architecture. We will start with the source system and database (Microsoft Dynamics &amp;amp; MSSQL), followed by the middleware (Azure Logic Apps &amp;amp; Azure functions) and finally, the destination system (message broker, consumer service, and MongoDB database).&lt;/p&gt;
+&lt;h1 id=&#34;the-articles-in-this-series&#34;&gt;The Articles in this series:&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;Part I: The Source System (see below)
+Part II: The Middleware
+Part III: The Destination System
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;references&#34;&gt;References&lt;/h1&gt;
+&lt;p&gt;Part of the design and development process always involves a bit of research, and I wanted to both credit the sources of information that helped us during our research and also provide other resources for anyone who will be taking on projects similar to ours.&lt;/p&gt;
+&lt;p&gt;Here are some of the sources we used during our research:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/
+https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities
+https://blog.crgroup.com/dynamics-365-latest-feature-the-data-export-service/
+https://www.encorebusiness.com/blog/logic-apps-in-dynamics-365-fo-file-based-data-integrations/
+https://medium.com/hitachisolutions-braintrust/logic-app-integration-with-d365-f-o-524ac4909f0
+https://azureintegrations.com/2019/10/15/d365fo-interacting-with-data-management-frame-work-using-rest-api-for-delta-changes-on-entity/
+https://github.com/Microsoft/Dynamics-AX-Integration/wiki/File-based-integration-using-Logic-Apps
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;part-i&#34;&gt;Part I&lt;/h2&gt;
+&lt;h3 id=&#34;the-source&#34;&gt;The Source&lt;/h3&gt;
+&lt;p&gt;For this project, our data source was the Microsoft Dynamics 365 Finance &amp;amp; Operations web application sitting on top of a SQL database. An important characteristic of this source is that it is a relational database, as opposed to the destination database, which is a document based database.&lt;/p&gt;
+&lt;h3 id=&#34;relational-databases&#34;&gt;Relational Databases&lt;/h3&gt;
+&lt;p&gt;Relational databases tend to be the industry standard for most groups and organizations because to be frank, these databases have been in place longer than the other types and have the most support amongst vendors and enterprise clients. Most developers and database admins learn their trade using relational databases, and they are the de facto standard in the industry. The key characteristics of these databases are as follows:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- Database is managed by RDBMS or “Relational Database Management System”
+- Data is structured in rows and columns based on pre-defined relationships
+- Data can be manipulated using SQL (Structured Query Language)
+- Rows represent a collection or grouping of related values
+- Columns represent a certain kind of data
+- Rows almost always have a “primary key”, used as an unique identifier
+- Popular relational databases include MSSQL, MySQL, Oracle, and PostgreSQL
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;microsoft-sql-server&#34;&gt;Microsoft SQL Server&lt;/h3&gt;
+&lt;p&gt;Now that we’ve covered the general idea of relational databases, we will go over some of the product specific traits of SQL Server. The first thing to note is that Microsoft SQL Server and the shorter “MSSQL” acronym are interchangeable in industry, so just remember that they are one and the same.&lt;/p&gt;
+&lt;p&gt;Microsoft’s SQL Server is one of the most popular enterprise databases and tends to come up quite a bit on client projects (including the one that inspired this post). In the past, Microsoft wasn’t exactly “open source” friendly and using their product would have required purchasing a license key and going through the process of setting up the system as a customer. Thankfully, they have taken different attitudes in recent years and expanded their offerings to allow for easier deployments and no upfront costs for use. Due to this, if you’re following this project and don’t have access to a client’s MSSQL, you can launch an non-production MSSQL database using Docker.&lt;/p&gt;
+&lt;h3 id=&#34;microsoft-dynamics-365-finance--operations&#34;&gt;Microsoft Dynamics 365 Finance &amp;amp; Operations&lt;/h3&gt;
+&lt;p&gt;Originally known as Microsoft Dynamics AX, this system is focused on medium and large organizations and enterprise resource planning. Within the Dynamics ecosystem, the data that we are interested in is expressed as “Data Entities” which are essentially custom views composed of fields from the base tables. The purpose of “Data Entities” is to abstract the data from the base tables to business specific terms for non-technical users (an example could be an “Employees” entity, which could bring in fields from 4 different base tables that store information relevant to employees). For our project, the data entities that needed to be transferred from source to destination came from what is referred to as “Export Jobs”. These export jobs are created using the web interface, which provides both a layer of convenience and safety since the data does not have to be directly pulled from the database. This interface meant that we did not need to create custom queries or stored procedures to get the data out. I’ve included some images below to demonstrate the features I’m talking about:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;dverasc.github.io/DI-II.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Ignore the red box, we’re interested in the Export button&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;dverasc.github.io/DI-III.png&#34; alt=&#34;image alt text&#34;&gt;
+&lt;em&gt;The Add Entity button allows us to configure each job with the data we are interested in&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;setting-up-the-source-components&#34;&gt;Setting Up the Source Components&lt;/h3&gt;
+&lt;p&gt;From a technical perspective, this source system requires the least amount of work. To set up the rest of the pipeline, we simply created “Export Jobs” for all the data entities we were interested in transferring to our destination system by adding the entities to the jobs on the configuration screen. In our particular case, we configured the jobs to export the data as CSV file extracts, but it is possible to export the data as Excel extracts or other file/data types. The key requirement for our project was that we weren’t interested in exporting all the data every time, we were interested in only the data that had changed (“Change Data Capture”). To make sure we were only transferring this specific data, we made sure to enable change data tracking on every entity we were interested in. Once this was enabled, only data that changed would be exported after the first initial data dump. You can do this using the web interface, in the Entities module.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;dverasc.github.io/DI-IV.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;To be clear, you should enable CDC for each entity before creating the Export Job&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;source-system-conclusion&#34;&gt;Source System Conclusion&lt;/h3&gt;
+&lt;p&gt;Reading this section, you might be struck by the simplicity in this stage of our pipeline. Due to the abstraction that is provided by the Dynamics web application, we were saved from having to directly interact with the underlying database. To summarize what we did here, we simply enabled change tracking on the entities we are interested in transferring and then created the corresponding export jobs. In the next post, we’ll explore how we tie these export jobs into the rest of the pipeline and our event driven design using a couple different Azure services.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>What is Micromobility</title>
+      <link>dverasc.github.io/posts/boongaloo/</link>
+      <pubDate>Mon, 31 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>dverasc.github.io/posts/boongaloo/</guid>
+      <description>We are in the midst of transformational times. The acceleration of several trends in various sectors due to COVID-19 has created an immediate need for building new services and products that can serve the new “normal.” One of the major trends gathering momentum prior to 2020 predicted to explode post-COVID is known as “micromobility”.
+Although the word is self-explanatory at face-value, the micromobility movement has historically faced some obstacles because both consumers and businesses struggle to truly define the new model of transportation.</description>
+      <content>&lt;p&gt;We are in the midst of transformational times. The acceleration of several trends in various sectors due to COVID-19 has created an immediate need for building new services and products that can serve the new “normal.” One of the major trends gathering momentum prior to 2020 predicted to explode post-COVID is known as “micromobility”.&lt;/p&gt;
+&lt;p&gt;Although the word is self-explanatory at face-value, the micromobility movement has historically faced some obstacles because both consumers and businesses struggle to truly define the new model of transportation. Horace Dediu over at micromobility.io provided a concise definition: “micromobility is personal mobility whose utility is to move its occupant. Its purpose is thus to offer maximum freedom of mobility and its minimalism is to do so in the least impactful way. Its minimalism means it needs to leave no trace of itself and ask the least for itself.” Another, more quantitative definition is “any vehicles whose gross weight is less than 500 kg.” In other words, the defining characteristics of micromobility is that it is any form of transportation that provides maximum mobility at a micro, individual level whilst creating the most minimalist footprint of itself. That last part is what truly defines this novel sector and captures the imagination of those with an eye on the future. Ultimately, micromobility could be the key to reduce the strain on our cities, and consequently, on our world.&lt;/p&gt;
+&lt;p&gt;At the same time, micromobility has also been largely defined by the simplicity and fun that its devices tend to inspire. Users don’t require any special talent to wield a micromobility device like an electric scooter, and yet at any time, one only has to spin their handle, “rev their engine,” and zoom towards their destination. These devices tend to be easy to fold away and at home, don’t take up too much space (as opposed to your car, which has a whole room dedicated to it). Most users who have adopted micromobility got their first taste of this movement by renting a device and purchased their own after experiencing both the efficiency of transportation and whimsical fun of the devices. Now that the early adopters have embraced micromobility, we are starting to see people apply these devices to more, standard, everyday use such as traveling to work or bouncing from meeting to meeting. However, it’s important to highlight that at its heart, the micromobility movement began with shared scooters, and users who simply wanted to have some fun, zoom around, and “rev their engine.”&lt;/p&gt;
+&lt;p&gt;Now that we have a less ambiguous idea of what micromobility is, the next question is what is private micromobility? Let’s start with defining what private micromobility isn’t. It is not the rental fleets of electric scooters that have been deployed in metro areas all over the world. It is instead, the next step in the movement, which is devices like those electric scooters that are instead owned by a person, as opposed to shared and “disposable.” Currently, most people are familiar with the “disposable” scooter model mentioned above, which has been popularized by services like Lime. This is the model in which a user can locate a scooter, rent it on a mobile app, use it to transport themselves to their destination, and then leave the vehicle wherever they decide to for the next user to pick up. However, the popularity of the shared model has led to an increase in individuals purchasing their own vehicles, especially in Europe. The perfect case study for this can be found in Spain, where studies estimated 100,000 personal mobility devices in the country, with e-scooters accounting for 60% of those devices.&lt;/p&gt;
+&lt;p&gt;Where does Boongaloo come in? Well, as I’m sure many of you realized as you read through the article, because the current most widespread model of micromobility is the shared, use-and-leave rentals, there is no infrastructure in place for those personal mobility devices that have begun to pop up in the hands of the private owners in European cities like Malaga. Unlike bicycles — which have a long history in European cities and are taken into consideration in discussions around infrastructure, parking areas, and development — electric scooters have little to no support. Boongaloo’s goal is to create the physical parking infrastructure for these devices, and just as crucially, create the digital and mobile systems that will allow users to get the full value of their private mobility devices, and ultimately, drive the shift towards smart cities and sustainable models for metropolitan areas.&lt;/p&gt;
+&lt;p&gt;For more information, please visit &lt;a href=&#34;http://www.boongaloo.com&#34;&gt;http://www.boongaloo.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The original article was written by me and posted on the Boongaloo medium page, which you can check out here, &lt;a href=&#34;https://medium.com/@Boongaloo/what-is-micromobility-b4eb14f28a89&#34;&gt;https://medium.com/@Boongaloo/what-is-micromobility-b4eb14f28a89&lt;/a&gt;&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>
