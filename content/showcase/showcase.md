@@ -1,0 +1,1 @@
+I will be adding some of the projects I've worked on (this is not comprehensive -- some clients prefer privacy)
