@@ -73,7 +73,7 @@ publishDir = "docs"
 [languages]
   [languages.en]
     languageName = "English"
-    title = "Terminal"
+    title = "DV"
     subtitle = "Welcome"
     owner = ""
     keywords = ""
