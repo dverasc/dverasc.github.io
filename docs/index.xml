@@ -19,20 +19,6 @@
     </item>
     
     <item>
-      <title>Thoughts 2-10-22</title>
-      <link>https://dverasc.github.io/posts/thoughts2-10-22/</link>
-      <pubDate>Thu, 10 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://dverasc.github.io/posts/thoughts2-10-22/</guid>
-      <description>EdTech Products &amp;amp; Analytics Some time last year, I read a research paper called Dashboard stories: How narratives told by predictive analytics reconfigure roles, risk, and sociality in education (s/o to Juliane Jarke &amp;amp; Felicitas Macgilchrist as they are the original researchers and authors of the paper). I wrote a whole end of course paper on the research so I could go into a lot of detail, but I&amp;rsquo;ll keep it brief for the sake of all our attention spans.</description>
-      <content>&lt;h1 id=&#34;edtech-products--analytics&#34;&gt;EdTech Products &amp;amp; Analytics&lt;/h1&gt;
-&lt;p&gt;Some time last year, I read a research paper called &lt;a href=&#34;https://journals.sagepub.com/doi/full/10.1177/20539517211025561&#34;&gt;Dashboard stories: How narratives told by predictive analytics reconfigure roles, risk, and sociality in education&lt;/a&gt; (s/o to Juliane Jarke &amp;amp; Felicitas Macgilchrist as they are the original researchers and authors of the paper). I wrote a whole end of course paper on the research so I could go into a lot of detail, but I&amp;rsquo;ll keep it brief for the sake of all our attention spans. The purpose of the research was to gauge the impact of predictive analytics on how teachers make decisions (framed through a focus on data dashboards with ML available to them through a variety of edtech products). The main thesis is that there are specific narratives &amp;amp; stories that are “written” by predictive analytics and consequently, into the dashboards that are produced, which then alter the behavior of teachers and students.&lt;/p&gt;
-&lt;p&gt;Analytics in Edtech products, research paper on teachers as managers, recent future of education conference technology products with dashboards&lt;/p&gt;
-&lt;p&gt;Gaming as subscription and overlap into the world of Netflix and streaming dynamics (content on Sony and Xbox etc)&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
       <title>DockerFile for SvelteKit Application</title>
       <link>https://dverasc.github.io/posts/svkit-dockerfile/</link>
       <pubDate>Fri, 28 Jan 2022 00:00:00 +0000</pubDate>
@@ -488,6 +474,16 @@ Although the word is self-explanatory at face-value, the micromobility movement 
 &lt;p&gt;For more information, please visit &lt;a href=&#34;http://www.boongaloo.com&#34;&gt;http://www.boongaloo.com&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The original article was written by me and posted on the Boongaloo medium page, which you can check out here, &lt;a href=&#34;https://medium.com/@Boongaloo/what-is-micromobility-b4eb14f28a89&#34;&gt;https://medium.com/@Boongaloo/what-is-micromobility-b4eb14f28a89&lt;/a&gt;&lt;/p&gt;
 </content>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://dverasc.github.io/posts/thoughts2-10-22/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dverasc.github.io/posts/thoughts2-10-22/</guid>
+      <description></description>
+      <content></content>
     </item>
     
     <item>

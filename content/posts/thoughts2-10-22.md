@@ -1,4 +1,4 @@
-+++
+<!-- +++
 title = "Thoughts 2-10-22"
 date = "2022-02-10"
 description = "Edtech, gaming, and other things I think about"
@@ -12,4 +12,4 @@ Some time last year, I read a research paper called [Dashboard stories: How narr
 Analytics in Edtech products, research paper on teachers as managers, recent future of education conference technology products with dashboards
 
 
-Gaming as subscription and overlap into the world of Netflix and streaming dynamics (content on Sony and Xbox etc)
+Gaming as subscription and overlap into the world of Netflix and streaming dynamics (content on Sony and Xbox etc) -->
