@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Terminal</title>
-    <link>dverasc.github.io/</link>
+    <link>https://dverasc.github.io/</link>
     <description>Recent content on Terminal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 10 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="dverasc.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dverasc.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>New site just dropped.</title>
-      <link>dverasc.github.io/posts/hello/</link>
+      <link>https://dverasc.github.io/posts/hello/</link>
       <pubDate>Thu, 10 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>dverasc.github.io/posts/hello/</guid>
+      <guid>https://dverasc.github.io/posts/hello/</guid>
       <description>I&amp;rsquo;ve backdated some of the content that I&amp;rsquo;ve published in other online places but let the record show the actual first post on this lovely slice of digital real estate is this run-on sentence.</description>
       <content>&lt;p&gt;I&amp;rsquo;ve backdated some of the content that I&amp;rsquo;ve published in other online places but let the record show the actual first post on this lovely slice of digital real estate is this run-on sentence.&lt;/p&gt;
 </content>
@@ -20,10 +20,10 @@
     
     <item>
       <title>Thoughts 2-10-22</title>
-      <link>dverasc.github.io/posts/thoughts2-10-22/</link>
+      <link>https://dverasc.github.io/posts/thoughts2-10-22/</link>
       <pubDate>Thu, 10 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>dverasc.github.io/posts/thoughts2-10-22/</guid>
+      <guid>https://dverasc.github.io/posts/thoughts2-10-22/</guid>
       <description>EdTech Products &amp;amp; Analytics Some time last year, I read a research paper called Dashboard stories: How narratives told by predictive analytics reconfigure roles, risk, and sociality in education (s/o to Juliane Jarke &amp;amp; Felicitas Macgilchrist as they are the original researchers and authors of the paper). I wrote a whole end of course paper on the research so I could go into a lot of detail, but I&amp;rsquo;ll keep it brief for the sake of all our attention spans.</description>
       <content>&lt;h1 id=&#34;edtech-products--analytics&#34;&gt;EdTech Products &amp;amp; Analytics&lt;/h1&gt;
 &lt;p&gt;Some time last year, I read a research paper called &lt;a href=&#34;https://journals.sagepub.com/doi/full/10.1177/20539517211025561&#34;&gt;Dashboard stories: How narratives told by predictive analytics reconfigure roles, risk, and sociality in education&lt;/a&gt; (s/o to Juliane Jarke &amp;amp; Felicitas Macgilchrist as they are the original researchers and authors of the paper). I wrote a whole end of course paper on the research so I could go into a lot of detail, but I&amp;rsquo;ll keep it brief for the sake of all our attention spans. The purpose of the research was to gauge the impact of predictive analytics on how teachers make decisions (framed through a focus on data dashboards with ML available to them through a variety of edtech products). The main thesis is that there are specific narratives &amp;amp; stories that are “written” by predictive analytics and consequently, into the dashboards that are produced, which then alter the behavior of teachers and students.&lt;/p&gt;
@@ -34,10 +34,10 @@
     
     <item>
       <title>DockerFile for SvelteKit Application</title>
-      <link>dverasc.github.io/posts/svkit-dockerfile/</link>
+      <link>https://dverasc.github.io/posts/svkit-dockerfile/</link>
       <pubDate>Fri, 28 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>dverasc.github.io/posts/svkit-dockerfile/</guid>
+      <guid>https://dverasc.github.io/posts/svkit-dockerfile/</guid>
       <description>DockerFile for SvelteKit Are you working with SvelteKit and ready to deploy? Having issues with containerizing your application for said deployment? Well, look no further, here’s a Dockerfile that works for SvelteKit apps that I’ve used on Digital Ocean, GCP, and AWS
 FROM node:14-alpine as builder WORKDIR /app COPY package.json package-lock.json ./ RUN npm install COPY . . RUN npm run build FROM node:14-alpine USER node:node WORKDIR /app COPY — from=builder — chown=node:node /app/build .</description>
       <content>&lt;h1 id=&#34;dockerfile-for-sveltekit&#34;&gt;DockerFile for SvelteKit&lt;/h1&gt;
@@ -73,10 +73,10 @@ CMD [“node”,”build”]
     
     <item>
       <title>Dynamics 365 F&amp;O Integration Case Study: Part III</title>
-      <link>dverasc.github.io/posts/dynamicsiii/</link>
+      <link>https://dverasc.github.io/posts/dynamicsiii/</link>
       <pubDate>Mon, 31 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>dverasc.github.io/posts/dynamicsiii/</guid>
+      <guid>https://dverasc.github.io/posts/dynamicsiii/</guid>
       <description>#The Destination
 #Introduction
 In the past articles in this case study, we went over the source systems and the middleware that comprise the data pipeline. Now we’ll discuss the destination components and how they communicate with the other parts to make up the end-to-end pipeline and complete the event-driven design. These components are the message broker, the consumer service, and the destination database (MongoDB).
@@ -230,16 +230,16 @@ func main() {
 &lt;p&gt;For context, MongoDB is a document based database (see NoSQL) that manages data not in tables or rows, but in essentially JSON-based format (i.e. BSON). Data is represented as key/value pairs, and is inherently more flexible than traditional SQL databases due to its lack of an enforced schema. It is important to note that in production, we utilized the upsert capability of MongoDB, which inserts data only if the database doesn’t find that the document already exists in the records. We used upsert because our production system is moving changed data, so we want to make sure that we only update the documents that have changed.&lt;/p&gt;
 &lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
 &lt;p&gt;Working on this particular project was exciting due to the many different services and software we implemented. From working on serverless functions to document based databases, this pipeline had a bit of everything (and it also optimized for cost &amp;amp; performance, which is the goal at the end of the day). I’ve included a visual of the entire system from beginning to end and its components, which I also included in the original post of this series, way back when. If you read this whole thing, I appreciate it and I hope you got something useful out of it. If neither of those things are true, then that’s okay too.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;dverasc.github.io/dI-I.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dverasc.github.io/dI-I.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
 </content>
     </item>
     
     <item>
       <title>Dynamics 365 F&amp;O Integration Case Study: Part II</title>
-      <link>dverasc.github.io/posts/dynamicsii/</link>
+      <link>https://dverasc.github.io/posts/dynamicsii/</link>
       <pubDate>Thu, 27 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>dverasc.github.io/posts/dynamicsii/</guid>
+      <guid>https://dverasc.github.io/posts/dynamicsii/</guid>
       <description>The “Middleware” Introduction In the previous entry, I went over the source systems including Microsoft Dynamics and the database that sits under it. Due to it being 2021 and the cloud eating the world, the source systems were deployed on the Azure cloud and as such were easily configured to interact with certain services that we designed to transfer the data from the source to the message queue. Specifically, these services were Azure Logic Apps, Azure functions, and finally blob storage.</description>
       <content>&lt;h1 id=&#34;the-middleware&#34;&gt;The “Middleware”&lt;/h1&gt;
 &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
@@ -249,26 +249,26 @@ func main() {
 &lt;p&gt;The purpose of the workflow that we developed on our logic application at a high level is to automatically run the export jobs on the Dynamics application and place the files generated from the jobs on Azure’s storage system. While it was not particularly difficult to create this workflow from a technical perspective as it is a no code solution, there were some tricks and quirks that we learned that are useful to share to the community.&lt;/p&gt;
 &lt;h1 id=&#34;azure-logic-workflow&#34;&gt;Azure Logic Workflow&lt;/h1&gt;
 &lt;p&gt;The first part of our particular process was to establish the cadence or scheduling of the logic app. The application offers several configuration options as far as scheduling goes, and for the sake of this guide, I’ll include a screenshot of what it looks like set to run every eight hours (see below)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;dverasc.github.io/DII-I.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dverasc.github.io/DII-I.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Now that the recurrence has been set and the schedule configured, the next step is to initialize the variable that the workflow is going to use to represent the export job’s reference ID for each specific run&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;dverasc.github.io/DII-II.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dverasc.github.io/DII-II.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The step that follows encompass the bulk of activities, and is held within a isolated series of events, in a section called “Scope”&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;dverasc.github.io/DII-III.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dverasc.github.io/DII-III.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
 &lt;p&gt;This self-contained block of logic within the scope called “Until” is the segment that runs the export job on Dynamics. This is illustrated below:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;dverasc.github.io/DII-IV.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dverasc.github.io/DII-IV.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The breakdown of these steps is essentially saying until the value that is returned by the “Dynamics Export to Package” job is not that string of zeros (which represents completion or not), then the logic app should run the “Dynamics Export to Package” job. The fields that can be configured for the “Execute Action” substep include the Instance (which Microsoft Dynamics application is this workflow controlling), the Action (in our use case, we were exporting to a data package hence the action shown in the image), the Definition Group ID (the name of the export job running on Dynamics), whether it should re-execute on failure, and the Legal Entity ID.&lt;/p&gt;
 &lt;p&gt;Once the export job is run, the logic app will then return a value. This value will be used further in the workflow to run other steps. One important thing to note at this stage is that there may be a slight delay in the export job running and the logic app returning the value, so I added a five minute delay in the app following the Export to Package job to give the systems time to align (shown below):&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;dverasc.github.io/DII-V.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dverasc.github.io/DII-V.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
 &lt;p&gt;At this point in the workflow, the logic app has triggered the job run and has stored the return value. This return value will be used to validate the next step in the workflow, since it represents the job’s execution ID.&lt;/p&gt;
 &lt;p&gt;Once the five minutes have passed, the next step of the workflow is set up to take the data files created by the jobs and place them into an Azure blob directory. The first part of this block of logic is a condition that is essentially asking “Is the execution ID that was declared in the beginning of the entire application the same as the value returned by Dynamics after the job was run?” (see below)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;dverasc.github.io/DII-VI.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dverasc.github.io/DII-VI.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
 &lt;p&gt;If this is False, then we configured the application to send an email notifying our support team that there was a failure in the process (shown below)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;dverasc.github.io/DII-VII.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dverasc.github.io/DII-VII.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
 &lt;p&gt;However if this is True (which means the job ran successfully), then there is another isolated block of logic that is responsible for getting the files and placing them in the Azure blob storage.&lt;/p&gt;
 &lt;p&gt;Within the block of logic that references the True condition, we added another sub-condition as control to the Dynamics operation that would gather the files produced by the earlier Export to Package job. This sub-condition is essentially asking if the Export to Package job succeeded.&lt;/p&gt;
 &lt;p&gt;If the job succeeds, then the logic app will execute the Dynamics action that gathers the URL of the data package (the result of the job Export job). This URL is used to place the data into Azure blob storage.&lt;/p&gt;
 &lt;p&gt;After getting the URL, the block of logic adds another sub-condition. This piece of conditional logic is to verify that the URL is https and thus, valid (shown below)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;dverasc.github.io/DII-VIII.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dverasc.github.io/DII-VIII.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Drilling down into the True section of logic, the HTTP module of the logic app is used to call a ‘GET’ method on the URL.&lt;/p&gt;
 &lt;p&gt;The HTTP block then gets to create the blob that will store the files. However, here’s one of the quirks of the Azure environment. The files created as part of the Export to Package job are all stored as one blob, which means that they appear as one object on Azure’s storage service. This is quite limiting if you have a job that exports multiple entities and would like to save each entity’s data file as a separate object. The solution to this issue is to add another step after creating the blob to “extract” the files to stand alone blobs (shown below)&lt;/p&gt;
 &lt;p&gt;Extracting the single blob object (Azure detects it as an archive) to a new directory dumps the individual files into the path that you set.&lt;/p&gt;
@@ -278,10 +278,10 @@ func main() {
 &lt;h1 id=&#34;setting-up-azure-functions-on-vs-studio-code&#34;&gt;Setting Up Azure Functions on VS Studio Code&lt;/h1&gt;
 &lt;p&gt;If you don’t typically use VS Studio Code, then….well I apologize because this entire section operates under the assumption that you are developing on that IDE. I’m sure there’s other ways to do it, but this guide will not be showing those. This guide also assumes that you have an existing Azure account.&lt;/p&gt;
 &lt;p&gt;Setting up VS Studio Code is relatively easy. The first step is downloading the Azure Functions extension to your IDE (see below).&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;dverasc.github.io/DII-VVI.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;dverasc.github.io/DII-VVII.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dverasc.github.io/DII-VVI.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dverasc.github.io/DII-VVII.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Once the function is installed, you should now see the Azure icon on your side menu (if you don’t see the icon, you may have to close and re-open the VS Studio Code application)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;dverasc.github.io/DII-VVIII.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dverasc.github.io/DII-VVIII.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Once the extension is installed, the next step is to “Create New Project”. After you’ve pressed this button, the IDE will present a series of configuration prompts:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;- What language do you want to use for the function project (Python)
 - What function template (Blob Trigger)
@@ -319,12 +319,12 @@ def main (myblob: func.InputStream, msg: func.Out[func.QueueMessage], inputblob:
              f&amp;quot;Blob Size: {myblob.length} bytes&amp;quot;)`
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;In this initial section of the code, we import all the packages that we need to take the data from the files and send it to the queue. It’s important to note that all packages being imported into the function need to be reflected in the “requirements.txt” file (see screen shot below):&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;dverasc.github.io/DII-VVIV.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dverasc.github.io/DII-VVIV.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The next part of the project files is the bindings that the function uses. While the template blob trigger comes with the binding for the blob storage trigger, our function also includes bindings for the message that we will be sending to our queue and for data in the blob that is triggering the function run. These bindings are reflected in the “function.json” file of our project&lt;/p&gt;
 &lt;p&gt;Each binding has certain values that reference the information in the “local.settings.json” file. For example, the field “connection” should reference a value in the “local.settings.json” that provides the connection URL value (see below):&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;dverasc.github.io/DII-VVV.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dverasc.github.io/DII-VVV.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Note: When deploying to production, all the values in the local.settings.json file need to be added as “Application Settings” to the Azure Function configuration in the Function App service&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;dverasc.github.io/DII-VVVI.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dverasc.github.io/DII-VVVI.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Once your bindings are set, you can now write the logic of the function code. While parts of the function we used in our system are either not relevant to the article or cannot be displayed because of client confidentiality, there are some things I want to highlight that can be useful for most general use cases.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;name = myblob.name
     print(name)
@@ -394,10 +394,10 @@ def main (myblob: func.InputStream, msg: func.Out[func.QueueMessage], inputblob:
     
     <item>
       <title>About</title>
-      <link>dverasc.github.io/about/</link>
+      <link>https://dverasc.github.io/about/</link>
       <pubDate>Wed, 26 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>dverasc.github.io/about/</guid>
+      <guid>https://dverasc.github.io/about/</guid>
       <description>This is going to be me telling you about me, in buzzwords and also in plain English.
 My name is Diego Veras and this is a collection of my thoughts, projects, and other things.
 During business hours (and often outside of business hours), I&amp;rsquo;m a Managing Partner and Product Manager at Arcvale . We&amp;rsquo;re an interactive technology studio, developing both strategy and products for clients as well as creating our own studio products (web // mobile apps, games, interactive experiences, etc).</description>
@@ -413,16 +413,16 @@ During business hours (and often outside of business hours), I&amp;rsquo;m a Man
     
     <item>
       <title>Dynamics 365 F&amp;O Integration Case Study: Part I</title>
-      <link>dverasc.github.io/posts/dynamicsi/</link>
+      <link>https://dverasc.github.io/posts/dynamicsi/</link>
       <pubDate>Wed, 26 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>dverasc.github.io/posts/dynamicsi/</guid>
+      <guid>https://dverasc.github.io/posts/dynamicsi/</guid>
       <description>Introduction Recently, I worked on a client project that required us to track changes made on the client’s Microsoft Dynamics 365 Finance &amp;amp; Operations module and integrate those data changes on the destination application. As a team we learned quite a bit on how to design and implement a solution to this scenario and we wanted to share insights and tips for anyone needing to develop a pipeline similar to ours.</description>
       <content>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;Recently, I worked on a client project that required us to track changes made on the client’s Microsoft Dynamics 365 Finance &amp;amp; Operations module and integrate those data changes on the destination application. As a team we learned quite a bit on how to design and implement a solution to this scenario and we wanted to share insights and tips for anyone needing to develop a pipeline similar to ours.&lt;/p&gt;
 &lt;h1 id=&#34;the-stack&#34;&gt;The Stack&lt;/h1&gt;
 &lt;p&gt;For this project, we had a source system made up of a relational source database in MSSQL, sitting behind Microsoft Dynamics 365 and a destination system composed of a web application with a supporting database on MongoDB. The source database has a feature called “CDC”, or Change Data Capture that can be configured to track changes at the table level. In our use case, these changes needed to be captured at the MongoDB side as they happen in the SQL database. Our pipeline was designed to use an event driven architecture, using RabbitMQ as our message broker. The destination components included a consumer service subscribed to our broker’s topic, and a MongoDB cluster as the destination database where the data changes are capture. The components of the pipeline include Azure Functions, Logic Apps, and blob storage as the middleware. I’ve included a visual of the design of the system from a high level for a complete look at all the different components.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;dverasc.github.io/dI-I.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dverasc.github.io/dI-I.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
 &lt;h1 id=&#34;the-articles&#34;&gt;The Articles&lt;/h1&gt;
 &lt;p&gt;To mirror the development process, this study will be broken into different articles, each one focused on a different layer or stack of our architecture. We will start with the source system and database (Microsoft Dynamics &amp;amp; MSSQL), followed by the middleware (Azure Logic Apps &amp;amp; Azure functions) and finally, the destination system (message broker, consumer service, and MongoDB database).&lt;/p&gt;
 &lt;h1 id=&#34;the-articles-in-this-series&#34;&gt;The Articles in this series:&lt;/h1&gt;
@@ -459,13 +459,13 @@ https://github.com/Microsoft/Dynamics-AX-Integration/wiki/File-based-integration
 &lt;p&gt;Microsoft’s SQL Server is one of the most popular enterprise databases and tends to come up quite a bit on client projects (including the one that inspired this post). In the past, Microsoft wasn’t exactly “open source” friendly and using their product would have required purchasing a license key and going through the process of setting up the system as a customer. Thankfully, they have taken different attitudes in recent years and expanded their offerings to allow for easier deployments and no upfront costs for use. Due to this, if you’re following this project and don’t have access to a client’s MSSQL, you can launch an non-production MSSQL database using Docker.&lt;/p&gt;
 &lt;h3 id=&#34;microsoft-dynamics-365-finance--operations&#34;&gt;Microsoft Dynamics 365 Finance &amp;amp; Operations&lt;/h3&gt;
 &lt;p&gt;Originally known as Microsoft Dynamics AX, this system is focused on medium and large organizations and enterprise resource planning. Within the Dynamics ecosystem, the data that we are interested in is expressed as “Data Entities” which are essentially custom views composed of fields from the base tables. The purpose of “Data Entities” is to abstract the data from the base tables to business specific terms for non-technical users (an example could be an “Employees” entity, which could bring in fields from 4 different base tables that store information relevant to employees). For our project, the data entities that needed to be transferred from source to destination came from what is referred to as “Export Jobs”. These export jobs are created using the web interface, which provides both a layer of convenience and safety since the data does not have to be directly pulled from the database. This interface meant that we did not need to create custom queries or stored procedures to get the data out. I’ve included some images below to demonstrate the features I’m talking about:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;dverasc.github.io/DI-II.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dverasc.github.io/DI-II.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Ignore the red box, we’re interested in the Export button&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;dverasc.github.io/DI-III.png&#34; alt=&#34;image alt text&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;https://dverasc.github.io/DI-III.png&#34; alt=&#34;image alt text&#34;&gt;
 &lt;em&gt;The Add Entity button allows us to configure each job with the data we are interested in&lt;/em&gt;&lt;/p&gt;
 &lt;h3 id=&#34;setting-up-the-source-components&#34;&gt;Setting Up the Source Components&lt;/h3&gt;
 &lt;p&gt;From a technical perspective, this source system requires the least amount of work. To set up the rest of the pipeline, we simply created “Export Jobs” for all the data entities we were interested in transferring to our destination system by adding the entities to the jobs on the configuration screen. In our particular case, we configured the jobs to export the data as CSV file extracts, but it is possible to export the data as Excel extracts or other file/data types. The key requirement for our project was that we weren’t interested in exporting all the data every time, we were interested in only the data that had changed (“Change Data Capture”). To make sure we were only transferring this specific data, we made sure to enable change data tracking on every entity we were interested in. Once this was enabled, only data that changed would be exported after the first initial data dump. You can do this using the web interface, in the Entities module.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;dverasc.github.io/DI-IV.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dverasc.github.io/DI-IV.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;To be clear, you should enable CDC for each entity before creating the Export Job&lt;/em&gt;&lt;/p&gt;
 &lt;h3 id=&#34;source-system-conclusion&#34;&gt;Source System Conclusion&lt;/h3&gt;
 &lt;p&gt;Reading this section, you might be struck by the simplicity in this stage of our pipeline. Due to the abstraction that is provided by the Dynamics web application, we were saved from having to directly interact with the underlying database. To summarize what we did here, we simply enabled change tracking on the entities we are interested in transferring and then created the corresponding export jobs. In the next post, we’ll explore how we tie these export jobs into the rest of the pipeline and our event driven design using a couple different Azure services.&lt;/p&gt;
@@ -474,10 +474,10 @@ https://github.com/Microsoft/Dynamics-AX-Integration/wiki/File-based-integration
     
     <item>
       <title>What is Micromobility</title>
-      <link>dverasc.github.io/posts/boongaloo/</link>
+      <link>https://dverasc.github.io/posts/boongaloo/</link>
       <pubDate>Mon, 31 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>dverasc.github.io/posts/boongaloo/</guid>
+      <guid>https://dverasc.github.io/posts/boongaloo/</guid>
       <description>We are in the midst of transformational times. The acceleration of several trends in various sectors due to COVID-19 has created an immediate need for building new services and products that can serve the new “normal.” One of the major trends gathering momentum prior to 2020 predicted to explode post-COVID is known as “micromobility”.
 Although the word is self-explanatory at face-value, the micromobility movement has historically faced some obstacles because both consumers and businesses struggle to truly define the new model of transportation.</description>
       <content>&lt;p&gt;We are in the midst of transformational times. The acceleration of several trends in various sectors due to COVID-19 has created an immediate need for building new services and products that can serve the new “normal.” One of the major trends gathering momentum prior to 2020 predicted to explode post-COVID is known as “micromobility”.&lt;/p&gt;
@@ -492,10 +492,10 @@ Although the word is self-explanatory at face-value, the micromobility movement 
     
     <item>
       <title></title>
-      <link>dverasc.github.io/showcase/showcase/</link>
+      <link>https://dverasc.github.io/showcase/showcase/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>dverasc.github.io/showcase/showcase/</guid>
+      <guid>https://dverasc.github.io/showcase/showcase/</guid>
       <description>I will be adding some of the projects I&amp;rsquo;ve worked on (this is not comprehensive &amp;ndash; some clients prefer privacy)</description>
       <content>&lt;p&gt;I will be adding some of the projects I&amp;rsquo;ve worked on (this is not comprehensive &amp;ndash; some clients prefer privacy)&lt;/p&gt;
 </content>
