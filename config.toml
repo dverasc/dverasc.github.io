@@ -62,6 +62,14 @@ publishDir = "docs"
   creator = ""
   site = ""
 
+[params.social.share]
+  facebook = true
+  linkedin = true
+  twitter = true
+  whatsapp = true
+  email = true
+
+
 [languages]
   [languages.en]
     languageName = "English"
