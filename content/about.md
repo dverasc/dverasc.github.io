@@ -4,7 +4,7 @@ date = "2021-05-26"
 description = "This is going to be me telling you about me, in buzzwords and also in plain English."
 
 +++
-This is going to be me telling you about me, in buzzwords and also in plain English.
+[ BUZZWORDS ]
 
 
 My name is Diego Veras and this is a collection of my thoughts, projects, and other things.
@@ -17,6 +17,6 @@ During business hours (and often outside of business hours), I'm a Managing Part
 
 
 
-When it comes to projects (more buzzwords), I've led multi-disciplinary teams for clients of various sizes, from multinational corporations to early stage startups & have hands-on experience as a data analyst, engineer, & cloud architect ([see: AWS certified associate architect](https://www.linkedin.com/in/diego-veras/details/certifications/)). I'm not tied to AWS though and have project experience across all the major cloud providers. I usually develop with Go, Python, Docker, and MongoDB but I've worked with most of the major relational dbs and a little of js // typescript as well. As far as credentials go, I have a BS in MIS & Commercial Entrepreneurship (s/o Jim Moran) and an MS in MIS, all from Florida State. 
+When it comes to projects (more buzzwords), I've led multi-disciplinary teams for clients of various sizes, from multinational corporations to early stage startups & have hands-on experience as a data analyst, engineer, & cloud architect ([see: AWS certified associate architect](https://www.linkedin.com/in/diego-veras/details/certifications/)). I'm not tied to AWS though and have project experience across all the major cloud providers. I usually develop with Go, Python, Docker, and MongoDB but I've worked with most of the major relational dbs and a little of js // typescript as well. As far as credentials go, I have a BS & MS in Information Systems & BS in Commercial Entrepreneurship (s/o Jim Moran), all from Florida State University (go noles). 
 
 Outside of my email-job life, I enjoy getting punched in the face on the weekends (see: rugby) and usually care about soccer & basketball as well. You can find me on Twitter (see: [@ diegov97](https://twitter.com/diegov97)) and on [other places online](https://dverasc.github.io/showcase/socials/) except the big blue app & vine's dumb cousin.
