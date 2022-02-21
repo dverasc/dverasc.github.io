@@ -67,53 +67,58 @@ CI/CD is one of the pillars behind schools of thoughts and best practices surrou
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;It will then deploy // run &amp;amp; publish a container based on the most up to date image build&lt;/p&gt;
-&lt;p&gt;name: CI&lt;/p&gt;
-&lt;p&gt;#Controls when the workflow will run
-on:
-#Triggers the workflow on push or pull request events but only for the master branch
-push:
-branches: [ main ]&lt;/p&gt;
-&lt;p&gt;#Allows you to run this workflow manually from the Actions tab
-workflow_dispatch:&lt;/p&gt;
-&lt;p&gt;#A workflow run is made up of one or more jobs that can run sequentially or in parallel
-jobs:
-#This workflow contains a single job called &amp;ldquo;build&amp;rdquo;
-deploy-to-digital-ocean-droplet:
-# The type of runner that the job will run on
-runs-on: ubuntu-latest
-name: Deploy Application&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;  # Steps represent a sequence of tasks that will be executed as part of the job
-  steps:
-  # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-  - name: Checkour repo
-      uses: actions/checkout@v2
+&lt;pre&gt;&lt;code&gt;  name: CI
 
-  # pulls latest
-  - name: Pull from GitHub
-      uses: appleboy/ssh-action@master
-      with:
-      host: ${{ secrets.HOST_IP }}
-      username: ${{ secrets.HOST_USERNAME }}
-      key: ${{ secrets.KEY }}
-      script: cd ~/directory &amp;amp;&amp;amp; git pull 
+  #Controls when the workflow will run
+  on:
+  #Triggers the workflow on push or pull request events but only for the master branch
+  push:
+      branches: [ main ]
 
-  # build docker container
-  - name: Docker Build
-      uses: appleboy/ssh-action@master
-      with:
-      host: ${{ secrets.HOST_IP }}
-      username: ${{ secrets.HOST_USERNAME }}
-      key: ${{ secrets.KEY }}
-      script: cd ~/directory &amp;amp;&amp;amp; docker rm containername -f &amp;amp;&amp;amp; docker build --platform linux/amd64 --no-cache -t appname .
 
-  # run docker container
-  - name: Docker Build
-      uses: appleboy/ssh-action@master
-      with:
-      host: ${{ secrets.HOST_IP }}
-      username: ${{ secrets.HOST_USERNAME }}
-      key: ${{ secrets.KEY }}
-      script: cd ~/directory &amp;amp;&amp;amp; docker run --restart=always --publish 3000:3000 --name=appname -d appname
+  #Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+  #A workflow run is made up of one or more jobs that can run sequentially or in parallel
+  jobs:
+  #This workflow contains a single job called &amp;quot;build&amp;quot;
+      deploy-to-digital-ocean-droplet:
+          # The type of runner that the job will run on
+      runs-on: ubuntu-latest
+      name: Deploy Application
+
+      # Steps represent a sequence of tasks that will be executed as part of the job
+      steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Checkour repo
+          uses: actions/checkout@v2
+
+      # pulls latest
+      - name: Pull from GitHub
+          uses: appleboy/ssh-action@master
+          with:
+          host: ${{ secrets.HOST_IP }}
+          username: ${{ secrets.HOST_USERNAME }}
+          key: ${{ secrets.KEY }}
+          script: cd ~/directory &amp;amp;&amp;amp; git pull 
+
+      # build docker container
+      - name: Docker Build
+          uses: appleboy/ssh-action@master
+          with:
+          host: ${{ secrets.HOST_IP }}
+          username: ${{ secrets.HOST_USERNAME }}
+          key: ${{ secrets.KEY }}
+          script: cd ~/directory &amp;amp;&amp;amp; docker rm containername -f &amp;amp;&amp;amp; docker build --platform linux/amd64 --no-cache -t appname .
+
+      # run docker container
+      - name: Docker Build
+          uses: appleboy/ssh-action@master
+          with:
+          host: ${{ secrets.HOST_IP }}
+          username: ${{ secrets.HOST_USERNAME }}
+          key: ${{ secrets.KEY }}
+          script: cd ~/directory &amp;amp;&amp;amp; docker run --restart=always --publish 3000:3000 --name=appname -d appname
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

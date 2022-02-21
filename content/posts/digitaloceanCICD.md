@@ -83,59 +83,58 @@ The script below will do the following:
 
 - It will then deploy // run & publish a container based on the most up to date image build
 
+        name: CI
 
-    name: CI
-
-    #Controls when the workflow will run
-    on:
-    #Triggers the workflow on push or pull request events but only for the master branch
-    push:
-        branches: [ main ]
+        #Controls when the workflow will run
+        on:
+        #Triggers the workflow on push or pull request events but only for the master branch
+        push:
+            branches: [ main ]
 
 
-    #Allows you to run this workflow manually from the Actions tab
-    workflow_dispatch:
+        #Allows you to run this workflow manually from the Actions tab
+        workflow_dispatch:
 
-    #A workflow run is made up of one or more jobs that can run sequentially or in parallel
-    jobs:
-    #This workflow contains a single job called "build"
-    deploy-to-digital-ocean-droplet:
-        # The type of runner that the job will run on
-        runs-on: ubuntu-latest
-        name: Deploy Application
+        #A workflow run is made up of one or more jobs that can run sequentially or in parallel
+        jobs:
+        #This workflow contains a single job called "build"
+            deploy-to-digital-ocean-droplet:
+                # The type of runner that the job will run on
+            runs-on: ubuntu-latest
+            name: Deploy Application
 
-        # Steps represent a sequence of tasks that will be executed as part of the job
-        steps:
-        # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-        - name: Checkour repo
-            uses: actions/checkout@v2
+            # Steps represent a sequence of tasks that will be executed as part of the job
+            steps:
+            # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+            - name: Checkour repo
+                uses: actions/checkout@v2
 
-        # pulls latest
-        - name: Pull from GitHub
-            uses: appleboy/ssh-action@master
-            with:
-            host: ${{ secrets.HOST_IP }}
-            username: ${{ secrets.HOST_USERNAME }}
-            key: ${{ secrets.KEY }}
-            script: cd ~/directory && git pull 
+            # pulls latest
+            - name: Pull from GitHub
+                uses: appleboy/ssh-action@master
+                with:
+                host: ${{ secrets.HOST_IP }}
+                username: ${{ secrets.HOST_USERNAME }}
+                key: ${{ secrets.KEY }}
+                script: cd ~/directory && git pull 
 
-        # build docker container
-        - name: Docker Build
-            uses: appleboy/ssh-action@master
-            with:
-            host: ${{ secrets.HOST_IP }}
-            username: ${{ secrets.HOST_USERNAME }}
-            key: ${{ secrets.KEY }}
-            script: cd ~/directory && docker rm containername -f && docker build --platform linux/amd64 --no-cache -t appname .
-            
-        # run docker container
-        - name: Docker Build
-            uses: appleboy/ssh-action@master
-            with:
-            host: ${{ secrets.HOST_IP }}
-            username: ${{ secrets.HOST_USERNAME }}
-            key: ${{ secrets.KEY }}
-            script: cd ~/directory && docker run --restart=always --publish 3000:3000 --name=appname -d appname
+            # build docker container
+            - name: Docker Build
+                uses: appleboy/ssh-action@master
+                with:
+                host: ${{ secrets.HOST_IP }}
+                username: ${{ secrets.HOST_USERNAME }}
+                key: ${{ secrets.KEY }}
+                script: cd ~/directory && docker rm containername -f && docker build --platform linux/amd64 --no-cache -t appname .
+                
+            # run docker container
+            - name: Docker Build
+                uses: appleboy/ssh-action@master
+                with:
+                host: ${{ secrets.HOST_IP }}
+                username: ${{ secrets.HOST_USERNAME }}
+                key: ${{ secrets.KEY }}
+                script: cd ~/directory && docker run --restart=always --publish 3000:3000 --name=appname -d appname
 
 
 # Final GUI & Conclusion
