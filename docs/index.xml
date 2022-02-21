@@ -6,7 +6,142 @@
     <description>Recent content on DV</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 10 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dverasc.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dverasc.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Digital Ocean &amp; CI/CD</title>
+      <link>https://dverasc.github.io/posts/digitaloceancicd/</link>
+      <pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dverasc.github.io/posts/digitaloceancicd/</guid>
+      <description>Introduction &amp;amp; DevOps We&amp;rsquo;ve been working on a three tier web application with a js front ent (sveltekit) &amp;amp; golang backend (GraphQL) and have containerized both. Early in development, we did manual deployments since it was a small team hacking together a starting prototype. As the product strategy &amp;amp; design developed, we started looking for ways to increase our development speed and practices and a natural point to improve was our deployment process (or lack thereof).</description>
+      <content>&lt;h1 id=&#34;introduction--devops&#34;&gt;Introduction &amp;amp; DevOps&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://arcvale.com&#34;&gt;We&amp;rsquo;ve&lt;/a&gt; been working on a three tier web application with a js front ent (sveltekit) &amp;amp; golang backend (GraphQL) and have containerized both. Early in development, we did manual deployments since it was a small team hacking together a starting prototype. As the product strategy &amp;amp; design developed, we started looking for ways to increase our development speed and practices and a natural point to improve was our deployment process (or lack thereof). With that in mind, I realized we needed to take advantage of the containerized nature of our application and the fact that we already had other projects running on DigitalOcean, so support was not an issue. The rest of this piece will go over the different parts of the CI/CD pipeline, but at a high level, the pipeline is based on Gitbub Actions with scripts to ssh into our DigitalOcean droplet, clean the resources &amp;amp; build a Docker inage, &amp;amp; then run the image, all in an automated fashion after a developer pushes into the main branch (look at all those buzzwords).&lt;/p&gt;
+&lt;p&gt;What is DevOps? Basically, in the giant constellation of cults and schools of thoughts in technology (you know Agile, Scrum, etc), there is a relatively new player called DevOps. This new school is focused on how the people that write the code (dev) and the people who launch // deploy the code work (ops) work together. While this is a somewhat simplistic definition, it&amp;rsquo;s really the main idea. There tends to be a lot of friction and handoffs that happens in teams that are building digital products and since our brains are always trying to OPTIMIZE, DevOps rose to address a lot of that friction. There&amp;rsquo;s a lot that goes into the specific rules and artifacts and etc, but it all starts with an attitude &amp;amp; desire to improve the transition between code to shipping with a focus on automation.&lt;/p&gt;
+&lt;h1 id=&#34;cicd&#34;&gt;CI/CD&lt;/h1&gt;
+&lt;p&gt;Okay DevOps makes sense I think&amp;hellip;but&amp;hellip;then&amp;hellip;.what is CI/CD?
+Glad you asked! One of the core pillars of DevOps is the concept of CI (Continous Integration) &amp;amp; CD (Continous Deployment), hence CI/CD. Here&amp;rsquo;s how it breaks down:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;CI: this is the part of integrating the different branches and versions of code into the &amp;ldquo;main&amp;rdquo; branch or whatever is considered the centralized, most up to date, source of truth version of the code. This is typically done by some variation of comitting, pushing, reviwewing and is associated with things like pull &amp;amp; merge requests, Github, Gitlab, and general chaos.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;CD: this is the part of deploying the most up to date version of the code to whatever environment is considered the final stage that end users interact with. This involves testing code and making sure that it will not break or destroy the product that end users are using. There are many variations and best practices on how different teams do this, but all deployment practices consist of automated testing &amp;amp; usually involve some interplay with either on-prem servers or a cloud provider.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When teams integrate CI/CD into their practices, release cycles tend to speed up and overall shipping cadence improves.
+CI/CD is one of the pillars behind schools of thoughts and best practices surrouding DevOps, Cloud-Native development, &amp;amp; Agile software development. Different teams have different components, but proper DevOps adoption tends to lead to a CI/CD pipeline, which is the end-to-end system with all the different components that make up its steps to integrate and deploy application code.&lt;/p&gt;
+&lt;h1 id=&#34;digital-ocean&#34;&gt;Digital Ocean&lt;/h1&gt;
+&lt;p&gt;For this particular use case, the cloud provider is DigitalOcean. While DigitalOcean isn&amp;rsquo;t one of the big 3 cloud platforms (Google, Azure, or AWS), it offers a better user experience built with developers in mind. They don&amp;rsquo;t offer the full portfolio of services like the big 3, but they have everything anyone needs to build a web application with very solid documentation and ease of use. Basically, they get you what you need for most situations, have transparent pricing, and you won&amp;rsquo;t end up smashing the screen at the UX of it all. I&amp;rsquo;m a fan and the application this piece is based on is currently running on a Digital Ocean droplet [NOTE: they didn&amp;rsquo;t pay me to say nice things about them, but they should&amp;hellip;hit my line DigitalOcean].&lt;/p&gt;
+&lt;h1 id=&#34;github-actions&#34;&gt;Github Actions&lt;/h1&gt;
+&lt;p&gt;GitHub Actions is a feature offered by Github that allows you to create a CI/CD pipeline based on config files, but with a nice user interface that plays well with other Github features like depoyment keys and secrets for information like passwords and user creds. I&amp;rsquo;ve worked with Azure DevOps before, and while Actions isn&amp;rsquo;t as comprehensive (not that I blame them for it, I mean its feature vs platform here), I did note a similar interface from a GUI perspective which felt familiar to me.&lt;/p&gt;
+&lt;h1 id=&#34;the-pipeline&#34;&gt;The Pipeline&lt;/h1&gt;
+&lt;p&gt;The pipeline starts with a push to a Github repo that contains the code, which then activates the Actions script to run, ssh into our DigitalOcean server, and run several Docker commands that will build and deploy our containerized application.&lt;/p&gt;
+&lt;h1 id=&#34;the-setup&#34;&gt;The SetUp&lt;/h1&gt;
+&lt;p&gt;A couple components must be set for the scrip to be able to run:&lt;/p&gt;
+&lt;p&gt;A) You will need to set Github secrets for your ssh server credentials (in this case, Username, Key, and IP)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Github Secrets are encrypted environment variables that are encrypted before they reach [Github] (&lt;a href=&#34;https://libsodium.gitbook.io/doc/public-key_cryptography/sealed_boxes)&#34;&gt;https://libsodium.gitbook.io/doc/public-key_cryptography/sealed_boxes)&lt;/a&gt;. You can set them up by clicking on the Settings tab for the repo that is storing your application code and looking on the left hand menu for the Secrets section.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://dverasc.github.io/secrets.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;You can set up secrets at the repo level&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;B) After setting up the secrets, you are going to need to activate Github Actions and add the script from the section below to run the pipeline.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Similar to secrets, you can configure the actions by finding the Actions tab on the same repo top level menu that has the Settings tab. Once you&amp;rsquo;ve landed on the secrets page, you&amp;rsquo;re gonna click &amp;lsquo;set up a workflow yourself&amp;rsquo; in order to create your own actions script (aka the one you&amp;rsquo;ll copy and paste from here).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://dverasc.github.io/actions.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;you&amp;rsquo;re gonna click &amp;lsquo;set up a workflow yourself&amp;rsquo;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;C) Once you&amp;rsquo;ve hit set up workflow yourself, Github will take you to a new file being created within your project structure called &amp;lsquo;main.yml&amp;rsquo; (this is the file you&amp;rsquo;ll be editing the script into)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dverasc.github.io/actionsyml.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;this is the file you&amp;rsquo;ll be editing the script into&lt;/em&gt;&lt;/p&gt;
+&lt;h1 id=&#34;the-script-what-youre-here-for&#34;&gt;The Script (what you&amp;rsquo;re here for)&lt;/h1&gt;
+&lt;p&gt;The script below will do the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;SSH into your DigitalOcean server using the IP, Username, and Key variables you&amp;rsquo;ve stored as environment variables (NOTE: you can use the root user for this but you should NOT..instead create a new user in your server with ssh priviliges and use those creds instead)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Once in, script will navigate to your project directory and pull for changes&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;After updating the code files in the directory, it will clean the current resources, and build the new, latest image&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It will then deploy // run &amp;amp; publish a container based on the most up to date image build&lt;/p&gt;
+&lt;p&gt;name: CI&lt;/p&gt;
+&lt;h1 id=&#34;controls-when-the-workflow-will-run&#34;&gt;Controls when the workflow will run&lt;/h1&gt;
+&lt;p&gt;on:&lt;/p&gt;
+&lt;h1 id=&#34;triggers-the-workflow-on-push-or-pull-request-events-but-only-for-the-master-branch&#34;&gt;Triggers the workflow on push or pull request events but only for the master branch&lt;/h1&gt;
+&lt;p&gt;push:
+branches: [ main ]&lt;/p&gt;
+&lt;h1 id=&#34;allows-you-to-run-this-workflow-manually-from-the-actions-tab&#34;&gt;Allows you to run this workflow manually from the Actions tab&lt;/h1&gt;
+&lt;p&gt;workflow_dispatch:&lt;/p&gt;
+&lt;h1 id=&#34;a-workflow-run-is-made-up-of-one-or-more-jobs-that-can-run-sequentially-or-in-parallel&#34;&gt;A workflow run is made up of one or more jobs that can run sequentially or in parallel&lt;/h1&gt;
+&lt;p&gt;jobs:&lt;/p&gt;
+&lt;h1 id=&#34;this-workflow-contains-a-single-job-called-build&#34;&gt;This workflow contains a single job called &amp;ldquo;build&amp;rdquo;&lt;/h1&gt;
+&lt;p&gt;deploy-to-digital-ocean-droplet:
+# The type of runner that the job will run on
+runs-on: ubuntu-latest
+name: Deploy Application&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  # Steps represent a sequence of tasks that will be executed as part of the job
+  steps:
+  # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+  - name: Checkour repo
+      uses: actions/checkout@v2
+
+  # pulls latest
+  - name: Pull from GitHub
+      uses: appleboy/ssh-action@master
+      with:
+      host: ${{ secrets.HOST_IP }}
+      username: ${{ secrets.HOST_USERNAME }}
+      key: ${{ secrets.KEY }}
+      script: cd ~/directory &amp;amp;&amp;amp; git pull 
+
+  # build docker container
+  - name: Docker Build
+      uses: appleboy/ssh-action@master
+      with:
+      host: ${{ secrets.HOST_IP }}
+      username: ${{ secrets.HOST_USERNAME }}
+      key: ${{ secrets.KEY }}
+      script: cd ~/directory &amp;amp;&amp;amp; docker rm containername -f &amp;amp;&amp;amp; docker build --platform linux/amd64 --no-cache -t appname .
+
+  # run docker container
+  - name: Docker Build
+      uses: appleboy/ssh-action@master
+      with:
+      host: ${{ secrets.HOST_IP }}
+      username: ${{ secrets.HOST_USERNAME }}
+      key: ${{ secrets.KEY }}
+      script: cd ~/directory &amp;amp;&amp;amp; docker run --restart=always --publish 3000:3000 --name=appname -d appname
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;final-gui--conclusion&#34;&gt;Final GUI &amp;amp; Conclusion&lt;/h1&gt;
+&lt;p&gt;After the script is comitted, this should trigger the first run of your pipeline with the following interface allowing you to control the pipeline and find out status and other data points on your runs.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dverasc.github.io/mainactions.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Main Actions Screen&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dverasc.github.io/drilldownactions.png&#34; alt=&#34;image alt text&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Drill Down into Run&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;And that pretty much wraps up the pipeline. This could work on other cloud providers or on-prem since we&amp;rsquo;re essentially just ssh-ing into servers, but the cool thing about &lt;a href=&#34;https://github.com/marketplace?category=&amp;amp;query=&amp;amp;type=actions&amp;amp;verification=&#34;&gt;Github Actions&lt;/a&gt; is that there are template for all sorts of use cases and platforms for deployments, so there&amp;rsquo;s a good chance that someone has already covered a stack and has posted a config file for it. The important bits here are the general concepts and ideas behind CI/CD and building a practical pipeline for small // prototype projects.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Thoughts 2-21-22</title>
+      <link>https://dverasc.github.io/posts/thoughts2-21-22/</link>
+      <pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dverasc.github.io/posts/thoughts2-21-22/</guid>
+      <description>EdTech Products &amp;amp; Analytics Some time last year, I read a research paper called Dashboard stories: How narratives told by predictive analytics reconfigure roles, risk, and sociality in education (s/o to Juliane Jarke &amp;amp; Felicitas Macgilchrist as they are the original researchers and authors of the paper). I wrote a whole end of course paper on the research so I could go into a lot more detail, but I&amp;rsquo;ll keep it relatively high-level on this for the sake of all our attention spans.</description>
+      <content>&lt;h1 id=&#34;edtech-products--analytics&#34;&gt;EdTech Products &amp;amp; Analytics&lt;/h1&gt;
+&lt;p&gt;Some time last year, I read a research paper called &lt;a href=&#34;https://journals.sagepub.com/doi/full/10.1177/20539517211025561&#34;&gt;Dashboard stories: How narratives told by predictive analytics reconfigure roles, risk, and sociality in education&lt;/a&gt; (s/o to Juliane Jarke &amp;amp; Felicitas Macgilchrist as they are the original researchers and authors of the paper). I wrote a whole end of course paper on the research so I could go into a lot more detail, but I&amp;rsquo;ll keep it relatively high-level on this for the sake of all our attention spans. The purpose of the research was to gauge the impact of predictive analytics on how teachers make decisions (framed through a focus on data dashboards with ML available to them through a variety of edtech products). This paper has haunted me a little bit over the last couple months as I&amp;rsquo;ve spent time building products and seeing other products be built in the edtech space and I felt like venting into the void.&lt;/p&gt;
+&lt;p&gt;The main thesis is that there are specific narratives &amp;amp; stories that are “written” by predictive analytics and consequently, into the dashboards that are produced, which then alter the behavior of teachers and students. These dashboards and products shift the teacher role to resemble a manager, which in turn, shift the framing of a student’s actions &amp;amp; potential to that of interactions that are “machine-readable”. To me, this seems related to the overall trend of &amp;ldquo;Silicon Valley best practices&amp;rdquo; spreading everywhere and the collective obsession modern business seems to have with FAANG culture &amp;amp; &amp;ldquo;data science&amp;rdquo; (note: I love a good dashboard as much as the next guy, but not everything needs to be tracked and fed into a model i.e. the educational system and the complex graph of interactions that make up its foundation). One could argue that this trend has even reached the other side of our educational system, parents and the home (see The Atlantic Piece with the all time quote, &lt;a href=&#34;https://www.theatlantic.com/family/archive/2019/07/families-slack-asana/593584/&#34;&gt;&amp;ldquo;Perhaps one’s children and direct reports are not so different after all.&amp;quot;&lt;/a&gt;). I guess my general take on this phenomenon is: data is not neutral, so the implementation of data analytics into an aspect of society is not inherently a good thing, and doing so blindly is such a giant cop-out of agency and a grand example of indeterminate optimism (&amp;ldquo;ML/data science/analytics dashboard is the future of education&amp;rdquo; &amp;amp; techno yoga-babble instead of idk actual investment and interest in building out our country&amp;rsquo;s educational system at the local and federal level being the future.&lt;/p&gt;
+&lt;p&gt;Anyway, the paper goes on to expand on dashboards as storytelling devices with two main narratives taking place. The first narrative deals with risk. If we conclude that predictive analytics and the dashboards shift the teacher into a “manager” role, then it stands to reason that as managers, they are being pointed towards seeing risk as a key dimension in the classroom and their interactions with students. Anyone that has managed a project of any kind knows that risk is something that has to be considered and measured, so this pivot in the role of teachers makes sense intuitively. Thing is, risk dashboards only show correlation, but the narrative nature of how humans interpret the data (humans love stories) shown in dashboards emphasizes causal connections, which leads to faulty conclusions that correlation is the same as causation from a behavioral perspective (big no no). The other narrative is about sociality. Sociality is a dimension that can be measured in predictive analytics but unfortunately, the nature of data at this point in time means that sociality can only be measured from “in-tech” interactions. This means that the only data points used to analyze sociality in students come from digital communication (discussion boards, comments, etc). Once again, anyone that has been assigned a discussion board knows that being measured solely on a db post as your &amp;ldquo;sociality&amp;rdquo; dimension is not a good representation of your true sociality (&amp;ldquo;Good evening xxx, Great post! I definitely agree with blah blah blah&amp;rdquo; at 11:55 PM before your initial post is due). This constraint leads to interactions in the physical classroom to be under measured when drawing conclusions about student behavior and participation. The conclusion of the paper finds that the constraints involved in predictive analytics and dashboards in the education space can lead to a “narrow understanding of individually measurable education” (shocker) and can render the external, structural inequalities invisible and thus not considered when teachers try to turn dashboard insights into action. In english&amp;hellip;.not all of education or life is digital, and measuring those complex aspects of life &amp;amp; society through the lens of only the digital interactions &amp;amp; inputs that can be modeled through software is extremely limiting and big NOT GOOD.&lt;/p&gt;
+&lt;p&gt;With all that in mind, let&amp;rsquo;s turn to the world of tech conferences. Recently, I attended a certain edtech conference that was A) gigantic and really cool but also B) full of products and vendors with DASHBOARDS &amp;amp; CLASSROOM ANALYTICS &amp;amp; MACHINE LEARNING and it just really struck me how much we&amp;rsquo;ve deferred to Tableau and D3 and python and all the buzzwords in the world instead of taking risks and exploring new ways to create technology for the actual purpose of education (not tracking, but like you know passing on knowledge and preparing the future of our society). As tech has risen as the Industry and its quirks and sins and general THOUGHT LEADERSHIP have spread, I fear we&amp;rsquo;ve forgotten what technology can be: a catalyst for rapid change and transfomation that has yet to be matched. We don&amp;rsquo;t need programs that track users across browsers or log keystrokes or any of the surveillance mechanisms we seem to implant into every product and feature list. We need products that can reach more students at a higher quality both in-person &amp;amp; remotely, expand access to actual broadband &amp;amp; high speed internet, add to our teachers&#39; natural abilities, and enrich students&amp;rsquo;s experiences, not just track // document them. As a builder of these things, I can only do my bit to create products that respect the balance between the analog and digital components that make up a healthy life but also I can have my scream into the void, which is this piece. Please stop tracking keystrokes and start trying to teach.&lt;/p&gt;
+</content>
+    </item>
+    
     <item>
       <title>New site just dropped.</title>
       <link>https://dverasc.github.io/posts/hello/</link>
@@ -384,15 +519,15 @@ def main (myblob: func.InputStream, msg: func.Out[func.QueueMessage], inputblob:
       <pubDate>Wed, 26 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://dverasc.github.io/about/</guid>
-      <description>This is going to be me telling you about me, in buzzwords and also in plain English.
+      <description>[ BUZZWORDS ]
 My name is Diego Veras and this is a collection of my thoughts, projects, and other things.
-During business hours (and often outside of business hours), I&amp;rsquo;m a Managing Partner and Product Manager at Arcvale . We&amp;rsquo;re an interactive technology studio, developing both strategy and products for clients as well as creating our own studio products (web // mobile apps, games, interactive experiences, etc).</description>
-      <content>&lt;p&gt;This is going to be me telling you about me, in buzzwords and also in plain English.&lt;/p&gt;
+During business hours (and often outside of business hours), I&amp;rsquo;m a Managing Partner and Product Manager at Arcvale . We&amp;rsquo;re an interactive technology studio, developing both strategy and products for clients as well as creating our own studio products (web // mobile apps, games, interactive experiences, etc). We specialize in cloud-native development, VR/AR, and 3D modeling.</description>
+      <content>&lt;p&gt;[ BUZZWORDS ]&lt;/p&gt;
 &lt;p&gt;My name is Diego Veras and this is a collection of my thoughts, projects, and other things.&lt;/p&gt;
 &lt;p&gt;During business hours (and often outside of business hours), I&amp;rsquo;m a Managing Partner and Product Manager at &lt;a href=&#34;https://arcvale.com/&#34;&gt;&lt;strong&gt;Arcvale&lt;/strong&gt;&lt;/a&gt; . We&amp;rsquo;re an interactive technology studio, developing both strategy and products for clients as well as creating our own studio products (web // mobile apps, games, interactive experiences, etc). We specialize in cloud-native development, VR/AR, and 3D modeling. Basically, we make things, sometimes for ourselves, sometimes for people that pay us. I&amp;rsquo;m generally responsible for studio operations &amp;amp; strategy, selling and leading client engagements, and leading development teams for our in-house products. My interests and focus revolves around digital products, cloud technologies and data analytics.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;If you&amp;rsquo;re interested in hiring us to build you things, please reach out here:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&amp;mdash;&amp;gt; &lt;em&gt;&lt;strong&gt;diego at (wayspire) (dot) com&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;When it comes to projects (more buzzwords), I&amp;rsquo;ve led multi-disciplinary teams for clients of various sizes, from multinational corporations to early stage startups &amp;amp; have hands-on experience as a data analyst, engineer, &amp;amp; cloud architect (&lt;a href=&#34;https://www.linkedin.com/in/diego-veras/details/certifications/&#34;&gt;see: AWS certified associate architect&lt;/a&gt;). I&amp;rsquo;m not tied to AWS though and have project experience across all the major cloud providers. I usually develop with Go, Python, Docker, and MongoDB but I&amp;rsquo;ve worked with most of the major relational dbs and a little of js // typescript as well. As far as credentials go, I have a BS in MIS &amp;amp; Commercial Entrepreneurship (s/o Jim Moran) and an MS in MIS, all from Florida State.&lt;/p&gt;
+&lt;p&gt;When it comes to projects (more buzzwords), I&amp;rsquo;ve led multi-disciplinary teams for clients of various sizes, from multinational corporations to early stage startups &amp;amp; have hands-on experience as a data analyst, engineer, &amp;amp; cloud architect (&lt;a href=&#34;https://www.linkedin.com/in/diego-veras/details/certifications/&#34;&gt;see: AWS certified associate architect&lt;/a&gt;). I&amp;rsquo;m not tied to AWS though and have project experience across all the major cloud providers. I usually develop with Go, Python, Docker, and MongoDB but I&amp;rsquo;ve worked with most of the major relational dbs and a little of js // typescript as well. As far as credentials go, I have a BS &amp;amp; MS in Information Systems &amp;amp; BS in Commercial Entrepreneurship (s/o Jim Moran), all from Florida State University (go noles).&lt;/p&gt;
 &lt;p&gt;Outside of my email-job life, I enjoy getting punched in the face on the weekends (see: rugby) and usually care about soccer &amp;amp; basketball as well. You can find me on Twitter (see: &lt;a href=&#34;https://twitter.com/diegov97&#34;&gt;@ diegov97&lt;/a&gt;) and on &lt;a href=&#34;https://dverasc.github.io/showcase/socials/&#34;&gt;other places online&lt;/a&gt; except the big blue app &amp;amp; vine&amp;rsquo;s dumb cousin.&lt;/p&gt;
 </content>
     </item>
@@ -478,10 +613,10 @@ Although the word is self-explanatory at face-value, the micromobility movement 
     
     <item>
       <title></title>
-      <link>https://dverasc.github.io/posts/thoughts2-10-22/</link>
+      <link>https://dverasc.github.io/posts/thoughtsgaming/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dverasc.github.io/posts/thoughts2-10-22/</guid>
+      <guid>https://dverasc.github.io/posts/thoughtsgaming/</guid>
       <description></description>
       <content></content>
     </item>
