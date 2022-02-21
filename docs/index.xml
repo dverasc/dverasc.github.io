@@ -68,17 +68,17 @@ CI/CD is one of the pillars behind schools of thoughts and best practices surrou
 &lt;li&gt;
 &lt;p&gt;It will then deploy // run &amp;amp; publish a container based on the most up to date image build&lt;/p&gt;
 &lt;p&gt;name: CI&lt;/p&gt;
-&lt;h1 id=&#34;controls-when-the-workflow-will-run&#34;&gt;Controls when the workflow will run&lt;/h1&gt;
-&lt;p&gt;on:&lt;/p&gt;
-&lt;h1 id=&#34;triggers-the-workflow-on-push-or-pull-request-events-but-only-for-the-master-branch&#34;&gt;Triggers the workflow on push or pull request events but only for the master branch&lt;/h1&gt;
-&lt;p&gt;push:
+&lt;p&gt;#Controls when the workflow will run
+on:
+#Triggers the workflow on push or pull request events but only for the master branch
+push:
 branches: [ main ]&lt;/p&gt;
-&lt;h1 id=&#34;allows-you-to-run-this-workflow-manually-from-the-actions-tab&#34;&gt;Allows you to run this workflow manually from the Actions tab&lt;/h1&gt;
-&lt;p&gt;workflow_dispatch:&lt;/p&gt;
-&lt;h1 id=&#34;a-workflow-run-is-made-up-of-one-or-more-jobs-that-can-run-sequentially-or-in-parallel&#34;&gt;A workflow run is made up of one or more jobs that can run sequentially or in parallel&lt;/h1&gt;
-&lt;p&gt;jobs:&lt;/p&gt;
-&lt;h1 id=&#34;this-workflow-contains-a-single-job-called-build&#34;&gt;This workflow contains a single job called &amp;ldquo;build&amp;rdquo;&lt;/h1&gt;
-&lt;p&gt;deploy-to-digital-ocean-droplet:
+&lt;p&gt;#Allows you to run this workflow manually from the Actions tab
+workflow_dispatch:&lt;/p&gt;
+&lt;p&gt;#A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+#This workflow contains a single job called &amp;ldquo;build&amp;rdquo;
+deploy-to-digital-ocean-droplet:
 # The type of runner that the job will run on
 runs-on: ubuntu-latest
 name: Deploy Application&lt;/p&gt;

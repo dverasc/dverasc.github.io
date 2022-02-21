@@ -77,7 +77,7 @@
     <div class="header__logo">
       <a href="/">
   <div class="logo">
-    Sometimes a Quant, sometimes a Poet
+    Sometimes a Poet, sometimes a Quant
   </div>
 </a>
 
@@ -200,17 +200,17 @@ CI/CD is one of the pillars behind schools of thoughts and best practices surrou
 <li>
 <p>It will then deploy // run &amp; publish a container based on the most up to date image build</p>
 <p>name: CI</p>
-<h1 id="controls-when-the-workflow-will-run">Controls when the workflow will run<a href="#controls-when-the-workflow-will-run" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
-<p>on:</p>
-<h1 id="triggers-the-workflow-on-push-or-pull-request-events-but-only-for-the-master-branch">Triggers the workflow on push or pull request events but only for the master branch<a href="#triggers-the-workflow-on-push-or-pull-request-events-but-only-for-the-master-branch" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
-<p>push:
+<p>#Controls when the workflow will run
+on:
+#Triggers the workflow on push or pull request events but only for the master branch
+push:
 branches: [ main ]</p>
-<h1 id="allows-you-to-run-this-workflow-manually-from-the-actions-tab">Allows you to run this workflow manually from the Actions tab<a href="#allows-you-to-run-this-workflow-manually-from-the-actions-tab" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
-<p>workflow_dispatch:</p>
-<h1 id="a-workflow-run-is-made-up-of-one-or-more-jobs-that-can-run-sequentially-or-in-parallel">A workflow run is made up of one or more jobs that can run sequentially or in parallel<a href="#a-workflow-run-is-made-up-of-one-or-more-jobs-that-can-run-sequentially-or-in-parallel" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
-<p>jobs:</p>
-<h1 id="this-workflow-contains-a-single-job-called-build">This workflow contains a single job called &ldquo;build&rdquo;<a href="#this-workflow-contains-a-single-job-called-build" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
-<p>deploy-to-digital-ocean-droplet:
+<p>#Allows you to run this workflow manually from the Actions tab
+workflow_dispatch:</p>
+<p>#A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+#This workflow contains a single job called &ldquo;build&rdquo;
+deploy-to-digital-ocean-droplet:
 # The type of runner that the job will run on
 runs-on: ubuntu-latest
 name: Deploy Application</p>

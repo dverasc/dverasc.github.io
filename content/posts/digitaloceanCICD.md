@@ -86,19 +86,19 @@ The script below will do the following:
 
     name: CI
 
-    # Controls when the workflow will run
+    #Controls when the workflow will run
     on:
-    # Triggers the workflow on push or pull request events but only for the master branch
+    #Triggers the workflow on push or pull request events but only for the master branch
     push:
         branches: [ main ]
 
 
-    # Allows you to run this workflow manually from the Actions tab
+    #Allows you to run this workflow manually from the Actions tab
     workflow_dispatch:
 
-    # A workflow run is made up of one or more jobs that can run sequentially or in parallel
+    #A workflow run is made up of one or more jobs that can run sequentially or in parallel
     jobs:
-    # This workflow contains a single job called "build"
+    #This workflow contains a single job called "build"
     deploy-to-digital-ocean-droplet:
         # The type of runner that the job will run on
         runs-on: ubuntu-latest

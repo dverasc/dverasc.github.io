@@ -87,7 +87,7 @@ publishDir = "docs"
     missingBackButtonLabel = "Back to home page"
 
     [languages.en.params.logo]
-      logoText = "Sometimes a Quant, sometimes a Poet"
+      logoText = "Sometimes a Poet, sometimes a Quant"
       logoHomeLink = "/"
 
     [languages.en.menu]
