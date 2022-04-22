@@ -33,7 +33,7 @@ The step that follows encompass the bulk of activities, and is held within a iso
 
 This self-contained block of logic within the scope called “Until” is the segment that runs the export job on Dynamics. This is illustrated below:
 
-![image alt text](/DII-IV.png)
+
 
 The breakdown of these steps is essentially saying until the value that is returned by the “Dynamics Export to Package” job is not that string of zeros (which represents completion or not), then the logic app should run the “Dynamics Export to Package” job. The fields that can be configured for the “Execute Action” substep include the Instance (which Microsoft Dynamics application is this workflow controlling), the Action (in our use case, we were exporting to a data package hence the action shown in the image), the Definition Group ID (the name of the export job running on Dynamics), whether it should re-execute on failure, and the Legal Entity ID.
 
