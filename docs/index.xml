@@ -6,7 +6,19 @@
     <description>Recent content on DV</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 30 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dverasc.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dverasc.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What is the Cloud</title>
+      <link>https://dverasc.github.io/posts/whatisthecloud/</link>
+      <pubDate>Mon, 30 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dverasc.github.io/posts/whatisthecloud/</guid>
+      <description>I recently did a small workshop on cloud computing for some of our team members who are not typically exposed to the backend operations of the web and digital products in general. It is not super in-depth but it&amp;rsquo;s really meant to serve as a starting point for someone wanting to dive deeper but is looking for an entry resource or as a high level overview for those who want to get a little more comfortable with the general cloud vibes.</description>
+      <content>&lt;iframe src=&#34;https://docs.google.com/presentation/d/e/2PACX-1vRH9soBIbZBiltE5dck33cU5VXlcQu6lnTLnsLW7w5A2z6Cl47-3fJOaLVBA5pg4vXGDhYus5LktC4D/embed?start=false&amp;amp;loop=false&amp;amp;delayms=3000&#34; width=&#34;800&#34; height=&#34;637&#34; frameborder=&#34;0&#34; allowfullscreen=&#34;allowfullscreen&#34; allow=&#34;geolocation *; microphone *; camera *; midi *; encrypted-media *&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;I recently did a small workshop on cloud computing for some of our team members who are not typically exposed to the backend operations of the web and digital products in general. It is not super in-depth but it&amp;rsquo;s really meant to serve as a starting point for someone wanting to dive deeper but is looking for an entry resource or as a high level overview for those who want to get a little more comfortable with the general cloud vibes. Enjoy.&lt;/p&gt;
+</content>
+    </item>
+    
     <item>
       <title>AI and Society aka another old undergrad essay</title>
       <link>https://dverasc.github.io/posts/aiessay/</link>
