@@ -5,4 +5,4 @@ I will be adding some of the projects I've worked on (this is not comprehensive 
 
 
 
-Clients include: Florida Politics, FSU College of Psychology (Marsh Labs), FSU College of Information (MLab), Innovation Centric Group, Black News Channel, New World Rides, amongst others.
+Clients include: Florida Politics, FSU College of Psychology (Marsh Labs), FSU College of Information (MLab), Pilot Media, Innovation Centric Group, Black News Channel, New World Rides, Pinballz Entertainment amongst others.
