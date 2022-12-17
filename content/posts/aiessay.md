@@ -5,7 +5,7 @@ description = "I wrote a paper on AI many moons ago. Here it is."
 
 +++
 
-Once again, instead of new writing I'm posting an old essay from underground. This time the focus was AI [buzzword gang]. Once again, there is a real sense of naiveness to the thoughts expressed here, but my caveat continues to be that I had zero experience in the field at the time of writing and also I was 19. Anyway, here is my slightly naive and silly take on AI in (what was then) the present and the future.
+Once again, instead of new writing I'm posting an old essay from undergrad. This time the focus was AI [buzzword gang]. Once again, there is a real sense of naiveness to the thoughts expressed here, but my caveat continues to be that I had zero experience in the field at the time of writing and also I was 19. Anyway, here is my slightly naive and silly take on AI in (what was then) the present and the future.
 
 
 Abstract
