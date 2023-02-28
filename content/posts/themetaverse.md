@@ -40,7 +40,7 @@ The reason there was so much hype is because humans love to hype up new things. 
 
 **WHAT CAN WE TAKE AWAY FROM THIS**
 
-Basically, the Metaverse isn't here because it is very hard to build. In fact, it's hard to define (even though we did our best). It probably won't be here anytime soon. But, I do think it will be here at some point. I also think the definition will likely shift by certain degrees, but that Ball really got the heart of it with his definition. We will see which bets succeed and which ones don't. But at least for now, we can move on to the next (hype) cycle.
+Basically, the Metaverse isn't here because it is very hard to build (shocker). In fact, we are still at the point where the thing itself is hard to define (even though we did our best). Looking at all the different things that need to go right, It probably won't be here anytime soon. But, I do think it will be here at some point. I also think the definition will likely shift by certain degrees, but that Ball really got the heart of it with his definition. General ideas to learn from this? Don't just see what other players are doing and copy them for no reason (Chief Metaverse Officers anyone?). Innovation is great and trying to push for the next break through is what we should all strive for, but it is important not to jump on the bandwagon for the sake of it. Do the research. Read about the underlying pieces that will make up the whole. In the end, we will see which bets succeed and which ones don't. But at least for now, we can move on to the next (hype) cycle.
 
 
 
