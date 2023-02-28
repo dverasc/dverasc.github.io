@@ -1,7 +1,7 @@
 +++
 title = "What Happened to the Metaverse"
 date = "2023-02-28"
-description = "Hype vs Fad"
+description = "VR AR and hype"
 
 +++
 
