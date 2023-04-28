@@ -8,7 +8,7 @@ description = "A look at the technologies that make up the DrawDrills backend"
 
 **What is DrawDrills**
 
-DrawDrills is a free tool for artists to create and share convenient practice regiments online. It's like rote-learning, but for drawing. The original inspiration for the tool came from artists close to the team at Arcvale and was then further developed by our studio as a tool to help our internal team of artists. As we began sharing DrawDrills with some friends and other artists, we realized it was something that people outside of Arcvale might like to use, and started development for the public. DrawDrills is currently available at https://www.drawdrills.org (we are at our beta release and thus reserve the right to make mistakes).
+DrawDrills is a free tool for artists to create and share convenient practice regimens online. It's like rote-learning, but for drawing. The original inspiration for the tool came from artists close to the team at Arcvale and was then further developed by our studio as a tool to help our internal team of artists. As we began sharing DrawDrills with some friends and other artists, we realized it was something that people outside of Arcvale might like to use, and started development for the public. DrawDrills is currently available at https://www.drawdrills.org (we are at our beta release and thus reserve the right to make mistakes).
 
 We spent the better part of a year getting the internal tool ready for public release and now that it is in beta, we wanted to start sharing what we learned through the process of building it out. This particular post will cover the backend of the application, specifically the APIs we developed for it. The DrawDrills team has evolved over time, but it has consistently consisted of a couple front end developers, a designer, and myself acting as both a product manager and backend developer. For this application, we developed the backend in Golang and GraphQL and used a MongoDB database. The rest of this post will cover a high level primer on Go, GraphQL, and some examples of the kind of functionality we were able to create with this stack.
 
@@ -17,7 +17,7 @@ We spent the better part of a year getting the internal tool ready for public re
 
 So, now that we covered the initial context, let’s start here: “What is golang?” (hereafter referred to as Go). Well, Go is a programming language that I happen to be a fan of. Open source but supported by Google, Go was released to the public in 2012, after being announced in 2009. The birth of Go stems from a small group of developers growing tired of the existing languages that they were developing in and their various issues (mostly C++ and its compile times). After meeting at Google and working on large, complex systems that needed high performance networking and multiprocessing, this initial core group of developers realized they wanted a language that essentially had all the best design aspects of their existing stack and addressed all the issues, something along these lines:
 
-- It should have the run-time efficiency and static typing of something like C
+- It should have the runtime performance and static typing of something like C
 - It should *also* have the readability and usability of Python or JS
 
 I’m a tad biased since Go is the first language I picked up after Python, but I like to think that they hit the spirit of these aspects. But it doesn't matter what I think, it's what the developer community thinks that truly matters. On that note, let’s take a look at Go’s popularity amongst developers:
@@ -54,11 +54,11 @@ So we’ve covered the backend’s primary programming language and some of the 
 
 Let me set some concrete context before going into some code examples. First, while GraphQL is the query language we used, the specific library that our backend is built with is the gqlgen library, which was built by the team over at 99designs (https://99designs.com/) for building GraphQL servers. This library has a ton of really great functionality, including the ability to work in the GraphQL playground to run your queries directly through a user-friendly interface, similar to Postman. This library also supports code generation, which takes care of a lot of the work around project scaffolding, GraphQL data types, etc. Now, for the part everyone has been waiting for, the actual code.
 
-We’ll start with getting a project started using the gqlgen library. For a general non project specific introduction, you can follow along with their “Get Started Guide” found here, https://gqlgen.com/getting-started/. I’ll go ahead and share some of the initial steps from there to get us going and then we’ll see some content that is more unique to our particulat use case and code base.
+We’ll start with getting a project started using the gqlgen library. For a general non project specific introduction, you can follow along with their “Get Started Guide” found here, https://gqlgen.com/getting-started/. I’ll go ahead and share some of the initial steps from there to get us going and then we’ll see some content that is more unique to our particular use case and code base.
 
 **1.** Assuming you’ve already created your project directory (mkdir yada yada) and find yourself within that directory, go ahead and initialize it as a go module, “go mod init github.com/[username]/projectdirectory”
 
-**2.** After you’ve done that, add gqlgen as a tool dependency to that module and run your go mod tidy command. At this point, if all has gone well, we can run the gqlgen command that will generate some of the project scaffolding for us. From within your project directory, run this command, “go run github.com/99designs/gqlgen init”
+**2.** After you’ve done that, add gqlgen as a tool dependency to that module (go get github.com/99designs/gqlgen) and run your go mod tidy command. At this point, if all has gone well, we can run the gqlgen command that will generate some of the project scaffolding for us. From within your project directory, run this command, “go run github.com/99designs/gqlgen init”
 
 
 You will end up with a project directory with a structure like this:
