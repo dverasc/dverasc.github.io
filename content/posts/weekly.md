@@ -82,7 +82,7 @@ This one is not long-form content, instead its a tweet from the founder and newl
 
 ---
 
-And that concludes the first installment of my Weekly Collection. Let's hope there's another one next week.
+And that concludes the first installment of my Weekly List. Let's hope there's another one next week.
 
 
 
