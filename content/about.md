@@ -9,7 +9,7 @@ description = "This is going to be me telling you about me, in buzzwords and als
 
 My name is Diego Veras and this is a collection of my thoughts, projects, and other things.
 
-During business hours (and often outside of business hours), I'm putting out fires at Wayspire, a technology firm that operates as a holding company for three different organizations: [**Arcvale**](https://arcvale.com/),[**Sitebolts**](https://sitebolts.com/), and Lenetic Labs. We do a lot, but in general, our teams are working on a variety of technologies with the intent to develop products and games, conduct R&D, and provide boutique advisory and implementation services. Basically, we make things, sometimes for ourselves, sometimes for people that pay us. I oversee operations, client engagements, and in-house product development. My interests and focus revolve around digital products, cloud technologies, and data analytics. 
+During business hours (and often outside of business hours), I'm putting out fires at Wayspire, a technology firm housing three different organizations: [**Arcvale**](https://arcvale.com/),[**Sitebolts**](https://sitebolts.com/), and Lenetic Labs. We do a lot, but in general, our teams are working on internal product // game development, client services, and R&D. Basically, we make things, sometimes for ourselves, sometimes for people that pay us. I oversee operations, client engagements, and in-house product development. My interests and focus revolve around digital products, cloud technologies, and data analytics. 
 
 
 **If you're interested in hiring us to build you things, please reach out here:**

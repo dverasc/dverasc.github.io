@@ -3,10 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://dverasc.github.io/</loc>
-    <lastmod>2023-07-21T00:00:00+00:00</lastmod>
+    <lastmod>2023-09-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dverasc.github.io/posts/</loc>
-    <lastmod>2023-07-21T00:00:00+00:00</lastmod>
+    <lastmod>2023-09-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dverasc.github.io/posts/weekly/</loc>
+    <lastmod>2023-09-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dverasc.github.io/showcase/flapol/</loc>
+    <lastmod>2023-08-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dverasc.github.io/showcase/icg/</loc>
+    <lastmod>2023-08-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dverasc.github.io/showcase/marshlabs/</loc>
+    <lastmod>2023-08-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dverasc.github.io/showcase/mlab/</loc>
+    <lastmod>2023-08-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dverasc.github.io/showcase/</loc>
+    <lastmod>2023-08-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dverasc.github.io/posts/apiprimer/</loc>
     <lastmod>2023-07-21T00:00:00+00:00</lastmod>
@@ -15,9 +33,6 @@
     <lastmod>2023-07-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dverasc.github.io/showcase/drawdrills_be/</loc>
-    <lastmod>2023-04-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dverasc.github.io/showcase/</loc>
     <lastmod>2023-04-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dverasc.github.io/posts/themetaverse/</loc>
@@ -36,6 +51,9 @@
     <lastmod>2022-05-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dverasc.github.io/posts/aiessay/</loc>
+    <lastmod>2022-04-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dverasc.github.io/posts/whatgame/</loc>
     <lastmod>2022-04-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dverasc.github.io/posts/vressay/</loc>
