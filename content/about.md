@@ -9,7 +9,11 @@ description = "This is going to be me telling you about me, in buzzwords and als
 
 My name is Diego Veras and this is a collection of my thoughts, projects, and other things.
 
-During business hours (and often outside of business hours), I'm a Principal at Wayspire, a technology firm housing three different organizations: [**Arcvale**](https://arcvale.com/),[**Sitebolts**](https://sitebolts.com/), and Lenetic Labs. We do a lot, but in general, our teams are working on internal product // game development, client services, and R&D. Basically, we make things, sometimes for ourselves, sometimes for people that pay us. I oversee operations, client engagements, and in-house product development (I make things, sell things, and put out fires). My interests and focus revolve around digital products, cloud technologies, and data analytics. 
+During business hours (and often outside of business hours), I'm a Principal at [**Wayspire**](https://wayspire.com), a diversified holding firm housing three different teams: [**Arcvale**](https://arcvale.com/), [**Sitebolts**](https://sitebolts.com/), and [**Lenetic Labs**](http://lenetic.com/). 
+
+We do a lot, but in general, our teams are working on internal product // game development, client services, and R&D. **Basically, we make things, sometimes for ourselves, sometimes for people that pay us.**
+
+I oversee operations (aka put out fires), client engagements (aka sell things), and in-house product development (aka make things). My interests and focus revolve around digital products, cloud technologies, and data analytics. 
 
 
 **If you're interested in hiring us to build you things, please reach out here:**
