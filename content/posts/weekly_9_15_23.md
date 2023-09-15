@@ -1,5 +1,5 @@
 +++
-title = "Weekly List 9-8-23"
+title = "Weekly List 9-15-23"
 date = "2023-09-15"
 description = "List of things I've read, researched, found interesting, etc."
 
