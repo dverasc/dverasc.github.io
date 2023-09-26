@@ -11,7 +11,7 @@ description = "List of things I've read, researched, found interesting, etc."
 
 ![image alt text](/iasip-its-always-sunny.png)
 
-Welcome to the third edition of my Weekly List. We made it to Week III. And also IV. Because this is late. It was bound to happen eventually...and it did. Technically, this was meant to be published on Friday the 23rd. Today is suspiciously Monday the 25th. What are you gonna do. Things break. People get upset. Fires have to be put out. All that good stuff. Anyways that means this week is a bogo edition, since this Friday we are back to my ambigiously regular programming. Maybe. See above about two sentences back about fires.
+Welcome to the third edition of my Weekly List. We made it to Week III. And also IV. Because this is late. It was bound to happen eventually...and it did. Technically, this was meant to be published on Friday the 22nd. Today is suspiciously Monday the 25th. What are you gonna do. Things break. People get upset. Fires have to be put out. All that good stuff. Anyways that means this week is a bogo edition, since this Friday we are back to my ambigiously regular programming. Maybe. See above about two sentences back about fires.
 
 ## **ANYWAYS HERE'S THE STUFF** ##
 
