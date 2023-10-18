@@ -11,7 +11,7 @@ I have been tinkering with different large language models and vector dbs recent
 
 **First, the model**
 
-Okay so most of you reading this are probably already familiar with GPT4 and 3.5 turbo. You probably are also familiar with the billing associated with these models. While not insane for personal projects, if you're looking to get anything LLM based into production, you should probably at least attempt to do so without having to pay a tithe to Sam Altman every time your user has a question. This is where Llama comes in. Developed Meta, Llama and its younger (and more powerful) brother Llama 2 are some of the leading open source large language models. Rare Zuck W. Anyway, being open source means that these models can be run locally and deployed on your chosen infrastruture, as opposed to the OpenAI APIs. 
+Okay so most of you reading this are probably already familiar with GPT4 and 3.5 turbo. You probably are also familiar with the billing associated with these models. While not insane for personal projects, if you're looking to get anything LLM based into production, you should probably at least attempt to do so without having to pay a tithe to Sam Altman every time your user has a question. This is where Llama comes in. Developed at Meta, Llama and its younger (and more powerful) brother Llama 2 are some of the leading open source large language models. Rare Zuck W. Anyway, being open source means that these models can be run locally and deployed on your chosen infrastruture, as opposed to the OpenAI APIs. 
 
 How is this done? Well, you can use HuggingFace (and request model access from Meta), or you can use an awesome tool like Ollama (note: I have zero affiliation with them, they just have a great tool). Ollama allows you to run Llama 2 and other models using Docker or your local machine's native capabilites (MacOS and Linux). It's as simple as downloading the app, model, and then running a couple commands on your terminal.
 
@@ -47,7 +47,7 @@ With that said, assuming you have Docker itself already set up, here's how to ge
     3. You should now be able to see the db UI at localhost:6333/dashboard and you'll be interfacing with it programatically at localhost:6333
 
 
-Okay so DB is stood up and sorted at this point. The other thing I want to briefly discuss in this section is the data and the scenario this case study presents. I found an Amazon products data set on Kaggle in a .csv format. Given this data, this use case is sort of assuming an e-commerce scenario, where some entity has a product catalog that users may want to search through or ask questions about. I included the data set in the project repo, but you can find it on Kaggle here, https://www.kaggle.com/datasets/promptcloud/amazon-product-dataset-2020/. 
+Okay so DB is stood up and sorted at this point. The other thing I want to briefly discuss in this section is the data and the scenario this case study presents. I found an Amazon products data set on Kaggle in a .csv format. Given this data, this use case is sort of assuming an e-commerce scenario, where some entity has a product catalog that users may want to search through or ask questions about. I included the data set in the project repo (https://github.com/dverasc/semantic-search-app.), but you can also find it on Kaggle here, https://www.kaggle.com/datasets/promptcloud/amazon-product-dataset-2020/. 
 
 
 
@@ -69,7 +69,7 @@ This first snippet shows you how to set up the streamlit multipage app:
 
 Each phase of this process (data transformation, data upload to db, and then search and chat) has its own dedicated page within this app.
 
-This second snippet shows you how we handle our data transformation. At this stage, we are turning our CSV file data into vectors using the HuggingFace Sentence transformer, which is one of the more popular (and open source) models to create embeddings. This process requires us to chunk the data in the csv file, encode our data, then turn that encodding into a numpy array and saving that into a .npy file. You will need this file for the next stage. 
+This second snippet shows you how we handle our data transformation. At this stage, we are turning our CSV file data into vectors using the HuggingFace Sentence transformer, which is one of the more popular (and open source) models to create embeddings. This process requires us to chunk the data in the csv file, encode our data, then turn that encoding into a numpy array and saving that into a .npy file. You will need this file for the next stage. 
 
 ![image alt text](/datatransform.png)
 
@@ -79,7 +79,7 @@ Anyway, the code for that step looks something like:
 {{< gist dverasc f6fdbc0a76ec409de6d88a06bf55eb8e  >}}
 
 
-After encoding our data and saving it to a .npy file, we need to upload this data into our vector db. If you remember, this case study uses Qdrant as the db. Qdrant supports the use of payloads, which is basically json content that represents any additional information we want to store along with vectors. So in this point in the process, we are looking to submit the vector data and associated payload data to Qdrant. To this, we need to first create the collection, then submit the data. 
+After encoding our data and saving it to a .npy file, we need to upload this data into our vector db. If you remember, this case study uses Qdrant as the db. Qdrant supports the use of payloads, which is basically json content that represents any additional information we want to store along with vectors. So at this point in the process, we are looking to submit the vector data and associated payload data to Qdrant. To this, we need to first create the collection, then submit the data. 
 
 
 ![image alt text](/dataupload.png)
@@ -138,4 +138,4 @@ Okay so uh congrats if you made it this far. You now have a (scaled down and loc
 
 - As you may have noticed, this entire project is built to run locally. So the next step would be to take this to a production type of config
 - Qdrant does offer some more enterprisy deployment options, including Qdrant Cloud (https://qdrant.tech/documentation/cloud/), a SaaS version that gives you a managed instance of the db basically (note: I have not gone past reading their docs on this product so not sure how it performs. proceed accordingly)
-- Ollama allowed us to run these open sourced models locally. this obviously does not work at any sort of scale. With that in mind, HuggingFace has offerings around open source models like Llama 2 + AWS BedRock and equivalent offerings at the hyperscalers also has Llama 2 options for deployment (note: again I have not gotten past the reading docs stage for these services so I can't speak too much about how good they are in reality)
+- Ollama allowed us to run these open sourced models locally. this obviously does not work at any sort of scale. With that in mind, HuggingFace has offerings around open source models like Llama 2 + AWS BedRock and equivalent offerings at the hyperscalers also have Llama 2 options for deployment (note: again I have not gotten past the reading docs stage for these services so I can't speak too much about how good they are in reality)
