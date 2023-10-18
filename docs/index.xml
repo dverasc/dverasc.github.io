@@ -6,11 +6,11 @@
     <description>Recent content on DV</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://dverasc.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://dverasc.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HuggingFace. Qdrant. Streamlit. Llama 2. Buzzwords baby</title>
       <link>https://dverasc.github.io/posts/llama-poc/</link>
-      <pubDate>Mon, 16 Oct 2023 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 18 Oct 2023 00:00:00 +0000</pubDate>
       
       <guid>https://dverasc.github.io/posts/llama-poc/</guid>
       <description>WHAT IS THIS I have been tinkering with different large language models and vector dbs recently for some client work and some personal projects. Recently, I started working with Llama 2 in order to stop relying on the elephant in the room (OpenAI). The following case study is basically a quick start on working with Llama 2 and semantic search as well. Read on if you aren&amp;rsquo;t bored at this point.</description>
@@ -96,15 +96,15 @@ in your terminal
     </item>
     
     <item>
-      <title>Weekly List 10-04-23</title>
+      <title>Weekly List 10-18-23</title>
       <link>https://dverasc.github.io/posts/weekly_10_12_23/</link>
-      <pubDate>Mon, 16 Oct 2023 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 18 Oct 2023 00:00:00 +0000</pubDate>
       
       <guid>https://dverasc.github.io/posts/weekly_10_12_23/</guid>
-      <description>WHAT IS THIS &amp;quot;The co-CEO arrangement would free Diego up to do what he loved – “getting beers with customers,” in the words of two former Wayspire employees. Veras, a self-described “builder at heart,” was at the wheel.&amp;quot;  Couples notes off the top:
+      <description>WHAT IS THIS &amp;quot;At the news conference, Veras described himself as a &#39;techie&#39; and former computer programmer, then later said he used the controversial tech on the city’s robocall system — sending out messages in many languages using his voice.&amp;quot;  Couples notes off the top:
  this is a very short list this is also a bit late based on the whole posting weekly plan but it&amp;rsquo;s bogo (!)  You&amp;rsquo;ll see what I mean.</description>
       <content>&lt;h2 id=&#34;what-is-this&#34;&gt;&lt;strong&gt;WHAT IS THIS&lt;/strong&gt;&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;&amp;quot;The co-CEO arrangement would free Diego up to do what he loved – “getting beers with customers,” in the words of two former Wayspire employees. Veras, a self-described “builder at heart,” was at the wheel.&amp;quot;
+&lt;pre&gt;&lt;code&gt;&amp;quot;At the news conference, Veras described himself as a &#39;techie&#39; and former computer programmer, then later said he used the controversial tech on the city’s robocall system — sending out messages in many languages using his voice.&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Couples notes off the top:&lt;/p&gt;
 &lt;ul&gt;
@@ -137,11 +137,28 @@ in your terminal
 &lt;p&gt;The final point leads to the author&amp;rsquo;s conclusion, which is basically that we have let the genie out the bottle and while we argue about whether the genie is out or not, it&amp;rsquo;s affecting everything around us. So uhh that is super fun.&lt;/p&gt;
 &lt;p&gt;I thought this was a thought-provoking piece. While I can&amp;rsquo;t say I agree with the authors on everything, it did make me stop and consider several arguments they put forward and kept me on my current LLM deep dive. Highly recommend.&lt;/p&gt;
 &lt;hr&gt;
+&lt;h2 id=&#34;eric-adams-ai-need-i-say-more&#34;&gt;Eric Adams. AI. Need I say more?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.thecity.nyc/2023/10/16/adams-taps-ai-robocalls-languages-he-doesnt-speak/&#34;&gt;https://www.thecity.nyc/2023/10/16/adams-taps-ai-robocalls-languages-he-doesnt-speak/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is so topical (you&amp;rsquo;ll see what I mean further down below). It&amp;rsquo;s also not surprising? Everything I have ever heard about Eric Adams has been:&lt;/p&gt;
+&lt;p&gt;A) Against my will
+B) Also so bat shit insane that it means that headline about him (regardless of how ridiculous), never surprise me&lt;/p&gt;
+&lt;p&gt;You could tell me Eric Adams flew to Miami, punched Lionel Messi in the face, and then attended a crypto conference and I wouldn&amp;rsquo;t bat an eye (note: as far as I know Eric Adams has not done this).&lt;/p&gt;
+&lt;p&gt;Anyway, the basic gist of this story is that Adams is leveraging &amp;ldquo;conversational AI&amp;rdquo; to basically spam people of all languages (as opposed to just English) with info about &amp;ldquo;hiring halls&amp;rdquo; and &amp;ldquo;also promoted the city’s Rise Up NYC concerts&amp;rdquo; (hell yeah). This is basically an application that takes Adams original message and translates it to different languages, then routes that through the city&amp;rsquo;s robo call system. We can only assume that this application leverages some LLM type of tech since this robo call shtick was revealed alongside the “MyCity Chatbot”. A self-descriped &amp;ldquo;techie&amp;rdquo;, Adams has famously also &lt;em&gt;checks notes&lt;/em&gt; uh given the NYPD robot dogs? (the hyper militarized NYPD is well known for not having enough resources to harass people)&lt;/p&gt;
+&lt;p&gt;Robot dogs aside, the main thrust of this piece basically examines the ethics of the mayor pretending to be fluent in multiple languages. Which is kind of cute. It&amp;rsquo;s probably not ethical to pretend to speak a bunch of languages that you don&amp;rsquo;t in order to gather goodwill from the diverse communities you are supposed to represent, but also, there&amp;rsquo;s so much other stuff that this particular does that isn&amp;rsquo;t ethical? This seems relatively minor all things considered. Also, as far as politics and AI goes&amp;hellip;.there&amp;rsquo;s definitely darker ways to use this type of technology other than sending info about concerts through &amp;ldquo;thousands of calls in Spanish, more than 250 in Yiddish, more than 160 in Mandarin, 89 calls in Cantonese and 23 in Haitian Creole.&amp;rdquo; So while this is sorta scummy, it doesn&amp;rsquo;t really ring any alarms.&lt;/p&gt;
+&lt;p&gt;Totally unrelated, but here&amp;rsquo;s a story about Eric Adams not disclosing his financial holdings properly, &lt;a href=&#34;https://www.cnbc.com/2023/07/14/nyc-mayor-eric-adams-did-not-report-crypto-holdings-in-disclosure-form.html&#34;&gt;https://www.cnbc.com/2023/07/14/nyc-mayor-eric-adams-did-not-report-crypto-holdings-in-disclosure-form.html&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
 &lt;h2 id=&#34;talking-my-own-book-baby&#34;&gt;TALKING MY OWN BOOK BABY &lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dverasc.github.io/posts/llama-poc/&#34;&gt;https://dverasc.github.io/posts/llama-poc/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;DISCLAIMER: The second and last item in the list is one of my (non-list) posts. I&amp;rsquo;ve been working on a couple different proof of concepts with LLMs and semantic search and after tinkering for a couple weeks, decided to write up one of those small projects into a short case study.&lt;/p&gt;
+&lt;p&gt;DISCLAIMER: The third and last item in the list is one of my (non-list) posts. I&amp;rsquo;ve been working on a couple different proof of concepts with LLMs and semantic search and after tinkering for a couple weeks, decided to write up one of those small projects into a short case study. The reason the posts above are so topical is because:&lt;/p&gt;
+&lt;p&gt;A) they are all about LLMs&lt;/p&gt;
+&lt;p&gt;but also&lt;/p&gt;
+&lt;p&gt;B) this project was based on working with an LLM in spanish&lt;/p&gt;
+&lt;p&gt;Take a look if you have any technical interests in these technologies and want to see how you can start leveraging them.&lt;/p&gt;
+&lt;p&gt;Note: unlike Eric Adams I do speak spanish.&lt;/p&gt;
 &lt;h1 id=&#34;credits&#34;&gt;CREDITS:&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Full credit and appreciation to the original authors of everything linked here. I am a mere curator and fan of (most) of the authors &amp;amp; creators mentioned.&lt;/li&gt;

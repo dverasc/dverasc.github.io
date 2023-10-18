@@ -1,6 +1,6 @@
 +++
 title = "HuggingFace. Qdrant. Streamlit. Llama 2. Buzzwords baby"
-date = "2023-10-16"
+date = "2023-10-18"
 description = "A look at a quick proof of concept for semantic search and chat"
 
 +++
