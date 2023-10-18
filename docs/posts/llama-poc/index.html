@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>HuggingFace. Qdrant. Streamlit. Llama 2. Buzzwords baby :: DV</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A look at a quick proof of concept for semantic search and chat" />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://dverasc.github.io/posts/llama-poc/" />
+
+
+
+
+<link rel="stylesheet" href="https://dverasc.github.io/assets/style.css">
+
+  <link rel="stylesheet" href="https://dverasc.github.io/assets/red.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon" href="https://dverasc.github.io/img/apple-touch-icon-192x192.png">
+
+  <link rel="shortcut icon" href="https://dverasc.github.io/img/favicon/red.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="HuggingFace. Qdrant. Streamlit. Llama 2. Buzzwords baby">
+<meta property="og:description" content="A look at a quick proof of concept for semantic search and chat" />
+<meta property="og:url" content="https://dverasc.github.io/posts/llama-poc/" />
+<meta property="og:site_name" content="DV" />
+
+  
+    <meta property="og:image" content="https://dverasc.github.io/img/favicon/red.png">
+  
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+  <meta property="article:published_time" content="2023-10-16 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="red">
+
+
+<div class="container headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Sometimes a Poet, sometimes a Quant
+  </div>
+</a>
+
+    </div>
+    
+      <div class="menu-trigger">menu</div>
+    
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/showcase">Showcase</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="https://dverasc.github.io/posts/llama-poc/">HuggingFace. Qdrant. Streamlit. Llama 2. Buzzwords baby</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2023-10-16
+        
+      </span>
+    
+    
+    
+  </div>
+
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <h2 id="what-is-this"><strong>WHAT IS THIS</strong><a href="#what-is-this" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>I have been tinkering with different large language models and vector dbs recently for some client work and some personal projects. Recently, I started working with Llama 2 in order to stop relying on the elephant in the room (OpenAI). The following case study is basically a quick start on working with Llama 2 and semantic search as well. Read on if you aren&rsquo;t bored at this point.</p>
+<p><strong>First, the model</strong></p>
+<p>Okay so most of you reading this are probably already familiar with GPT4 and 3.5 turbo. You probably are also familiar with the billing associated with these models. While not insane for personal projects, if you&rsquo;re looking to get anything LLM based into production, you should probably at least attempt to do so without having to pay a tithe to Sam Altman every time your user has a question. This is where Llama comes in. Developed Meta, Llama and its younger (and more powerful) brother Llama 2 are some of the leading open source large language models. Rare Zuck W. Anyway, being open source means that these models can be run locally and deployed on your chosen infrastruture, as opposed to the OpenAI APIs.</p>
+<p>How is this done? Well, you can use HuggingFace (and request model access from Meta), or you can use an awesome tool like Ollama (note: I have zero affiliation with them, they just have a great tool). Ollama allows you to run Llama 2 and other models using Docker or your local machine&rsquo;s native capabilites (MacOS and Linux). It&rsquo;s as simple as downloading the app, model, and then running a couple commands on your terminal.</p>
+<pre><code>1. Download Ollama (https://ollama.ai/download)
+2. Choose a model (Llama 2, Llama 2 uncensored, or even a variant) NOTE: Be conscious of your machine's capabilites and the models spec requirements i.e. the 7b model generally requires at least 8GB of RAM, etc
+3a. Interact on the CLI directly by running &quot;ollama run llama2&quot; in your terminal
+                            or
+3b. Call it like you would an API in your app or program (you will see how I did it further below)
+</code></pre>
+<p><strong>Second, the database (and the data i guess)</strong></p>
+<p>At this point, we&rsquo;ve got our local model set up and running. Our next step is getting our database sorted and the data inserted. This is where things start picking up a bit in complexity.</p>
+<p>First, what even is a vector db? If you aren&rsquo;t familiar, a vector database is used for storing data in the vector format (simple enough so far). What&rsquo;s a vector? While that can be whole article in of itself, at a high-level, a vector is basically a list of numbers that represents an object (like a word, image, etc) as a point in multi-dimensional space. For example, the word &ldquo;cat&rdquo; could be represented as [0.1, 0.3, 0.8] in a 3D vector space. A vector can be used to capture semantic meaning and relationships in data (aka embeddings). A vector db then is a specialized database optimized for storing and querying large collections of vectors/embeddings. They allow fast similarity searches to find vectors close to a query vector in the semantic embedding space. This enables applications like recommender systems which retrieve items similar to a user&rsquo;s interests.</p>
+<p>If you&rsquo;re interested in learning about this component in more details, I highly recommend the following resources:</p>
+<ul>
+<li>
+<p>Vicki Boykis' &ldquo;What are embeddings&rdquo; book, <a href="https://vickiboykis.com/what_are_embeddings/about.html">https://vickiboykis.com/what_are_embeddings/about.html</a>.</p>
+</li>
+<li>
+<p>Prashanth Rao&rsquo;s &ldquo;Vector Databases&rdquo; series, <a href="https://thedataquarry.com/posts/vector-db-1/">https://thedataquarry.com/posts/vector-db-1/</a></p>
+</li>
+</ul>
+<p>In this particular case, I decided to work with Qdrant&rsquo;s Vector DB, <a href="https://qdrant.tech/">https://qdrant.tech/</a>. The resources above go into more details regarding the pros and cons of some of the major vector dbs out there, but to keep it short for this piece, I basically chose it because it is one of the newer ones on the scene, it was written in Rust, it isn&rsquo;t postgres, and it works locally using Docker.</p>
+<p>With that said, assuming you have Docker itself already set up, here&rsquo;s how to get Qdrant up locally:</p>
+<pre><code>1. Run 'docker pull qdrant/qdrant in your terminal'
+2. Run 'docker run -p 6333:6333 \
+-v $(pwd)/qdrant_storage:/qdrant/storage:z \
+qdrant/qdrant'
+in your terminal
+3. You should now be able to see the db UI at localhost:6333/dashboard and you'll be interfacing with it programatically at localhost:6333
+</code></pre>
+<p>Okay so DB is stood up and sorted at this point. The other thing I want to briefly discuss in this section is the data and the scenario this case study presents. I found an Amazon products data set on Kaggle in a .csv format. Given this data, this use case is sort of assuming an e-commerce scenario, where some entity has a product catalog that users may want to search through or ask questions about. I included the data set in the project repo, but you can find it on Kaggle here, <a href="https://www.kaggle.com/datasets/promptcloud/amazon-product-dataset-2020/">https://www.kaggle.com/datasets/promptcloud/amazon-product-dataset-2020/</a>.</p>
+<p><strong>Third, the thing</strong></p>
+<p>The thing here is an application layer + a couple different features that I added to it. The application will be done with Streamlit (shocker I know) and the features are basically some basic CRUD + semantic search and chat using the model and db running locally (see earlier sections).</p>
+<p>First, let&rsquo;s get the application started with creating some data. In this case, we will be uploading CSV files and turning that data into vectors, before uploading those to the vector database.</p>
+<p>This post will show the snippets of code, but if you&rsquo;re trying to replicate this demo like for like, check out the actual Github repo to see the full source code. With that said, here&rsquo;s how we start the application.</p>
+<p><img src="/mainpage.png" alt="image alt text"></p>
+<p>This first snippet shows you how to set up the streamlit multipage app:</p>
+<script type="application/javascript" src="https://gist.github.com/dverasc/9f8f90fff1b5d3ba7a3df5c9fca79a87.js"></script>
+
+<p>Each phase of this process (data transformation, data upload to db, and then search and chat) has its own dedicated page within this app.</p>
+<p>This second snippet shows you how we handle our data transformation. At this stage, we are turning our CSV file data into vectors using the HuggingFace Sentence transformer, which is one of the more popular (and open source) models to create embeddings. This process requires us to chunk the data in the csv file, encode our data, then turn that encodding into a numpy array and saving that into a .npy file. You will need this file for the next stage.</p>
+<p><img src="/datatransform.png" alt="image alt text"></p>
+<p>Anyway, the code for that step looks something like:</p>
+<script type="application/javascript" src="https://gist.github.com/dverasc/f6fdbc0a76ec409de6d88a06bf55eb8e.js"></script>
+
+<p>After encoding our data and saving it to a .npy file, we need to upload this data into our vector db. If you remember, this case study uses Qdrant as the db. Qdrant supports the use of payloads, which is basically json content that represents any additional information we want to store along with vectors. So in this point in the process, we are looking to submit the vector data and associated payload data to Qdrant. To this, we need to first create the collection, then submit the data.</p>
+<p><img src="/dataupload.png" alt="image alt text"></p>
+<p>The code for that bit is:</p>
+<script type="application/javascript" src="https://gist.github.com/dverasc/2f358622ad8b082f2a237b4f5c6ed6a3.js"></script>
+
+<p>And after running this step, we can navigate to the db UI and see our collection of data:</p>
+<p><img src="/qdrantui.png" alt="image alt text"></p>
+<p><img src="/qdrantui2.png" alt="image alt text"></p>
+<p>Now is where the fun starts. At this point, we&rsquo;ve got our data properly formatted and transformed to vectors, which are stored in our local Qdrant db instance. With that set up, we can run semantic searches on the data as well as chat over it with a LLM running locally.</p>
+<p>The search results are displayed on the streamlit app along with their respective payload data:</p>
+<p><img src="/searchresults.png" alt="image alt text"></p>
+<p><img src="/searchresults2.png" alt="image alt text"></p>
+<script type="application/javascript" src="https://gist.github.com/dverasc/43b7001566a1976cb665c6d752f6e411.js"></script>
+
+<p>We can also chat over our data using llama-2 uncensored. This uncensored version basically has the guardrails off compared to the standard one. This allows us to get creative with our system prompts and avoid some of the more uhhh HR speak responses that the other version tends to throw out (&ldquo;As an AI I cannot blah blah blah). The fun twist I&rsquo;m throwing in here is that I am setting up the system prompt to force the model to respond in spanish. This obviously has inconsistent results compared to the more typical english scenarios, but I thought it was an interesting wrinkle to add to our case study and to explore more in depth the differences in quality of responses from the model.</p>
+<p>Some of the better results can be seen in this chat:</p>
+<p><img src="/chatllama.png" alt="image alt text"></p>
+<p>And the code + prompts to get us to that stage can be found here:</p>
+<script type="application/javascript" src="https://gist.github.com/dverasc/687115bac7bbd798e18e8be6f979b764.js"></script>
+
+<p>Also before I forget, if you are having trouble with some of the functions referenced in the gists above, you can find them here:</p>
+<script type="application/javascript" src="https://gist.github.com/dverasc/4d0c46c88735ece65efc9b14b2dc7649.js"></script>
+
+<p><strong>Conclusion</strong></p>
+<p>Okay so uh congrats if you made it this far. You now have a (scaled down and local version) of an LLM based data pipeline. I&rsquo;ve been getting really deep into this space lately (well deep for anyone without a phd) and find it incredibly interesting, commercial value aside. The aspects of this little case study that I found really valuable were all the different open source components that make up the whole end to end pipeline. Most of the documentation and examples out there of systems like these tend to use OpenAI from top to bottom, which can definitely start running up costs. Exploring these open source components has alleviated a little of my anxiety around vendor dependency // lock-in and I highly recommend that anyone attempting to launch LLM based systems consider using these options instead.</p>
+<p><em>Things to extend</em>:</p>
+<ul>
+<li>As you may have noticed, this entire project is built to run locally. So the next step would be to take this to a production type of config</li>
+<li>Qdrant does offer some more enterprisy deployment options, including Qdrant Cloud (<a href="https://qdrant.tech/documentation/cloud/)">https://qdrant.tech/documentation/cloud/)</a>, a SaaS version that gives you a managed instance of the db basically (note: I have not gone past reading their docs on this product so not sure how it performs. proceed accordingly)</li>
+<li>Ollama allowed us to run these open sourced models locally. this obviously does not work at any sort of scale. With that in mind, HuggingFace has offerings around open source models like Llama 2 + AWS BedRock and equivalent offerings at the hyperscalers also has Llama 2 options for deployment (note: again I have not gotten past the reading docs stage for these services so I can&rsquo;t speak too much about how good they are in reality)</li>
+</ul>
+
+      </div></div>
+
+  
+  
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        
+        <span class="button next">
+            <a href="https://dverasc.github.io/posts/weekly_10_12_23/">
+                <span class="button__text">Weekly List 10-04-23</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
+
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2023 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="https://dverasc.github.io/assets/main.js"></script>
+<script src="https://dverasc.github.io/assets/prism.js"></script>
+
+
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
