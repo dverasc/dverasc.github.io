@@ -19,7 +19,7 @@ Okay so here goes my list of things I've read // researched // found interesting
 
 ---
 
-## (poisones) garbage in, (poisoned) garbage out  ##
+## (poisoned) garbage in, (poisoned) garbage out  ##
 
 - https://www.technologyreview.com/2023/10/23/1082189/data-poisoning-artists-fight-generative-ai/
 
@@ -29,12 +29,12 @@ Anyway, here's something!
 
 A team of researchers led by Univeristy of Chicago professor Ben Zhao created a tool called "Nightshade" that essentially makes the output of models like DALL-E, Midjourney, and Stable Diffusion useless. The tool basically works like this:
 
-    - Large language models are trained on giant dumps of data from the Internet, specifically images in this case.
-    - Nightshade allows artists to manipulate the image pixels of their work in a manner that is not visible to humans, but does materially affect how a machine interprets that image and creates associations with it
-    - This manipulation distorts the training of the model, essentially causing the data contained in the image to alter how the model "learns" concepts
+    - Large language models used for gen AI are trained on giant dumps of data from the Internet, specifically images in this case.
+    - Nightshade allows artists to manipulate the image pixels of their work in a manner that is not visible to humans, but does materially affect how a machine interprets that image
+    - The effect of this manipulation results in a distortion of the training of the model, essentially changing the data contained in the image to alter how the model "learns" concepts and associates these concepts with one another
     - The final effect is that of a system with an incorrect sense of concepts, leading to malfunctions such as being trained to "think" (excuse the lack of better term) that images of hats are cakes or that dogs are cats, etc
 
-This type of manipulation has not been seen in the wild just yet, but the research results sort of speak for themselves. According the MIT technology review, the research team fed poisoned images to both the latest model from Stable Diffusion and to a model they trained from scratch. After feeding a mere 50 poiosoned images of dogs to the model's data, the researchers prompted the model to create images of dogs. The model's output "started looking weird—-creatures with too many limbs and cartoonish faces. With 300 poisoned samples, an attacker can manipulate Stable Diffusion to generate images of dogs to look like cats." The way that these models work under the hood means that the poison spreads across general concepts, not just specific key words. Large language models create connections between words and semantic meaning, which means that if you poisoned a dataset that is relevant to dogs for example, then you would "infect" words like husky or puppy or wolf. Encouraging results if you're interested in messing with the data collection process! 
+This type of manipulation has not been seen in the wild in a major way just yet, but the research results sort of speak for themselves. According the MIT technology review, the research team fed poisoned images to both the latest model from Stable Diffusion and to a model they trained from scratch. After feeding a mere 50 poiosoned images of dogs to the Stable Diffusion model's training data, the researchers prompted the model to create images of dogs. The model's output "started looking weird—-creatures with too many limbs and cartoonish faces. With 300 poisoned samples, an attacker can manipulate Stable Diffusion to generate images of dogs to look like cats." The way that these models work under the hood means that the poison spreads across general concepts, not just specific key words. Large language models create connections between words and semantic meaning, which means that if you poisoned a dataset that is relevant to dogs for example, then you would "infect" words like husky or puppy or wolf. Encouraging results if you're interested in messing with the data collection process! 
 
 I'm sure there's some AI threadboys out there punching the wall about how this is unfair to people developing foundational models or things like that. Maybe they have a point. But also, maybe artists and IP rights activists have a point. I don't really identify with either perspective entirely, and I try to approach this whole can of worms with more questions than answers. However on this particular issue, I feel comfortable taking a strong stance: Developments like these are good for everyone, actually.
 
@@ -45,7 +45,7 @@ Artists deserve to have as many resources as possible to protect their art, asse
 
 - https://www.engadget.com/google-expands-its-bug-bounty-program-to-target-generative-ai-attacks-120049796.html
 
-One of the books I am currently reading is called, "This Is How They Tell Me the World Ends: The Cyberweapons Arms Race". It is really good. If you haven't read it or heard about it, for the sake of this piece, all you have to know is that it is an inside look at the (usually opaque) world of hacking, information security, and cybersecurity. One of the areas that the book goes into a lot of detail on is something called "bug bounty programs". Basically, private companies and organizations will pay (non employees) figures ranging from hundres of dollars to hundreds of thousands of dolalrs to find vulnerabilties in their systems or appications and report them (as opposed to you know, hacking the company using that vulnerability). These tend to be win-win scenarios for everyone involved because:
+One of the books I am currently reading is called, "This Is How They Tell Me the World Ends: The Cyberweapons Arms Race". It is really good. If you haven't read it or heard about it, for the sake of this piece, all you have to know is that it is an inside look at the (usually opaque) world of hacking, information security, and cybersecurity. One of the areas that the book goes into a lot of detail on is something called "bug bounty programs". Basically, private companies and organizations will pay (non employees) figures ranging from hundreds of dollars to hundreds of thousands of dolalrs to find vulnerabilties in their systems or appications and report them (as opposed to you know, hacking the company using that vulnerability). These tend to be win-win scenarios for everyone involved because:
 
 
 A. The companies don't get hacked and find vulnerabilities to patch 
@@ -78,8 +78,8 @@ And what a journey it has been. I'm assuming that people reading this are famili
 
     - Sam Bankman Fried (aka SBF) was a crypto super star founder and alleged genius
     - He ran an exchange (FTX) where customers deposited their capital and used it for things like trading crypto, options, etc
-    - He also (silently) ran a hedge fund called Alameda Rsearch that traded on that exchange, but was very unclear about hwo closely the two were intertwinned
-    - Around this time last year, the proverbial jig was up and news came out that his companies were bankrupt and had been siphoning money that customers deposited on the exchange to the hedge fund, to executives, and even to Sam's parents (family business baby)
+    - He also (silently) ran a hedge fund called Alameda Research that traded on that exchange, but was very unclear about how closely the two were intertwinned (you could even say he was criminally unclear about the closeness)
+    - Around this time last year, the proverbial jig was up and news came out that his companies were essentially bankrupt and had been siphoning money that customers deposited on the exchange to the hedge fund, to executives, and even to Sam's parents (family business baby)
     - After going on the world's worst media tour, SBF was formally charged with (several) counts of fraud and adjacent crimes and has been waiting to stand trial until the last month or so
     - His trial happened quite recently and the closing remarks and results are summed up by the Verge piece linked here.
 
@@ -87,7 +87,7 @@ Basically, the trial was uh a giant dumpster fire for the defense. Sam's closest
 
 It honestly is wild how bad this went for SBF. Did I mention both his parents are lawyers? 
 
-Now, this is definitely not advice on how to commit crimes. But (hypothetically), if I was the son of lawyers, who planned and committed the largest financial fraud scheme in recent history, I think I'd have a better thesis behind my defense? Or some sort of excuse that didn't fall apart upon immediately being shown screenshots of my culpability? Like, a lot of people with fancy degrees and legal experience were involved in this. And no one prepared for how to handle the scenario of going to court? Anyway, the trial ended this week and the jury found him guilty on all counts. *110 years or so.* 
+Now, this is definitely not advice on how to commit crimes. But (hypothetically), if I was the son of lawyers, who planned and committed the largest financial fraud scheme in recent history, I think I'd have a better thesis behind my defense? Or some sort of excuse that didn't fall apart upon immediately being shown screenshots of my culpability? Like, a lot of people with fancy degrees and legal experience were involved in this. And no one prepared for how to handle the scenario of going to court? Anyway, the trial ended this week and the jury found him guilty on all counts, with a lengthy sentence set to be brought down. *110 years or so.* 
 
 Also, did I mention his parents are lawyers?
 
@@ -100,7 +100,12 @@ Also, did I mention his parents are lawyers?
 
 Okay, so some of the major non-technical talking points in AI right now revolve around the idea of regulatory capture. Regulatory capture is the concept of a regulatory authportiy, agency, or org being co-opted or influenced to serve the interest of (usually) a  large corporate consituent who while massive in scale, only represents a minority of the overall field or market being regulated. You could look at something like Uber as an example. First, Uber fought local transporation regulators to allow their app and business model to run in different cities. Then, they lobbied against competitors and their apps and business models so that they could not run in different cities. The AI case is someone like OpenAI or Anthropic lobbying reps in DC for regulation that will effectively lock them in as a monopoly in the market.
 
-Speaking of Uber, the link above is famous Uber investor Bill Gurely being interviewed on AI and regulatory capture. It is (surprisingly) an interview full of takes that I tend to agree with. Bill really gets to the heart of the issue on AI and how large firms are aiming to shape policy to stamp out their competitors and tighten their grip on (the extremely hyped) large language model space. He even brings up the value of open-source software and how relevant it is to keeping the AI sector competitive. I mean, he makes some really good points. It is just funny to see one of the faces of the Uber rise and fall on this side of the regulatory capture conversation. Still, credit to Bill, it's a good interview with some very valid and insightful commentary on the AI sector and its current policy challenges. I recommend giving it a read.
+Speaking of Uber, the link above is famous Uber investor Bill Gurley being interviewed on AI and regulatory capture. It is (surprisingly) an interview full of takes that I tend to agree with. Bill really gets to the heart of the issue on AI and how large firms are aiming to shape policy to stamp out their competitors and tighten their grip on (the extremely hyped) large language model space. He even brings up the value of open-source software and how relevant it is to keeping the AI sector competitive. I mean, he makes some really good points. It is just funny to see one of the faces of the Uber rise and fall on this side of the regulatory capture conversation. Still, credit to Bill, it's a good interview with some very valid and insightful commentary on the AI sector and its current policy challenges. I recommend giving it a read.
+
+---
+
+With that, we are at the end of this edition of the list. I am still unsure of how this will continue to work from a programming perspective, since weekly posting has been uh not consistent but the idea of changing to something like a monthly posting schedule feels like quitting. Not sure truthfully, but I will keep trying to hit that weekly cadence for now. As always, I welcome any feedback or criticism unless it is mean, in which case I do not.
+
 
 
 
