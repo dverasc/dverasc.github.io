@@ -7,13 +7,13 @@ description = "This is going to be me telling you about me, in buzzwords and als
 [ BUZZWORDS ]
 
 
-My name is Diego Veras and this is a collection of my thoughts, projects, and other things.
+My name is Diego Veras and this is a collection of my thoughts, projects, and other things. Contrary to popular belief, I am not a large language model. 
 
 During business hours (and often outside of business hours), I'm a Principal at [**Wayspire**](https://wayspire.com), a diversified holding firm housing three different teams: [**Arcvale**](https://arcvale.com/), [**Sitebolts**](https://sitebolts.com/), and [**Lenetic Labs**](http://lenetic.com/). 
 
-We do a lot, but in general, our teams are working on internal product // game development, client services, and R&D. **Basically, we make things, sometimes for ourselves, sometimes for people that pay us.**
+We do a lot, but in general, our teams are working on product & game development, technical client services, and R&D. **Basically, we make things, sometimes for ourselves, sometimes for people that pay us.**
 
-I oversee operations (aka put out fires), client engagements (aka sell things), and in-house product development (aka make things). My interests and focus revolve around digital products, cloud technologies, and data analytics. 
+I oversee strategy & operations (aka put out fires), client engagements (aka sell things), and in-house product development (aka make things). 
 
 
 **If you're interested in hiring us to build you things, please reach out here:**
@@ -21,6 +21,6 @@ I oversee operations (aka put out fires), client engagements (aka sell things), 
 ---> ***diego at (wayspire) (dot) com***
 
 
-When it comes to buzzwords, I've worn a bunch of different hats (product management, data analytics, and cloud native development) for companies of all sizes, from multinational corporations to early stage startups. When I do get a chance to code, I typically use Go, Python, Docker, and MongoDB, but I've also worked with little of js // typescript + rust and most of the major cloud providers and relational databases. As for education, I have a BS and MS in Information Systems and a BS in Commercial Entrepreneurship (s/o Jim Moran), all from Florida State University (go noles).
+Usually, I tell people I am a plumber of sorts, moving data from one place to another, one pipeline or CRUD app at the time. However, if I do have to use buzz words, I usually go with the fact that I've worn a bunch of different hats (product management, data analytics, and cloud native development) for companies of all sizes, from multinational corporations to early stage startups. My tools of choice these days are between Python, Rust, and Go (even JS every once in a while), with some variation of SQL at the other end. As for education, I have a BS and MS in Information Systems and a BS in Commercial Entrepreneurship (s/o Jim Moran), all from Florida State University (go noles).
 
 Outside of my email-job life, I enjoy getting punched in the face on the weekends (see: rugby) and usually care about soccer & basketball as well. You can find me on Twitter (see: [@ diegov97](https://twitter.com/diegov97)) and on [other places online](https://dverasc.github.io/showcase/socials/) except the big blue app & vine's dumb cousin.
