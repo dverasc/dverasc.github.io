@@ -9,7 +9,7 @@ description = "This is going to be me telling you about me, in buzzwords and als
 
 My name is Diego Veras and this is a collection of my thoughts, projects, and other things. Contrary to popular belief, I am not a large language model. 
 
-During business hours (and often outside of business hours), I'm a Principal at [**Wayspire**](https://wayspire.com), a diversified holding firm housing three different teams: [**Arcvale**](https://arcvale.com/), [**Sitebolts**](https://sitebolts.com/), and [**Lenetic Labs**](http://lenetic.com/). I also run product at [**Privity**] (https://privityai.com/), a legaltech venture spun out of our multiverse, focused on reshaping universal legal accessibility.
+During business hours (and often outside of business hours), I'm a Principal at [**Wayspire**](https://wayspire.com), a diversified holding firm housing three different teams: [**Arcvale**](https://arcvale.com/), [**Sitebolts**](https://sitebolts.com/), and [**Lenetic Labs**](http://lenetic.com/). I also run product at [**Privity**](https://privityai.com/), a legaltech venture spun out of our multiverse, focused on reshaping universal legal accessibility.
 
 We do a lot, but in general, our teams are working on product // game development & technical client services. **Basically, we make things, sometimes for ourselves, sometimes for people that pay us.**
 
