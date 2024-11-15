@@ -1,6 +1,6 @@
 +++
 title = "What game are you playing"
-date = "2022-04-30"
+date = "1988-04-30"
 description = "Thoughts on growth, businesses, and games. Bit of a fun one"
 
 +++

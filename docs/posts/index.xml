@@ -6,7 +6,25 @@
     <description>Recent content in Posts on DV</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 03 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://dverasc.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://dverasc.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Emerging Tech &amp; $$ Chat</title>
+      <link>https://dverasc.github.io/posts/ihub-presentation/</link>
+      <pubDate>Fri, 15 Nov 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://dverasc.github.io/posts/ihub-presentation/</guid>
+      <description>I recently had the opportunity to chat with James Hudson&amp;rsquo;s IDS 1107 Future Innovators X class at the Innovation Hub @ Florida State University. James and everyone at the iHub were amazing hosts and incredibly generous with their time and resources, so I&amp;rsquo;d like to thank them again. The purpose of the class is to give college freshmen an opportunity to explore the dynamic world of design, tech, and innovation.</description>
+      <content>&lt;iframe src=&#34;https://docs.google.com/presentation/d/1krNjAXH-aodIswRlQwr0VgY4DwqhVtphA4cGbP6yfQw/embed?start=false&amp;amp;loop=false&amp;amp;delayms=3000&#34; width=&#34;800&#34; height=&#34;637&#34; frameborder=&#34;0&#34; allowfullscreen=&#34;allowfullscreen&#34; allow=&#34;geolocation *; microphone *; camera *; midi *; encrypted-media *&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;I recently had the opportunity to chat with James Hudson&amp;rsquo;s IDS 1107 Future Innovators X class at the Innovation Hub @ Florida State University. James and everyone at the iHub were amazing hosts and incredibly generous with their time and resources, so I&amp;rsquo;d like to thank them again. The purpose of the class is to give college freshmen an opportunity to explore the dynamic world of design, tech, and innovation. It&amp;rsquo;s really focused on hands-on skill development and technological experimentation.&lt;/p&gt;
+&lt;p&gt;Given that the audience was fairly new to this spcae, the presentation and talk I gave was pretty condensed because a) I talk a lot and b) attention spans in the modern age. With that in mind, I decided to share and open source the (expanded) deck I used for the chat. You&amp;rsquo;ll notice there is absolutely zero design and a lot of text on each slide. I uh cut out a lot of that text during the talk and used it as speaker notes, but I added them back in for this read-only deck to try and include the context missed from hearing me yap about each point.&lt;/p&gt;
+&lt;p&gt;The content itself is a look at the model // framework I use to run Wayspire and really how I look at building businesses and products in emerging tech. It definitely stands on the shoulders of giants, primarily the great work from:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lia DiBello&lt;/li&gt;
+&lt;li&gt;Cedric Chin (&lt;a href=&#34;https://commoncog.com/&#34;&gt;https://commoncog.com/&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
     <item>
       <title>Old Macro Thoughts</title>
       <link>https://dverasc.github.io/posts/old-macro-thoughts/</link>
@@ -1155,36 +1173,6 @@ Overall, artificial intelligence presents an exciting opportunity for humanity a
     </item>
     
     <item>
-      <title>What game are you playing</title>
-      <link>https://dverasc.github.io/posts/whatgame/</link>
-      <pubDate>Sat, 30 Apr 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://dverasc.github.io/posts/whatgame/</guid>
-      <description>draft: true
-This is more of a shout into the void about thoughts that have been kicking around my brain recently. If they are not good thoughts, well, then don&amp;rsquo;t read them.
-Games, growth, and ZIRP
-Let&amp;rsquo;s start with a quick glossary of terms:
-  Zero Interest Rate Policy: a type of economic policy used by gov&amp;rsquo;ts to stimulate activity and growth. Basically, central banks turn the dial all the way down on short term interests aka it sets its target short-term interest rate to 0% (or like sorta close to 0).</description>
-      <content>&lt;p&gt;draft: true&lt;/p&gt;
-&lt;p&gt;This is more of a shout into the void about thoughts that have been kicking around my brain recently. If they are not good thoughts, well, then don&amp;rsquo;t read them.&lt;/p&gt;
-&lt;p&gt;Games, growth, and ZIRP&lt;/p&gt;
-&lt;p&gt;Let&amp;rsquo;s start with a quick glossary of terms:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Zero Interest Rate Policy: a type of economic policy used by gov&amp;rsquo;ts to stimulate activity and growth. Basically, central banks turn the dial all the way down on short term interests aka it sets its target short-term interest rate to 0% (or like sorta close to 0). Might sond familiar if you operated in the US from post Great Recession to the COVID era (lets call it ~09-22)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Lucasverse: the many spinning plates that make up Wayspire and all its associated entities&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Techno Wizard: Lucas, as seen here (&lt;a href=&#34;https://lucasearth.com/&#34;&gt;https://lucasearth.com/&lt;/a&gt;) or here (&lt;a href=&#34;https://www.google.com/search?q=techno+wizard+of+tallahassee&amp;amp;sca_esv=556766949&amp;amp;sxsrf=AB5stBgMiPU0CZ1XFTHFgeBxSCZOHXhjmA%3A1692024698653&amp;amp;source=hp&amp;amp;ei=ej_aZMTpJJCMwbkP8NaEsAY&amp;amp;iflsig=AD69kcEAAAAAZNpNisNV6GQnEA5mIBaZqZiNBzbR6yU5&amp;amp;oq=techno&amp;amp;gs_lp=Egdnd3Mtd2l6IgZ0ZWNobm8qAggAMgcQIxiKBRgnMggQLhiABBixAzIFEAAYgAQyBRAAGIAEMgcQABiABBgKMgUQABiABDIFEAAYgAQyBRAAGIAEMgsQLhiABBjHARjRAzIFEAAYgARIvQ5QAFilBnAAeACQAQCYAYcEoAGiDKoBCzEuMS4yLjEuMC4xuAEDyAEA-AEBwgIEECMYJ8ICERAuGIAEGLEDGIMBGMcBGNEDwgILEAAYgAQYsQMYgwHCAgUQLhiABMICCxAuGIoFGLEDGIMBwgILEC4YgAQYsQMYgwHCAhEQLhiDARjHARixAxjRAxiABMICCBAAGIAEGLEDwgIIEAAYgAQYyQPCAggQABiKBRiSA8ICCxAAGIoFGLEDGIMBwgIIEAAYgAQYkgPCAg4QLhiABBiSAxjHARivAQ&amp;amp;sclient=gws-wiz&#34;&gt;https://www.google.com/search?q=techno+wizard+of+tallahassee&amp;amp;sca_esv=556766949&amp;amp;sxsrf=AB5stBgMiPU0CZ1XFTHFgeBxSCZOHXhjmA%3A1692024698653&amp;amp;source=hp&amp;amp;ei=ej_aZMTpJJCMwbkP8NaEsAY&amp;amp;iflsig=AD69kcEAAAAAZNpNisNV6GQnEA5mIBaZqZiNBzbR6yU5&amp;amp;oq=techno&amp;amp;gs_lp=Egdnd3Mtd2l6IgZ0ZWNobm8qAggAMgcQIxiKBRgnMggQLhiABBixAzIFEAAYgAQyBRAAGIAEMgcQABiABBgKMgUQABiABDIFEAAYgAQyBRAAGIAEMgsQLhiABBjHARjRAzIFEAAYgARIvQ5QAFilBnAAeACQAQCYAYcEoAGiDKoBCzEuMS4yLjEuMC4xuAEDyAEA-AEBwgIEECMYJ8ICERAuGIAEGLEDGIMBGMcBGNEDwgILEAAYgAQYsQMYgwHCAgUQLhiABMICCxAuGIoFGLEDGIMBwgILEC4YgAQYsQMYgwHCAhEQLhiDARjHARixAxjRAxiABMICCBAAGIAEGLEDwgIIEAAYgAQYyQPCAggQABiKBRiSA8ICCxAAGIoFGLEDGIMBwgIIEAAYgAQYkgPCAg4QLhiABBiSAxjHARivAQ&amp;amp;sclient=gws-wiz&lt;/a&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Early on in my journey with the Techno Wizard in the Lucasverse (Wayspire, Arcvale, you know the lot), I remember chatting with a group about the gaming and tech industry, the failures we had seen in it, and the type of things we would build in its place (if we had the chance). I remember distinctly during that conversation that the entire group was aligned on building something that was focused on sustainable growth with an emphasis on control by the people building it and you know, (actual profit). This was right at the last, massive, ambitious, short sighted, beautiful gasp of the ZIRP era. The glory of crypto, the Uber Eatsification of mobile, the sheer blind faith of the Metaverse. What a time. Anyway, these days everyone is talking about startups valuing control over infinite injections of outside capital (and dilution), prioritizing profits over projected growth, disbanning skunk works divisons etc. On one hand, I think it’s easier to make that decision when the insane valuations are no longer on the table. On the other hand, can’t take too much credit from our side of things. We were a group of industry friends on Discord making fun projects and opining on the scars we had gathered in said industry. We weren’t a startup, or a nonprofit, or an agency, or anything that we ended up becoming. We were just a small fish in a big pond trying to figure out if we even liked the water. Basically, we were nobodies, outsiders, etc. It’s pretty easy to take on a contrarian approach in a world that uh doesn’t really care what you think of it. I didn’t have the words for it back then, but being unknown (and broke) was a gift because it allowed us to move without fear of loss (there wasn’t much to lose!) and to identify that we wanted to play an infinite game, not a finite one. We lucked into identifying the game we wanted to play really early on. Many businesses, organizations, and people never realize what game they are playing (or what game they want to play).&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
       <title>Virtual Reality and Society aka an old undergrad essay</title>
       <link>https://dverasc.github.io/posts/vressay/</link>
       <pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate>
@@ -1812,6 +1800,36 @@ Although the word is self-explanatory at face-value, the micromobility movement 
 &lt;p&gt;Where does Boongaloo come in? Well, as I’m sure many of you realized as you read through the article, because the current most widespread model of micromobility is the shared, use-and-leave rentals, there is no infrastructure in place for those personal mobility devices that have begun to pop up in the hands of the private owners in European cities like Malaga. Unlike bicycles — which have a long history in European cities and are taken into consideration in discussions around infrastructure, parking areas, and development — electric scooters have little to no support. Boongaloo’s goal is to create the physical parking infrastructure for these devices, and just as crucially, create the digital and mobile systems that will allow users to get the full value of their private mobility devices, and ultimately, drive the shift towards smart cities and sustainable models for metropolitan areas.&lt;/p&gt;
 &lt;p&gt;For more information, please visit &lt;a href=&#34;http://www.boongaloo.com&#34;&gt;http://www.boongaloo.com&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The original article was written by me and posted on the Boongaloo medium page, which you can check out here, &lt;a href=&#34;https://medium.com/@Boongaloo/what-is-micromobility-b4eb14f28a89&#34;&gt;https://medium.com/@Boongaloo/what-is-micromobility-b4eb14f28a89&lt;/a&gt;&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>What game are you playing</title>
+      <link>https://dverasc.github.io/posts/whatgame/</link>
+      <pubDate>Sat, 30 Apr 1988 00:00:00 +0000</pubDate>
+      
+      <guid>https://dverasc.github.io/posts/whatgame/</guid>
+      <description>draft: true
+This is more of a shout into the void about thoughts that have been kicking around my brain recently. If they are not good thoughts, well, then don&amp;rsquo;t read them.
+Games, growth, and ZIRP
+Let&amp;rsquo;s start with a quick glossary of terms:
+  Zero Interest Rate Policy: a type of economic policy used by gov&amp;rsquo;ts to stimulate activity and growth. Basically, central banks turn the dial all the way down on short term interests aka it sets its target short-term interest rate to 0% (or like sorta close to 0).</description>
+      <content>&lt;p&gt;draft: true&lt;/p&gt;
+&lt;p&gt;This is more of a shout into the void about thoughts that have been kicking around my brain recently. If they are not good thoughts, well, then don&amp;rsquo;t read them.&lt;/p&gt;
+&lt;p&gt;Games, growth, and ZIRP&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s start with a quick glossary of terms:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Zero Interest Rate Policy: a type of economic policy used by gov&amp;rsquo;ts to stimulate activity and growth. Basically, central banks turn the dial all the way down on short term interests aka it sets its target short-term interest rate to 0% (or like sorta close to 0). Might sond familiar if you operated in the US from post Great Recession to the COVID era (lets call it ~09-22)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Lucasverse: the many spinning plates that make up Wayspire and all its associated entities&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Techno Wizard: Lucas, as seen here (&lt;a href=&#34;https://lucasearth.com/&#34;&gt;https://lucasearth.com/&lt;/a&gt;) or here (&lt;a href=&#34;https://www.google.com/search?q=techno+wizard+of+tallahassee&amp;amp;sca_esv=556766949&amp;amp;sxsrf=AB5stBgMiPU0CZ1XFTHFgeBxSCZOHXhjmA%3A1692024698653&amp;amp;source=hp&amp;amp;ei=ej_aZMTpJJCMwbkP8NaEsAY&amp;amp;iflsig=AD69kcEAAAAAZNpNisNV6GQnEA5mIBaZqZiNBzbR6yU5&amp;amp;oq=techno&amp;amp;gs_lp=Egdnd3Mtd2l6IgZ0ZWNobm8qAggAMgcQIxiKBRgnMggQLhiABBixAzIFEAAYgAQyBRAAGIAEMgcQABiABBgKMgUQABiABDIFEAAYgAQyBRAAGIAEMgsQLhiABBjHARjRAzIFEAAYgARIvQ5QAFilBnAAeACQAQCYAYcEoAGiDKoBCzEuMS4yLjEuMC4xuAEDyAEA-AEBwgIEECMYJ8ICERAuGIAEGLEDGIMBGMcBGNEDwgILEAAYgAQYsQMYgwHCAgUQLhiABMICCxAuGIoFGLEDGIMBwgILEC4YgAQYsQMYgwHCAhEQLhiDARjHARixAxjRAxiABMICCBAAGIAEGLEDwgIIEAAYgAQYyQPCAggQABiKBRiSA8ICCxAAGIoFGLEDGIMBwgIIEAAYgAQYkgPCAg4QLhiABBiSAxjHARivAQ&amp;amp;sclient=gws-wiz&#34;&gt;https://www.google.com/search?q=techno+wizard+of+tallahassee&amp;amp;sca_esv=556766949&amp;amp;sxsrf=AB5stBgMiPU0CZ1XFTHFgeBxSCZOHXhjmA%3A1692024698653&amp;amp;source=hp&amp;amp;ei=ej_aZMTpJJCMwbkP8NaEsAY&amp;amp;iflsig=AD69kcEAAAAAZNpNisNV6GQnEA5mIBaZqZiNBzbR6yU5&amp;amp;oq=techno&amp;amp;gs_lp=Egdnd3Mtd2l6IgZ0ZWNobm8qAggAMgcQIxiKBRgnMggQLhiABBixAzIFEAAYgAQyBRAAGIAEMgcQABiABBgKMgUQABiABDIFEAAYgAQyBRAAGIAEMgsQLhiABBjHARjRAzIFEAAYgARIvQ5QAFilBnAAeACQAQCYAYcEoAGiDKoBCzEuMS4yLjEuMC4xuAEDyAEA-AEBwgIEECMYJ8ICERAuGIAEGLEDGIMBGMcBGNEDwgILEAAYgAQYsQMYgwHCAgUQLhiABMICCxAuGIoFGLEDGIMBwgILEC4YgAQYsQMYgwHCAhEQLhiDARjHARixAxjRAxiABMICCBAAGIAEGLEDwgIIEAAYgAQYyQPCAggQABiKBRiSA8ICCxAAGIoFGLEDGIMBwgIIEAAYgAQYkgPCAg4QLhiABBiSAxjHARivAQ&amp;amp;sclient=gws-wiz&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Early on in my journey with the Techno Wizard in the Lucasverse (Wayspire, Arcvale, you know the lot), I remember chatting with a group about the gaming and tech industry, the failures we had seen in it, and the type of things we would build in its place (if we had the chance). I remember distinctly during that conversation that the entire group was aligned on building something that was focused on sustainable growth with an emphasis on control by the people building it and you know, (actual profit). This was right at the last, massive, ambitious, short sighted, beautiful gasp of the ZIRP era. The glory of crypto, the Uber Eatsification of mobile, the sheer blind faith of the Metaverse. What a time. Anyway, these days everyone is talking about startups valuing control over infinite injections of outside capital (and dilution), prioritizing profits over projected growth, disbanning skunk works divisons etc. On one hand, I think it’s easier to make that decision when the insane valuations are no longer on the table. On the other hand, can’t take too much credit from our side of things. We were a group of industry friends on Discord making fun projects and opining on the scars we had gathered in said industry. We weren’t a startup, or a nonprofit, or an agency, or anything that we ended up becoming. We were just a small fish in a big pond trying to figure out if we even liked the water. Basically, we were nobodies, outsiders, etc. It’s pretty easy to take on a contrarian approach in a world that uh doesn’t really care what you think of it. I didn’t have the words for it back then, but being unknown (and broke) was a gift because it allowed us to move without fear of loss (there wasn’t much to lose!) and to identify that we wanted to play an infinite game, not a finite one. We lucked into identifying the game we wanted to play really early on. Many businesses, organizations, and people never realize what game they are playing (or what game they want to play).&lt;/p&gt;
 </content>
     </item>
     
