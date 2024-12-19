@@ -7,7 +7,7 @@ description = "a look at how I think about commercializing emerging tech"
 
 **Video here:**
 
-{{< youtube id=“wtJfUo5n7XU” >}}
+{{< youtube id=wtJfUo5n7XU >}}
 
 
 ----------
