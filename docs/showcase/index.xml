@@ -6,7 +6,35 @@
     <description>Recent content in Showcases on DV</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://dverasc.github.io/showcase/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://dverasc.github.io/showcase/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Emerging Tech &amp; $$ Chat</title>
+      <link>https://dverasc.github.io/showcase/ihub-presentation/</link>
+      <pubDate>Fri, 15 Nov 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://dverasc.github.io/showcase/ihub-presentation/</guid>
+      <description>Video here:
+   Deck here:
+ I recently had the opportunity to chat with James Hudson&amp;rsquo;s IDS 1107 Future Innovators X class at the Innovation Hub @ Florida State University. James and everyone at the iHub were amazing hosts and incredibly generous with their time and resources, so I&amp;rsquo;d like to thank them again. The purpose of the class is to give college freshmen an opportunity to explore the dynamic world of design, tech, and innovation.</description>
+      <content>&lt;p&gt;&lt;strong&gt;Video here:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/%e2%80%9cwtJfUo5n7XU%e2%80%9d&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Deck here:&lt;/strong&gt;&lt;/p&gt;
+&lt;iframe src=&#34;https://docs.google.com/presentation/d/1krNjAXH-aodIswRlQwr0VgY4DwqhVtphA4cGbP6yfQw/embed?start=false&amp;amp;loop=false&amp;amp;delayms=3000&#34; width=&#34;800&#34; height=&#34;637&#34; frameborder=&#34;0&#34; allowfullscreen=&#34;allowfullscreen&#34; allow=&#34;geolocation *; microphone *; camera *; midi *; encrypted-media *&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;I recently had the opportunity to chat with James Hudson&amp;rsquo;s IDS 1107 Future Innovators X class at the Innovation Hub @ Florida State University. James and everyone at the iHub were amazing hosts and incredibly generous with their time and resources, so I&amp;rsquo;d like to thank them again. The purpose of the class is to give college freshmen an opportunity to explore the dynamic world of design, tech, and innovation. It&amp;rsquo;s really focused on hands-on skill development and technological experimentation.&lt;/p&gt;
+&lt;p&gt;Given that the audience was fairly new to this space, the presentation and talk I gave was pretty condensed because a) I talk a lot and b) attention spans in the modern age. With that in mind, I decided to share and open source the (expanded) deck I used for the chat. You&amp;rsquo;ll notice there is absolutely zero design and a lot of text on each slide. I uh cut out a lot of that text during the talk and used it as speaker notes, but I added them back in for this read-only deck to try and include the context missed from hearing me yap about each point.&lt;/p&gt;
+&lt;p&gt;The content itself is a look at the model // framework I use to run Wayspire and really how I look at building businesses and products in emerging tech. It definitely stands on the shoulders of giants, primarily the great work from:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lia DiBello&lt;/li&gt;
+&lt;li&gt;Cedric Chin (&lt;a href=&#34;https://commoncog.com/&#34;&gt;https://commoncog.com/&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </item>
+    
     <item>
       <title>DrawDrills (the backend)</title>
       <link>https://dverasc.github.io/showcase/drawdrills_be/</link>
