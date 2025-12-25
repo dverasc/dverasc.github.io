@@ -1,6 +1,6 @@
 +++
 title = "2025 Letter to Shareholders*"
-date = "2025-12-26"
+date = "2025-12-25"
 description = "*Uh, “shareholder” is (still) code for anyone reading this."
 
 +++

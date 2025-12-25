@@ -6,7 +6,245 @@
     <description>Recent content on DV</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://dverasc.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dverasc.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2025 Letter to Shareholders*</title>
+      <link>https://dverasc.github.io/posts/shareholder-letter-25/</link>
+      <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://dverasc.github.io/posts/shareholder-letter-25/</guid>
+      <description>Uh, “shareholder” is (still) code for anyone reading this.
+Introduction We doubled our income in 2025. That sounds like good news. It was. It also nearly broke our systems.
+Last year, I wrote the indie equivalent of a public company’s end-of-year letter to shareholders, made famous by a certain Oracle over in Omaha. For those new to the Lucas-verse, Wayspire is a “private diversified technology holding firm,” led by Lucas von Hollen (famously, the Techno Wizard of Tallahassee) and myself (still not a wizard, still not CEO of a public company).</description>
+      <content>&lt;p&gt;&lt;em&gt;Uh, “shareholder” is (still) code for anyone reading this.&lt;/em&gt;&lt;/p&gt;
+&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;We doubled our income in 2025. That sounds like good news. It was. It also nearly broke our systems.&lt;/p&gt;
+&lt;p&gt;Last year, I wrote the indie equivalent of a public company’s end-of-year letter to shareholders, made famous by a certain Oracle over in Omaha. For those new to the Lucas-verse, Wayspire is a “private diversified technology holding firm,” led by Lucas von Hollen (famously, the Techno Wizard of Tallahassee) and myself (still not a wizard, still not CEO of a public company). Our portfolio consists of 3 main tentpole brands: Arcvale (game studio), Lenetic Labs (R&amp;amp;D), and Sitebolts (enterprise tech).&lt;/p&gt;
+&lt;p&gt;This year&amp;rsquo;s letter is about scaling, which is another way of saying what happens when growth arrives faster than your systems can handle it. We recorded our highest earnings, expanded our developer pool significantly, and published multiple products across the portfolio. We also had weeks where I genuinely wanted to bash my head against the wall. Scaling from a handful of developers to 6 squads means scaling complexity faster than revenue. We survived it (and consequently, I developed an obsession around resource allocation and bandwidth).&lt;/p&gt;
+&lt;p&gt;The thesis from last year still holds: great ideas are the most valuable things out there, and we want to increase the number of great ideas we can work on. But 2025 taught us something about how that actually works at scale.&lt;/p&gt;
+&lt;h1 id=&#34;portfolio&#34;&gt;Portfolio&lt;/h1&gt;
+&lt;p&gt;Before diving into 2025, let me revisit what I said we&amp;rsquo;d do.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Goal: Productize our services work.&lt;/strong&gt; We struck digital ground on two platforms (Sitebolts Workflow Automation, Echelon Pulse). &lt;em&gt;Grade: B+.&lt;/em&gt; The platforms exist; none have hit sustainable MRR yet. Shipping is the easy part.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Goal: Shift toward recurring revenue.&lt;/strong&gt; Retainers now comprise over 50% of Sitebolts revenue. &lt;em&gt;Grade: A.&lt;/em&gt; This was the most important structural change we made.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Goal: Roll out Lexicon on iOS.&lt;/strong&gt; Done, with 500+ downloads since Q2 launch. &lt;em&gt;Grade: B.&lt;/em&gt; The app works; the commercial model doesn&amp;rsquo;t yet&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;On with the deep dive.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Arcvale&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://arcvale.com&#34;&gt;Arcvale&lt;/a&gt; is a studio focused on the creative application of emerging technologies (and our most well known brand). The studio exists to build capability and community, not (necessarily) profit. When I say &amp;ldquo;diversified portfolio,&amp;rdquo; I mean it structurally: Sitebolts funds the ability for Arcvale to take long-horizon bets. The mission, &amp;ldquo;making universal leaps in learning and expanding technology&amp;rdquo; (aka MULLET), is educational and communal, not commercial. If that changes someday, great. If it doesn&amp;rsquo;t, the studio still serves its purpose.&lt;/p&gt;
+&lt;p&gt;Lexicon hit &lt;a href=&#34;https://apps.apple.com/us/app/lexicon-the-word-game/id6744262139&#34;&gt;iOS&lt;/a&gt; in Q2 after last year&amp;rsquo;s Android release. With 500+ downloads and no marketing, the game is in the &amp;ldquo;learning, not earning&amp;rdquo; phase aka testing mechanics, gathering feedback, and deepening our understanding of what players actually want. The game follows intuitive construction mechanics up to 8 letters, with longer words worth more points across various modes. It works. Whether it has commercial legs remains unproven.&lt;/p&gt;
+&lt;p&gt;The VR simulation we developed with &lt;a href=&#34;https://www.marchlab.org/&#34;&gt;March Labs&lt;/a&gt; at FSU&amp;rsquo;s Psychology Department saw significant expansion after some bureaucratic delays in research funding (&lt;em&gt;a story for another time&lt;/em&gt;). More subjects used it than the previous year, with multiple hundreds going through by our last count. The additions expanded the research reach, which is the actual goal.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://drawdrills.org/&#34;&gt;DrawDrills&lt;/a&gt;, our publicly available training tool for artists, continued to operate in 2025 with major features deployed including digital drawing pads, a tagging system, and new user interfaces.&lt;/p&gt;
+&lt;p&gt;On the community side—and this is where Arcvale actually delivers value:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;We became official community partners with Florida State&amp;rsquo;s Innovation Hub, holding workshops, demos, and in-person events throughout 2025. This gave us credibility and wall space. It also committed us to workshops we sometimes scrambled to prepare the night before. The accountability was good for us.&lt;/li&gt;
+&lt;li&gt;The Discord community hit 200+ members, with projects blending students, industry experts, and our wider studio network.&lt;/li&gt;
+&lt;li&gt;This network publicly demo&amp;rsquo;d a new game called Bridge Weaver, which won second place at the Innovation Hub&amp;rsquo;s project showcase.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;2026 Goals:&lt;/strong&gt; More in-person events (we&amp;rsquo;re committing to a regular cadence, not ad-hoc scrambles), Bridge Weaver to app stores, and continued network expansion across academia and industry. I&amp;rsquo;m not setting revenue targets for Arcvale because that&amp;rsquo;s not what it&amp;rsquo;s optimizing for.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Lenetic Labs&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Next up is Lenetic Labs. This brand handles atoms, not bits: hardware R&amp;amp;D, additive manufacturing, and rapid prototyping. The skunk works side of the business. As we often say, this division has “plans measured in centuries” (which is either visionary or delusional depending on your tolerance for long time horizons.)&lt;/p&gt;
+&lt;p&gt;The aim is to build intellectual property with research partnerships at the initial legs of commercialization. In plain terms, these are the moonshots. 2025 continued last year&amp;rsquo;s theme: intense effort bursts interrupted by bureaucratic slowness. Research partnerships move at institutional speed, which means we control effort but not timeline. What moved forward:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- Our established partnerships with University of Florida labs in rapid prototyping and additive manufacturing continued, though &amp;quot;continued&amp;quot; undersells the grant cycles and approval processes involved.
+- We married this research work to commercially-ready applications: NFC-enabled identity systems and hardware monitoring for corporate clients.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I should be honest that &amp;ldquo;commercially ready&amp;rdquo; means &amp;ldquo;ready for pilot deployments,&amp;rdquo; not &amp;ldquo;generating meaningful revenue.&amp;rdquo; The identity systems work. The monitoring hardware works. Whether clients will pay what it costs to deliver them remains the 2026 question.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2026 Goals&lt;/strong&gt;: Commercial release of these systems as they transition out of R&amp;amp;D, and launch of our public website making the non-NDA portions of this division&amp;rsquo;s work visible. I&amp;rsquo;d also like to report actual revenue from this division next year, not just R&amp;amp;D progress.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sitebolts&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Then, there’s Sitebolts. While the other sides of the business saw significant progress and milestones, it led the pack (and caused the most chaos.)&lt;/p&gt;
+&lt;p&gt;With a focus on enterprise technology (aka the final leg of the commercial journey), the key driver of growth here was shifting from a pure services consulting model to &amp;ldquo;product-enabled&amp;rdquo; services. This is consulting-speak for &amp;ldquo;we stopped selling only projects and started selling platforms that generate recurring revenue.&amp;rdquo; Many agencies attempt this transition. Most fail. We haven&amp;rsquo;t failed yet, but the jury&amp;rsquo;s still out on whether we&amp;rsquo;ve succeeded.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Why this matters&lt;/em&gt;: Pure services revenue is spiky and fragile. You&amp;rsquo;re only as good as your next project sale. This makes pure services too volatile as the portfolio&amp;rsquo;s commercial engine.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;The shift to recurring revenue:&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Retainers now comprise a little over half of the division&amp;rsquo;s revenue. These focus on technology operations: resilient architectures, consistent uptime, compliance-focused systems. Clients pay monthly; we deliver ongoing value. This stream smooths the spikiness.&lt;/p&gt;
+&lt;p&gt;The remaining revenue diversified into two areas:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- Advisory services: Technical due diligence and greenfield development. This is still project-based but higher-margin and shorter-cycle than implementation work.
+- Proprietary platforms and partner products:
+    - Sitebolts Monitor &amp;amp; Hardened CMS Server Images
+    - Sitebolts Workflow Automation Platform
+    - Echelon Pulse (developed via strategic partnership)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The shift included strategic revenue share partnerships with folks like Echelon, where we collaborated on go-to-market offerings and developed a proprietary business intelligence platform (aka Echelon Pulse), diversifying the revenue model further. &amp;ldquo;Strategic partnership&amp;rdquo; sounds clean; the reality involved learning a lot about how to maneuver different sales cycles.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;What we published:&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This year we wrote ~10 long-form pieces on the Sitebolts blog. Rather than list all 10, let me highlight the through-line: &amp;ldquo;the geopolitics of code.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;The argument across these pieces: technical decisions are increasingly supply chain decisions. Every npm install is a procurement act, and most organizations aren&amp;rsquo;t treating it that way.&lt;/p&gt;
+&lt;p&gt;Start with &lt;a href=&#34;https://sitebolts.com/the-wordpress-saga/&#34;&gt;The WordPress Saga&lt;/a&gt; for governance failures in open-source. Then &lt;a href=&#34;https://sitebolts.com/the-visible-hand-when-digital-supply-chains-meet-geopolitical-reality/&#34;&gt;The Visible Hand&lt;/a&gt; for how supply chain realities hit technical teams. Then &lt;a href=&#34;https://sitebolts.com/eurostack-europes-digital-sovereignty-initiative/&#34;&gt;EuroStack&lt;/a&gt; for one jurisdiction&amp;rsquo;s sovereignty response. &lt;a href=&#34;https://sitebolts.com/the-great-refactor/&#34;&gt;The Great Refactor&lt;/a&gt; covers why Rust adoption in critical infrastructure matters. &lt;a href=&#34;https://sitebolts.com/deepseek-deep-dive/&#34;&gt;DeepSeek&lt;/a&gt; examines what Chinese AI labs mean for the competitive landscape.&lt;/p&gt;
+&lt;p&gt;This isn&amp;rsquo;t just content marketing. It&amp;rsquo;s how we think about where the industry is going and it directly informs how we advise clients on technical architecture and vendor selection.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Operational infrastructure we built:&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The growth forced us to systematize
+- We developed the team&amp;rsquo;s knowledge base: onboarding guides, development standards, methodology documentation, tooling specs across our dev pods.
+- We implemented project and dev management frameworks so teams speak the same language (communication standards, estimation frameworks, and of course, Linear for task tracking.)
+- We rolled out a profit-sharing framework to align incentives. This is heterodox; most shops pay flat salaries and capture margin at the top. We think sharing upside produces better work.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2026 Goals&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;- Bring the automation platform to wider market (beyond current pilot clients)
+- Scale Echelon Pulse out of private beta to 5-figure MRR (a meaningful multiple of current state).
+- Make recurring revenue the majority of overall division revenue (it&#39;s currently half of Sitebolts revenue; I want it majority of Wayspire revenue)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;by-the-numbers&#34;&gt;By the Numbers&lt;/h1&gt;
+&lt;p&gt;Let me give you the quantitative picture with honest context:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Income&lt;/strong&gt;: We roughly doubled 2024&amp;rsquo;s annual income, crossing into the mid-six figures. This is our highest year as a company.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Margins&lt;/strong&gt;: We hovered around 50% gross profit margins, which is respectable for a services-heavy business, though margins compressed during skewed utilization project periods. Net profit margins landed around 10%, which reflects the investment in team expansion.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Team scale&lt;/strong&gt;: At peak, we ran 6 squads of 4-5 developers. Average utilization was lower than peak, which is part of why margins compressed. We learned that our pod model works best when we have 90-day visibility on project pipeline; anything less and we&amp;rsquo;re either understaffed or overstaffed.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Infrastructure costs&lt;/strong&gt;: Maintained optimized infrastructure costs from 2024 with no material increases. This is one area where prior investment in automation paid off.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What the numbers mean&lt;/strong&gt;: We&amp;rsquo;re in the middle of &amp;ldquo;the valley of death&amp;rdquo; for SMBs: too big to operate informally, too small to absorb inefficiency and chaos. Revenue doubled, but so did complexity.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What got us here will not get us to the next stage:&lt;/strong&gt; While this brings problems, we’ve found our success this year came from surfing the wave of chaos and developing “chaordic systems” (shoutout to Dee Hock for those who know ball)&lt;/p&gt;
+&lt;h1 id=&#34;on-chaordic-systems&#34;&gt;On Chaordic Systems&lt;/h1&gt;
+&lt;p&gt;I mentioned Dee Hock earlier. Let me actually explain what I mean, because it&amp;rsquo;s central to how we&amp;rsquo;re trying to operate.&lt;/p&gt;
+&lt;p&gt;Hock founded Visa and wrote extensively about organizational design. His insight: Visa succeeded because it was neither purely hierarchical (ordered) nor purely decentralized (chaotic). It was both, &amp;ldquo;chaordic&amp;rdquo;, with clear boundaries that enabled autonomous action (naming things was uh perhaps not his strength)&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s how this manifests at Wayspire:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;The chaos&lt;/strong&gt;: Temporal flexibility. When a project needs a pivot in scope, we accommodate without 6 weeks of change-order bureaucracy. Squads operate semi-autonomously; leads make tactical decisions without escalating to me or Lucas. We deliberately avoid the process bloat that makes larger firms slow.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;The order&lt;/strong&gt;: Infrastructure standards. Shared codebases. Common methodology. Onboarding documentation that means new developers contribute within a week, not a month. Clear financial reporting so I know margin position in real-time, not quarterly.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;The boundary&lt;/strong&gt;: Squads have autonomy &lt;em&gt;within&lt;/em&gt; standards. You can architect a solution however you want if it &lt;em&gt;meets our security and maintainability requirements&lt;/em&gt;. You can staff a project however makes sense if you&amp;rsquo;re &lt;em&gt;hitting margin targets&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When we onboard new developers, the order meant they aren&amp;rsquo;t flailing. When a client&amp;rsquo;s scope changes mid-project, the chaos meant we don&amp;rsquo;t lose the account. When the outside world goes haywire (is 2025 not the epitome of that?), the real-time financial visibility (order) let us make fast decisions (chaos) about which bets to accelerate.&lt;/p&gt;
+&lt;p&gt;This isn&amp;rsquo;t a management philosophy I&amp;rsquo;m preaching, it&amp;rsquo;s a description of what I think we&amp;rsquo;re actually doing (imperfectly). The 2025 stress-test suggested the model works. 2026 will test whether it scales further.&lt;/p&gt;
+&lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;Last year I told the origin story—Lucas at mach 5, friends jamming on Discord, accidental corporation. I won&amp;rsquo;t repeat it.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s what&amp;rsquo;s different now: In 2024, we were still figuring out if this thing had legs. In 2025, we learned it does, but uh maybe they&amp;rsquo;re different legs than we expected.&lt;/p&gt;
+&lt;p&gt;The jam session model doesn&amp;rsquo;t scale past a certain point. We had to introduce structure without killing the spirit. That&amp;rsquo;s the actual story of 2025: learning to be chaordic on purpose rather than chaotic by accident.&lt;/p&gt;
+&lt;p&gt;Scale brings problems and milestone moments. We&amp;rsquo;ve continued to uphold our belief in developing technology with humanistic perspectives while stewarding this network of partners, researchers, consultants, (and friends). We still don&amp;rsquo;t fit into a neat label (sort of an agency, sort of a game studio, sort of an R&amp;amp;D lab, sort of none of the above).&lt;/p&gt;
+&lt;p&gt;My mind is pessimistic: I see the operational gaps, the margin pressure, the competitive threats, the dozen ways this could fall apart. My will is optimistic: we&amp;rsquo;ve built something real, with people I trust, doing work that matters.&lt;/p&gt;
+&lt;p&gt;In 2026, we plan to keep growing while balancing on that knife&amp;rsquo;s edge. I hope you’ll join us, IRL or on the Internet.&lt;/p&gt;
+&lt;p&gt;Diego&lt;/p&gt;
+&lt;p&gt;Principal Wayspire LLC | Arcvale | Sitebolts | Lenetic Labs&lt;/p&gt;
+&lt;h1 id=&#34;appendix-full-blog-post-list-2025&#34;&gt;Appendix: Full Blog Post List (2025)&lt;/h1&gt;
+&lt;p&gt;For completeness, here&amp;rsquo;s everything we published:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://sitebolts.com/the-wordpress-saga/&#34;&gt;The WordPress Saga&lt;/a&gt; - Exploring the implications of the ongoing WordPress conflict&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sitebolts.com/what-is-rag/&#34;&gt;What is RAG?&lt;/a&gt; - A practical guide to Retrieval Augmented Generation&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sitebolts.com/link-roundup/&#34;&gt;Sitebolts Link Roundup&lt;/a&gt; - Tools and work highlights&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sitebolts.com/deepseek-deep-dive/&#34;&gt;DeepSeek AI: A Deep Dive&lt;/a&gt; - The true impact of DeepSeek&amp;rsquo;s release&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sitebolts.com/conways-law/&#34;&gt;Conway&amp;rsquo;s Law in Practice&lt;/a&gt; - How org structure shapes products&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sitebolts.com/the-visible-hand-when-digital-supply-chains-meet-geopolitical-reality/&#34;&gt;The Visible Hand&lt;/a&gt; - When digital supply chains meet geopolitical reality&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sitebolts.com/when-digital-supply-chains-meet-geopolitical-reality-part-ii-electric-boogaloo/&#34;&gt;The Visible Hand Part II&lt;/a&gt; - The sequel&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sitebolts.com/wtf-wordpress-still/&#34;&gt;WTF is still going on with WordPress&lt;/a&gt; - Revisiting the conflict&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sitebolts.com/eurostack-europes-digital-sovereignty-initiative/&#34;&gt;EuroStack&lt;/a&gt; - Europe&amp;rsquo;s digital sovereignty initiative&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sitebolts.com/the-great-refactor/&#34;&gt;The Great Refactor&lt;/a&gt; - Securing critical open-source code&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sitebolts.com/predictions25/&#34;&gt;2025 Predictions&lt;/a&gt; - Predictions for next year&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Weekly List 12-26-25</title>
+      <link>https://dverasc.github.io/posts/readinglist2425/</link>
+      <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://dverasc.github.io/posts/readinglist2425/</guid>
+      <description>WHAT IS THIS I have not blogged here in a while. It&amp;rsquo;s been close to two years essentially. Since then, most of my writing has been over at the Sitebolts blog, covering things closer to that side of the business (you can find those bits linked below):
+ The WordPress Saga - Exploring the implications of the ongoing WordPress conflict What is RAG? - A practical guide to Retrieval Augmented Generation Sitebolts Link Roundup - Tools and work highlights DeepSeek AI: A Deep Dive - The true impact of DeepSeek&amp;rsquo;s release Conway&amp;rsquo;s Law in Practice - How org structure shapes products The Visible Hand - When digital supply chains meet geopolitical reality The Visible Hand Part II - The sequel WTF is still going on with WordPress - Revisiting the conflict EuroStack - Europe&amp;rsquo;s digital sovereignty initiative The Great Refactor - Securing critical open-source code 2025 Predictions - Predictions for next year  ANYWAY.</description>
+      <content>&lt;h2 id=&#34;what-is-this&#34;&gt;&lt;strong&gt;WHAT IS THIS&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;I have not blogged here in a while. It&amp;rsquo;s been close to two years essentially. Since then, most of my writing has been over at the Sitebolts blog, covering things closer to that side of the business (you can find those bits linked below):&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://sitebolts.com/the-wordpress-saga/&#34;&gt;The WordPress Saga&lt;/a&gt; - Exploring the implications of the ongoing WordPress conflict&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sitebolts.com/what-is-rag/&#34;&gt;What is RAG?&lt;/a&gt; - A practical guide to Retrieval Augmented Generation&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sitebolts.com/link-roundup/&#34;&gt;Sitebolts Link Roundup&lt;/a&gt; - Tools and work highlights&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sitebolts.com/deepseek-deep-dive/&#34;&gt;DeepSeek AI: A Deep Dive&lt;/a&gt; - The true impact of DeepSeek&amp;rsquo;s release&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sitebolts.com/conways-law/&#34;&gt;Conway&amp;rsquo;s Law in Practice&lt;/a&gt; - How org structure shapes products&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sitebolts.com/the-visible-hand-when-digital-supply-chains-meet-geopolitical-reality/&#34;&gt;The Visible Hand&lt;/a&gt; - When digital supply chains meet geopolitical reality&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sitebolts.com/when-digital-supply-chains-meet-geopolitical-reality-part-ii-electric-boogaloo/&#34;&gt;The Visible Hand Part II&lt;/a&gt; - The sequel&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sitebolts.com/wtf-wordpress-still/&#34;&gt;WTF is still going on with WordPress&lt;/a&gt; - Revisiting the conflict&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sitebolts.com/eurostack-europes-digital-sovereignty-initiative/&#34;&gt;EuroStack&lt;/a&gt; - Europe&amp;rsquo;s digital sovereignty initiative&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sitebolts.com/the-great-refactor/&#34;&gt;The Great Refactor&lt;/a&gt; - Securing critical open-source code&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sitebolts.com/predictions25/&#34;&gt;2025 Predictions&lt;/a&gt; - Predictions for next year&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;ANYWAY. I have a bit more time on my hands this week so I decided to revive my old bit and cover some of the books I&amp;rsquo;ve read since my last contribution to this blog.&lt;/p&gt;
+&lt;h2 id=&#34;anyways-heres-the-stuff&#34;&gt;&lt;strong&gt;ANYWAYS HERE&amp;rsquo;S THE STUFF&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Okay so (for the first time in a while), here goes my list of things I&amp;rsquo;ve read // researched // found interesting (in reverse chronological order):&lt;/p&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;House of Huawei: The Secret History of China&amp;rsquo;s Most Powerful Company (2025)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is the book I&amp;rsquo;ve finished most recently. It&amp;rsquo;s incredibly well researched and sourced and outside of the general insder baseball of the business, it was another reminder of just how different (but no less impressive) the different parts of the world are. Huwaei&amp;rsquo;s story is extremelly interesting as it&amp;rsquo;s one of the firms whose trajectory matches the wider nation&amp;rsquo;s development and rise. The founder, Ren, is a fascinating figure as well. Incredibly reserved from the outside world (except in moments of strategic value), Ren evolved into modern tech CEO as Huawei became a global powerhouse, but he strikes me as a figure from a different era (for better or for worse)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Be Slightly Evil (2025)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Compact and to the point (which makes sense given its origin as long form blog posts), Be Slightly Evil is a compilation of a series from Venkatesh Rao&amp;rsquo;s Ribbon Farm blog. It covers different dynamics in modern society and how to come out ahead, mostly framed through professional interactions. Like most of Ribbon Farm content, there was some stuff I disagreed with, some stuff I agreed with, but it made me pause and reflect several times as I went through it. It&amp;rsquo;s sort of like an in-on-the-joke corpo Machivallian self help book.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Gilded Rage (2025)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is Jacob Silverman&amp;rsquo;s latest work and was released relatively recently, focused on the post COVID evolution of political change in the US, framed through the platforms that accelerated these changes and the individuals who run them. I&amp;rsquo;ve read a lot of Jacob&amp;rsquo;s work through the years, especially his crypto cvoerage, and this is him at his very best. Sharp, incisive, and actually immersed in the (digital) conversations driving today&amp;rsquo;s political discouse and scene. It might be helpful to consider what Jacob&amp;rsquo;s work isn&amp;rsquo;t, in the sense that while he contributes to certain MSM outlets, his work stands outside of their usual constraints and ivory tower takes. Gilded Rage traces the change in the tech ecosystem, through the individual journeys of our very own oligarchs like Thiel, Anderssen, and as always, a certain Musk, and how their neuroses have created the society we live in today.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Other People’s Money: The real business of finance (2025)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;John Kay&amp;rsquo;s book on the financail industry was a bit dense but incredibly informative. Kay makes a sector that purposefully makes itself oblique and over main street&amp;rsquo;s head feel clear and comprehensible. It has to be dense to this, so it isn&amp;rsquo;t a knock really more of an observation. Kay gives enough insider baseball to connect the academic principles to the real world expression of the industry and the people who work in it.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Empire of AI (2025)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I read this book pretty early when it first came out while I was on a fairly long flight and really enjoyed the depth of coverage and the journalistic rigour backing it. It took a winding approach across contemporary AI organizations, products, models, nations, and individuals, all rotating around the central gravity of the story birth and life of OpenAI, the organization. The author, Karen Hao, was a journalist at MIT Technology Review who got access to OpenAI a couple years before the release of ChatGPT so she got access to a lot of the key players that would take over the industry shortly after. She also balanced it out with the perspectives of the different people affected by these tectonic shifts, from South American battles over hyperscaler server farm development to droughts in Arizona.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s a tough balance to hit coverage across all these perspectives, but I felt like it managed to pull it off, so overall, I rated it quite highly.&lt;/p&gt;
+&lt;p&gt;And then&amp;hellip;discourse happened.&lt;/p&gt;
+&lt;p&gt;Basically, a couple weeks ago (it is December now. so fairly late in the year), a blogger (and Head of Effective Altruism DC, make of that what you will) named Andy Masley wrote some long form deep dives into the environmental claims and threads in the book (original linked here: &lt;a href=&#34;https://andymasley.substack.com/p/empire-of-ai-is-wildly-misleading&#34;&gt;https://andymasley.substack.com/p/empire-of-ai-is-wildly-misleading&lt;/a&gt;) and pointed out some pretty substantial issues with the numbers behind data center water use in the book. I encourage anyone curious about this exchange to read both the book and the piece and then make up their mind on their position on the whole thread of discourse.&lt;/p&gt;
+&lt;p&gt;TLDR:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Empire of AI&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;ldquo;Claim that a data center is using 1000x as much water as a city of 88,000 people, where it’s actually using about 0.22x as much water as the city, and only 3% of the municipal water system the city relies on. She’s off by a factor of 4500&amp;rdquo;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Hayek’s Bastards (2025)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Quinn Slobodan&amp;rsquo;s work this year was fantastic. I mean, it really cut right to the truth of the modern era&amp;rsquo;s economic and political spaces &amp;amp; systems of power (and the names we all know who live in these spaces). Historical in perspective, but completely clear eyed about the contemporary expressions of this history, I cannot recommend it enough. The main thread that Quinn puts forward is that the authoritarian right-wing populism that we see rising across the globe is a &amp;ldquo;mutation&amp;rdquo; borne from the neo-liberalism and market fundamentalism of figures like Hayek and gov&amp;rsquo;ts like Thatcher&amp;rsquo;s and Reagan&amp;rsquo;s. He traces the different idelogical strains and the topology of groups like paleo-libertarians and race IQ fusionists while connecting their shared communications, the points of agreement, and of course, the points of disagreement.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cybernetic Revolutionaries: Technology and Politics in Allende’s Chile (2025)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Somewhat niche, this was an inside look at one of the most fascinating experiments in socio-technical systems (aka the things we are stuck in these days). Bridging the perspectives of figures like Stafford Beer and the Chilean politicians that (alongside Allende&amp;rsquo;s general leadership) worked to build intelligent technical systems to provide (as close to) real time information about Chile, its economy, and industries in a project called &amp;ldquo;Cybersin&amp;rdquo;. Combining historical and narrative moments, it has a rather foreboading shadow hanging over the end because the end of the Cybersin project was the end of Allende, his government, and peace in Chile (spoiler alert: uh the fella that ended all the aforementioned items was named Augusto Pinochet)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Chip War: The Fight for the World&amp;rsquo;s Most Critical Technology by Chris Miller (2025)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;One of the most topical and accessible wonky books in the past couple years, Chip War does an extremely good job at covering the different players, companies, nations, and specific technologies in the chip industry. As a historian and professor, Miller brings a really keen and in-depth approach to the world of semi conductors. His particular expertise is international history, which sets him up well to cover all the geopolitical threads that make up the chip industry.Dense, but digestible for non-specialists, it deserves the wide recognition it got. Really well done.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The Power Law: Venture Capital and the Making of the New Future (2024)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Sebastian Mallaby is a really great writer. He is particularly good at covering the corners of the (financial) world that capture cultural imagination, from hedge funds&amp;hellip;.to venture capital. The Power Law is both a historical perspective with narrative components and an analytical outline of the political economy that created and fueled our modern economy. Extremely well written, with accessible prose and clever explainers.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The Fund: Ray Dalio (2024)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;What can I say about this one? In short, it was another installment to the collection of &amp;ldquo;no one knows what they&amp;rsquo;re doing, including the most &amp;ldquo;elite&amp;rdquo; or &amp;ldquo;prestigious&amp;rdquo; orgs out there. Corporate disfunction, battles between egos, and occasionally some people sort of put their money where their mouth is. It was quick and entertaining and confirmed my previous biases, so it was fun but also made me more cynical. I guess that&amp;rsquo;s a fair trade.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The Rebel Allocator (2024)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;On paper, it&amp;rsquo;s a bit of a tough sell. It&amp;rsquo;s a narrative story that seeks to explain the philosophies of capital allocation from the Buffet and Munger school of value and their intellectual ancestors, while also creating enough story to keep a reader engaged and enteratained. It somehow pulls it off. Jake Taylor does an immense job of marrying the strains that these different objectives create while also creating moments of real, pure humanity. A book about capital allocation that brought tears to my eyes in certain moments. This is one of those pieces of writing that I will come back to for the rest of my life. What else can I say.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Poor Charlie’s Almanac (2024)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;One of the all time classics for MBAs and value investor heads out there, the Alamanac is a collection of Charlie Munger&amp;rsquo;s greatest hits. Everything from his commencement speech for the University of Southern California law school to lovely pieces of writing like his 2000 memo &amp;ldquo;The Great Financial Scandal of 2003 (An Account by Charles T. Munger)&amp;rdquo;. It was a very pleasant read and one that gave words to the things that I thought only existed in my head. Another one to keep coming back to.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The Counting House (2024)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A fictional story depicting the very real psychology of long term investors and their world, this was an eye opener for me in regards to the endowndments and large, pools of long term capital. Written from the perspective of the endowndment manager himself, it was a roller coaster of emotions and a first hand account on the figures that show up to the doors of capital allocators, all angling to get a piece of the pie. Entertaining and relatively light (complementary.)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Number Go Up (audio book, 2024)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The past two years I have broadened my horizons and given audio books a chance. The first experiment in this little expansion was Zeke Faux&amp;rsquo;s incredibly detailed and well structured coverage of the past half decade of crypto nonsense. From SBF to Razzlekhan, you either laugh at the nonsense or cry at the sheer scale of grifts. As far as audio vs text goes, I think there is something visceral about reading text that I missed while listening. So, the audio book experiment is still a bit of a wash.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pathless Path (2024)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Bit of an outlier compareed to the rest of the books on this list, I read it in one sitting as a sort of mental reset and enjoyed the general vibes of it. It&amp;rsquo;s not a heavy read (complimentary) and you can imagine it as a series of long blog posts instead of a book. If you&amp;rsquo;re very cynical (as I tend to be), it can read as a bit of uh&amp;hellip;an airport woowoo book, but sometimes great things lie on the other side of cringe. I think the parts that really stuck with me are the ones that align with my priors around taking some heterodox risks in your career (shocker), but seriously, sometimes people need the cringey words to push them to do something they wouldn&amp;rsquo;t have done other wise.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Supremacy: AI, ChatGPT and the Race That Will Change the World (2024)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Written by Bloomberg journalist, Parmy Olson, this is a really balanced and well researched journey through the most recent AI boom (and some of the previous winters), framed through the parallel journeys of OpenAI and DeepMind. I specifically enjoyed the coverage of DeepMind, since OpenAI has dominated news and general attention and I had some gaps in my knowledge of DeepMind and their team. It has enough inside baseball to keep you enjoyed, and again, has strong evidence and support from insiders and analysts. Recommend it for anyone trying to understand more of the humans involved in this era of tech.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The Code: Silicon Valley and the Remaking of America (2024)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Margaret O’Mara covers more than three generations of technologists, engineers, and the suits that have made up the technology industry and the spirit of Silicon Valley in a historical analysis with insider narratives and connections between tech and gov&amp;rsquo;t. Given that 2025 was a year where that combo and the relationship between the Beltway and the Valley affected every citizen&amp;rsquo;s lives, reading this book when I did provided a richer understanding of the relationships and history of those relationships that drive these dynamics.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The Twilight Before the Storm: From the Fractured 1930s to Today’s Crisis Culture (2024)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I read Viktor Shvetz latest book around this time last year and it&amp;rsquo;s stayed in the back of my mind since. His wide perspective across the different complex systems that have intertwined to become our modern society gives him the exact latitude needed to trace how history and society have changed. Eerily prescient, his specific prognostications regarding international affairs and geopolitics started to come to pass in 2025 and uh unfortunately makes me realize that the calm maybe shorter lived than I originally thought.&lt;/p&gt;
+</content>
+    </item>
+    
     <item>
       <title>2024 Letter to Shareholders*</title>
       <link>https://dverasc.github.io/posts/shareholder-letter-24/</link>
