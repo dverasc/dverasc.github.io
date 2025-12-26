@@ -101,9 +101,9 @@ The growth forced us to systematize
 
 **2026 Goals**:
 
-    - Bring the automation platform to wider market (beyond current pilot clients)
-    - Scale Echelon Pulse out of private beta to 5-figure MRR (a meaningful multiple of current state).
-    - Make recurring revenue the majority of overall division revenue (it's currently half of Sitebolts revenue; I want it majority of Wayspire revenue)
+- Bring the automation platform to wider market (beyond current pilot clients)
+- Scale Echelon Pulse out of private beta to 5-figure MRR (a meaningful multiple of current state).
+- Make recurring revenue the majority of overall division revenue (it's currently half of Sitebolts revenue; I want it majority of Wayspire revenue)
 
 
 # By the Numbers
