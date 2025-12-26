@@ -61,7 +61,7 @@ I should be honest that "commercially ready" means "ready for pilot deployments,
 
 **Sitebolts**
 
-Then, there’s Sitebolts. While the other sides of the business saw significant progress and milestones, it led the pack (and caused the most chaos.)
+Then, there’s [Sitebolts](https://sitebolts.com/). While the other sides of the business saw significant progress and milestones, it led the pack (and caused the most chaos.)
 
 With a focus on enterprise technology (aka the final leg of the commercial journey), the key driver of growth here was shifting from a pure services consulting model to "product-enabled" services. This is consulting-speak for "we stopped selling only projects and started selling platforms that generate recurring revenue." Many agencies attempt this transition. Most fail. We haven't failed yet, but the jury's still out on whether we've succeeded.
 
@@ -79,7 +79,7 @@ The remaining revenue diversified into two areas:
         - Sitebolts Workflow Automation Platform
         - Echelon Pulse (developed via strategic partnership)
 
-The shift included strategic revenue share partnerships with folks like Echelon, where we collaborated on go-to-market offerings and developed a proprietary business intelligence platform (aka Echelon Pulse), diversifying the revenue model further. "Strategic partnership" sounds clean; the reality involved learning a lot about how to maneuver different sales cycles.
+The shift included strategic revenue share partnerships with folks like [Echelon](https://echelon.nyc), where we collaborated on go-to-market offerings and developed a proprietary business intelligence platform (aka Echelon Pulse), diversifying the revenue model further. "Strategic partnership" sounds clean; the reality involved learning a lot about how to maneuver different sales cycles.
 
 *What we published:*
 
@@ -94,9 +94,10 @@ This isn't just content marketing. It's how we think about where the industry is
 *Operational infrastructure we built:*
 
 The growth forced us to systematize
-    - We developed the team's knowledge base: onboarding guides, development standards, methodology documentation, tooling specs across our dev pods.
-    - We implemented project and dev management frameworks so teams speak the same language (communication standards, estimation frameworks, and of course, Linear for task tracking.)
-    - We rolled out a profit-sharing framework to align incentives. This is heterodox; most shops pay flat salaries and capture margin at the top. We think sharing upside produces better work.
+
+- We developed the team's knowledge base: onboarding guides, development standards, methodology documentation, tooling specs across our dev pods.
+- We implemented project and dev management frameworks so teams speak the same language (communication standards, estimation frameworks, and of course, Linear for task tracking.)
+- We rolled out a profit-sharing framework to align incentives. This is heterodox; most shops pay flat salaries and capture margin at the top. We think sharing upside produces better work.
 
 **2026 Goals**:
 

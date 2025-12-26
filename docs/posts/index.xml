@@ -51,7 +51,7 @@ Last year, I wrote the indie equivalent of a public company’s end-of-year lett
 &lt;p&gt;I should be honest that &amp;ldquo;commercially ready&amp;rdquo; means &amp;ldquo;ready for pilot deployments,&amp;rdquo; not &amp;ldquo;generating meaningful revenue.&amp;rdquo; The identity systems work. The monitoring hardware works. Whether clients will pay what it costs to deliver them remains the 2026 question.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;2026 Goals&lt;/strong&gt;: Commercial release of these systems as they transition out of R&amp;amp;D, and launch of our public website making the non-NDA portions of this division&amp;rsquo;s work visible. I&amp;rsquo;d also like to report actual revenue from this division next year, not just R&amp;amp;D progress.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Sitebolts&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Then, there’s Sitebolts. While the other sides of the business saw significant progress and milestones, it led the pack (and caused the most chaos.)&lt;/p&gt;
+&lt;p&gt;Then, there’s &lt;a href=&#34;https://sitebolts.com/&#34;&gt;Sitebolts&lt;/a&gt;. While the other sides of the business saw significant progress and milestones, it led the pack (and caused the most chaos.)&lt;/p&gt;
 &lt;p&gt;With a focus on enterprise technology (aka the final leg of the commercial journey), the key driver of growth here was shifting from a pure services consulting model to &amp;ldquo;product-enabled&amp;rdquo; services. This is consulting-speak for &amp;ldquo;we stopped selling only projects and started selling platforms that generate recurring revenue.&amp;rdquo; Many agencies attempt this transition. Most fail. We haven&amp;rsquo;t failed yet, but the jury&amp;rsquo;s still out on whether we&amp;rsquo;ve succeeded.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Why this matters&lt;/em&gt;: Pure services revenue is spiky and fragile. You&amp;rsquo;re only as good as your next project sale. This makes pure services too volatile as the portfolio&amp;rsquo;s commercial engine.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;The shift to recurring revenue:&lt;/em&gt;&lt;/p&gt;
@@ -63,17 +63,19 @@ Last year, I wrote the indie equivalent of a public company’s end-of-year lett
     - Sitebolts Workflow Automation Platform
     - Echelon Pulse (developed via strategic partnership)
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The shift included strategic revenue share partnerships with folks like Echelon, where we collaborated on go-to-market offerings and developed a proprietary business intelligence platform (aka Echelon Pulse), diversifying the revenue model further. &amp;ldquo;Strategic partnership&amp;rdquo; sounds clean; the reality involved learning a lot about how to maneuver different sales cycles.&lt;/p&gt;
+&lt;p&gt;The shift included strategic revenue share partnerships with folks like &lt;a href=&#34;https://echelon.nyc&#34;&gt;Echelon&lt;/a&gt;, where we collaborated on go-to-market offerings and developed a proprietary business intelligence platform (aka Echelon Pulse), diversifying the revenue model further. &amp;ldquo;Strategic partnership&amp;rdquo; sounds clean; the reality involved learning a lot about how to maneuver different sales cycles.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;What we published:&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;This year we wrote ~10 long-form pieces on the Sitebolts blog. Rather than list all 10, let me highlight the through-line: &amp;ldquo;the geopolitics of code.&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;The argument across these pieces: technical decisions are increasingly supply chain decisions. Every npm install is a procurement act, and most organizations aren&amp;rsquo;t treating it that way.&lt;/p&gt;
 &lt;p&gt;Start with &lt;a href=&#34;https://sitebolts.com/the-wordpress-saga/&#34;&gt;The WordPress Saga&lt;/a&gt; for governance failures in open-source. Then &lt;a href=&#34;https://sitebolts.com/the-visible-hand-when-digital-supply-chains-meet-geopolitical-reality/&#34;&gt;The Visible Hand&lt;/a&gt; for how supply chain realities hit technical teams. Then &lt;a href=&#34;https://sitebolts.com/eurostack-europes-digital-sovereignty-initiative/&#34;&gt;EuroStack&lt;/a&gt; for one jurisdiction&amp;rsquo;s sovereignty response. &lt;a href=&#34;https://sitebolts.com/the-great-refactor/&#34;&gt;The Great Refactor&lt;/a&gt; covers why Rust adoption in critical infrastructure matters. &lt;a href=&#34;https://sitebolts.com/deepseek-deep-dive/&#34;&gt;DeepSeek&lt;/a&gt; examines what Chinese AI labs mean for the competitive landscape.&lt;/p&gt;
 &lt;p&gt;This isn&amp;rsquo;t just content marketing. It&amp;rsquo;s how we think about where the industry is going and it directly informs how we advise clients on technical architecture and vendor selection.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Operational infrastructure we built:&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;The growth forced us to systematize
-- We developed the team&amp;rsquo;s knowledge base: onboarding guides, development standards, methodology documentation, tooling specs across our dev pods.
-- We implemented project and dev management frameworks so teams speak the same language (communication standards, estimation frameworks, and of course, Linear for task tracking.)
-- We rolled out a profit-sharing framework to align incentives. This is heterodox; most shops pay flat salaries and capture margin at the top. We think sharing upside produces better work.&lt;/p&gt;
+&lt;p&gt;The growth forced us to systematize&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;We developed the team&amp;rsquo;s knowledge base: onboarding guides, development standards, methodology documentation, tooling specs across our dev pods.&lt;/li&gt;
+&lt;li&gt;We implemented project and dev management frameworks so teams speak the same language (communication standards, estimation frameworks, and of course, Linear for task tracking.)&lt;/li&gt;
+&lt;li&gt;We rolled out a profit-sharing framework to align incentives. This is heterodox; most shops pay flat salaries and capture margin at the top. We think sharing upside produces better work.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;2026 Goals&lt;/strong&gt;:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;- Bring the automation platform to wider market (beyond current pilot clients)
 - Scale Echelon Pulse out of private beta to 5-figure MRR (a meaningful multiple of current state).
