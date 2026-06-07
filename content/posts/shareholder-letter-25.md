@@ -23,7 +23,7 @@ Before diving into 2025, let me revisit what I said we'd do.
 
 - **Goal: Productize our services work.** We struck digital ground on two platforms (Sitebolts Workflow Automation, Echelon Pulse). _Grade: B+._ The platforms exist; none have hit sustainable MRR yet. Shipping is the easy part.
 - **Goal: Shift toward recurring revenue.** Retainers now comprise over 50% of Sitebolts revenue. _Grade: A._ This was the most important structural change we made.
-- **Goal: Roll out Lexicon on iOS.** Done, with 500+ downloads since Q2 launch. _Grade: B._ The app works; the commercial model doesn't yet
+
 
 On with the deep dive.
 
@@ -31,7 +31,6 @@ On with the deep dive.
 
 [Arcvale](https://arcvale.com) is a studio focused on the creative application of emerging technologies (and our most well known brand). The studio exists to build capability and community, not (necessarily) profit. When I say "diversified portfolio," I mean it structurally: Sitebolts funds the ability for Arcvale to take long-horizon bets. The mission, "making universal leaps in learning and expanding technology" (aka MULLET), is educational and communal, not commercial. If that changes someday, great. If it doesn't, the studio still serves its purpose.
 
-Lexicon hit [iOS](https://apps.apple.com/us/app/lexicon-the-word-game/id6744262139) in Q2 after last year's Android release. With 500+ downloads and no marketing, the game is in the "learning, not earning" phase aka testing mechanics, gathering feedback, and deepening our understanding of what players actually want. The game follows intuitive construction mechanics up to 8 letters, with longer words worth more points across various modes. It works. Whether it has commercial legs remains unproven.
 
 The VR simulation we developed with [March Labs](https://www.marchlab.org/) at FSU's Psychology Department saw significant expansion after some bureaucratic delays in research funding (_a story for another time_). More subjects used it than the previous year, with multiple hundreds going through by our last count. The additions expanded the research reach, which is the actual goal.
 
