@@ -6,7 +6,18 @@
     <description>Recent content in Showcases on DV</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://dverasc.github.io/showcase/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dverasc.github.io/showcase/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sidekick AI</title>
+      <link>https://dverasc.github.io/showcase/sidekick/</link>
+      <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://dverasc.github.io/showcase/sidekick/</guid>
+      <description>Sidekickai.ca</description>
+      <content>&lt;p&gt;Sidekickai.ca&lt;/p&gt;
+</content>
+    </item>
+    
     <item>
       <title>Emerging Tech &amp; $$ Chat</title>
       <link>https://dverasc.github.io/showcase/ihub-presentation/</link>
@@ -219,16 +230,6 @@ New World Rides is a virtual reality startup based out of their location, the Ce
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://dverasc.github.io/showcase/mlab/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://dverasc.github.io/showcase/nfty/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://dverasc.github.io/showcase/nfty/</guid>
       <description></description>
       <content></content>
     </item>

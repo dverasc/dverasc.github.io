@@ -2,10 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://dverasc.github.io/posts/shareholder-letter-25/</loc>
-    <lastmod>2025-12-25T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://dverasc.github.io/</loc>
+    <lastmod>2026-09-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dverasc.github.io/showcase/</loc>
+    <lastmod>2026-09-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dverasc.github.io/showcase/sidekick/</loc>
+    <lastmod>2026-09-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dverasc.github.io/posts/shareholder-letter-25/</loc>
     <lastmod>2025-12-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dverasc.github.io/posts/</loc>
@@ -21,9 +27,6 @@
     <lastmod>2024-11-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dverasc.github.io/showcase/ihub-presentation/</loc>
-    <lastmod>2024-11-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dverasc.github.io/showcase/</loc>
     <lastmod>2024-11-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dverasc.github.io/posts/old-macro-thoughts/</loc>
@@ -131,8 +134,6 @@
     <loc>https://dverasc.github.io/showcase/marshlabs/</loc>
   </url><url>
     <loc>https://dverasc.github.io/showcase/mlab/</loc>
-  </url><url>
-    <loc>https://dverasc.github.io/showcase/nfty/</loc>
   </url><url>
     <loc>https://dverasc.github.io/showcase/showcase/</loc>
   </url><url>
