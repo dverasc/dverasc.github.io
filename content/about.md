@@ -16,7 +16,7 @@ We do a lot, but in general, our teams are working on product // game developmen
 I oversee strategy & operations (aka put out fires), client engagements (aka sell things), and in-house product development (aka make things). 
 
 
-**If you're interested in helping you build you things, please reach out here:**
+**If you're interested in chatting or need help building things, please reach out here:**
 
 ---> ***diego at (wayspire) (dot) com***
 
